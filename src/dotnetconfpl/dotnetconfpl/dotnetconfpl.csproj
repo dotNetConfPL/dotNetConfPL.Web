@@ -180,10 +180,10 @@
     <Content Include="Content\twitterbootstrap\js\bootstrap.js" />
     <Content Include="Content\twitterbootstrap\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
-    <None Include="Content\countdown\fonts\agaramondpro-regular-webfont.eot" />
-    <None Include="Content\countdown\fonts\AGaramondPro-Regular.otf" />
-    <None Include="Content\countdown\fonts\MyriadPro-Cond.eot" />
-    <None Include="Content\countdown\fonts\MyriadPro-Cond.otf" />
+    <Content Include="Content\countdown\fonts\agaramondpro-regular-webfont.eot" />
+    <Content Include="Content\countdown\fonts\AGaramondPro-Regular.otf" />
+    <Content Include="Content\countdown\fonts\MyriadPro-Cond.eot" />
+    <Content Include="Content\countdown\fonts\MyriadPro-Cond.otf" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
