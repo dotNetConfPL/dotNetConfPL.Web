@@ -1,0 +1,58 @@
+		#days_text{
+			background-image:url('../img/days_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 180px;
+			margin-left: -74px;
+			height: 26px;
+			width: 94px;
+		}
+	
+
+		#hours_text{
+			background-image:url('../img/hours_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 180px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+
+		#mins_text{
+			background-image:url('../img/mins_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 180px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+
+
+		#secs_text{
+			background-image:url('../img/secs_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 180px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+	
+	#days span, #hours span, #mins span , #secs span {
+	background: url(../img/flip_gradient.png);
+	background-repeat:no-repeat;
+	position: absolute;
+	display: block;
+	margin-left: -20px;
+	height: 57px;
+	width: 94px;
+}

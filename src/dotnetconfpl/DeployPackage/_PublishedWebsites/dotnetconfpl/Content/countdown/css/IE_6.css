@@ -1,0 +1,138 @@
+#container{
+	background: url(../img/fixed.jpg);
+	background-repeat:no-repeat;
+	width: 735px;
+	margin-top: -10px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#logo{
+	width:735px;
+	margin-left:auto;
+	margin-right:auto;
+	height: 140px;
+	margin-bottom: 40px;
+	background-image:url('../img/IE_6/logo.jpg');
+	background-repeat:no-repeat;
+	background-position: bottom;
+}
+
+#countbox{
+	padding-top: 20px;
+	color: #fff;
+	font-family: Myriad Pro,Helvetica,sans-serif;
+	font-size: 70px;
+	width: 440px;
+	height: 200px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#days{
+	float: left;
+	text-align: center;	
+	background-image:url('../img/IE_6/flip.jpg');
+	background-repeat:no-repeat;
+	margin: 0 7px 0 7px;
+	height: 89px;
+	width: 94px;
+	z-index:1;
+}
+
+		#days_text{
+			background-image:url('../img/days_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 80px;
+			margin-left: -74px;
+			height: 26px;
+			width: 94px;
+		}
+	
+#hours{	
+	float: left;
+	text-align: center;
+	background-image:url('../img/IE_6/flip.jpg');
+	background-repeat:no-repeat;
+	margin: 0 7px 0 7px;
+	height: 89px;
+	width: 94px;
+	z-index:1;
+}
+
+		#hours_text{
+			background-image:url('../img/hours_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 80px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+
+#mins{
+	float: left;
+	text-align: center;
+	background-image:url('../img/IE_6/flip.jpg');
+	background-repeat:no-repeat;
+	margin: 0 7px 0 7px;
+	height: 89px;
+	width: 94px;
+    z-index:1;
+}
+
+		#mins_text{
+			background-image:url('../img/mins_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 80px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+
+#secs{
+	float: left;
+	text-align: center;
+	background-image:url('../img/IE_6/flip.jpg');
+	background-repeat:no-repeat;
+	margin: 0 7px 0 7px;
+	height: 89px;
+	width: 94px;
+    z-index:1;
+}
+
+		#secs_text{
+			background-image:url('../img/secs_text.jpg');
+			background-position: center;
+			background-repeat:no-repeat;
+			position: absolute;
+			padding-top: 80px;
+			margin-left: -74px;
+			margin-top: 30px;
+			height: 26px;
+			width: 94px;
+		}
+		
+#days span, #hours span, #mins span , #secs span {
+	background: url(../img/IE_6/fixed.jpg);
+	background-repeat:no-repeat;
+	position: absolute;
+	display: block;
+	height: 57px;
+	width: 94px;
+}
+
+.line{
+	width: 432px;
+	margin-left:auto;
+	margin-right: auto;
+	background-color: #000;
+	border-bottom: 1px solid #393939;
+}
