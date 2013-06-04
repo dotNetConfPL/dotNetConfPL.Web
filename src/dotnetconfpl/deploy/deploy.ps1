@@ -1,13 +1,27 @@
 Properties {
 	$build_dir = Split-Path $psake.build_script_file
-	$sln_dir = "$build_dir\..\"
+	$sln_dir =  "$build_dir\..\"
     $build_artifacts_dir = "$sln_dir\DeployPackage\"
+    $package_dir = [System.IO.Path]::GetFullPath("$sln_dir\DeployPackage\_PublishedWebsites\dotnetconfpl\")
 }
 
 Task Default -depends Deploy
 
-Task Deploy -depends Build {
-   "Deploy"
+Task Deploy -depends Build { 
+    try{
+			$ftp = "ftp://$userName"+":"+"$password@$ftpAddress/";
+	
+            "option batch abort
+            option confirm off
+
+            open $ftp
+            cd /dotnetconf.pl/wwwroot/
+            put $package_dir\*
+            exit " | winscp -i
+    }
+    catch [Exception]{
+        Write-Host $_.Exception.ToString()
+    }
 }
 
 Task Build {
