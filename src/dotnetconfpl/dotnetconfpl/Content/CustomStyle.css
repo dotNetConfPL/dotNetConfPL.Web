@@ -1,0 +1,16 @@
+﻿.nav-collapse > .nav-bar > a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #777777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.nav-collapse {
+    text-align: center;
+}
+
+.nav-bar {
+    margin-bottom: 10px;
+    float: none;
+}
