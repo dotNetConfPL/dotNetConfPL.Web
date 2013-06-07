@@ -14,9 +14,8 @@ Task Deploy -depends Build {
             "option batch abort
             option confirm off
 
-            open $ftp
-            cd /dotnetconf.pl/wwwroot/
-            put $package_dir\*
+            open $ftp           
+            synchronize remote $package_dir /dotnetconf.pl/wwwroot/
             exit " | winscp -i
     }
     catch [Exception]{
