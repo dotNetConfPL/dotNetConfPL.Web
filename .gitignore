@@ -3,6 +3,7 @@
 *.datasource
 *.Publish.xml
 *.dotcover
+*.swo
 
 obj
 bin
@@ -20,3 +21,4 @@ Adminica
 packages
 DeployPackage
 deploy.cmd
+App_Data
