@@ -4,6 +4,7 @@
 *.Publish.xml
 *.dotcover
 *.swo
+local.config
 
 obj
 bin
