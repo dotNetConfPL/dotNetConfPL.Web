@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using dotnetconfpl.App_Start;
 using dotnetconfpl.DAL;
 
@@ -19,6 +20,14 @@ namespace dotnetconfpl.Services
 
                 documentSession.Store(newAttende);
                 documentSession.SaveChanges();
+            }
+        }
+
+        public IEnumerable<Attende> List()
+        {
+            using (var documentSession = RavenDb.DocumentStore.OpenSession())
+            {
+               return documentSession.Query<Attende>();
             }
         }
     }
