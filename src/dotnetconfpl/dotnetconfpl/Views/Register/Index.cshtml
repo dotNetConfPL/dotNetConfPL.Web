@@ -1,11 +1,46 @@
-﻿@{
-    ViewBag.Title = "Register";
+﻿@model dotnetconfpl.DAL.Attende
+
+@{
+    ViewBag.Name = "Rejestracja";
 }
 
-<h2>Register Test</h2>
 
-
-@Html.BeginForm()
+@using (Html.BeginForm())
 {
-    <button>TEST</button>
+    <fieldset>
+     <div class="editor-label">
+          @Html.LabelFor(model => model.Name)
+     </div>
+     <div class="editor-field">
+          @Html.EditorFor(model => model.Name)
+          @Html.ValidationMessageFor(model => model.Name)
+     </div>
+
+     <div class="editor-label">
+          @Html.LabelFor(model => model.Mail)
+     </div>
+     <div class="editor-field">
+          @Html.EditorFor(model => model.Mail)
+          @Html.ValidationMessageFor(model => model.Mail)
+     </div>
+
+     <div class="editor-label">
+          @Html.LabelFor(model => model.PageWww)
+     </div>
+     <div class="editor-field">
+          @Html.EditorFor(model => model.PageWww)
+          @Html.ValidationMessageFor(model => model.PageWww)
+     </div>
+
+     <div class="editor-label">
+         @Html.LabelFor(model => model.TwitterHandle)
+     </div>
+     <div class="editor-field">
+          @Html.EditorFor(model => model.TwitterHandle)
+          @Html.ValidationMessageFor(model => model.TwitterHandle)
+     </div>
+     <p>
+          <input type="submit" value="Rejestruj" />
+     </p>
+</fieldset>   
 }

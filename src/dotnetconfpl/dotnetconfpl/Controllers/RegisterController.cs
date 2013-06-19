@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using dotnetconfpl.DAL;
 using dotnetconfpl.Services;
 
 namespace dotnetconfpl.Controllers
@@ -12,10 +13,17 @@ namespace dotnetconfpl.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string test = "")
+        public ActionResult Index(Attende newAttende)
         {
-            new RavenDbClient().AddTestUser();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                new RavenDbClient().AddAttende(newAttende);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(newAttende);
+            }
         }
 
         public ActionResult List()

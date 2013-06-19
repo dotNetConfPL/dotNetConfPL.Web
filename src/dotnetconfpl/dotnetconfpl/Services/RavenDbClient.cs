@@ -7,27 +7,22 @@ namespace dotnetconfpl.Services
 {
     public class RavenDbClient
     {
-        public void AddTestUser()
-        {
-            using (var documentSession = RavenDb.DocumentStore.OpenSession())
-            {
-                var newAttende = new Attende
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Mail = "michal.franc@gmail.com",
-                    Name = "Michal Franc"
-                };
-
-                documentSession.Store(newAttende);
-                documentSession.SaveChanges();
-            }
-        }
-
         public IEnumerable<Attende> List()
         {
             using (var documentSession = RavenDb.DocumentStore.OpenSession())
             {
                return documentSession.Query<Attende>();
+            }
+        }
+
+        public void AddAttende(Attende newAttende)
+        {
+            using (var documentSession = RavenDb.DocumentStore.OpenSession())
+            {
+                newAttende.Id = Guid.NewGuid().ToString();
+
+                documentSession.Store(newAttende);
+                documentSession.SaveChanges();
             }
         }
     }
