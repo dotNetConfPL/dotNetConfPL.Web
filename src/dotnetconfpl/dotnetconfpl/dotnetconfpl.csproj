@@ -124,7 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RavenDB.cs" />
-    <Compile Include="Controllers\CountDownController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="DAL\Attende.cs" />
@@ -211,7 +210,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-1.9.0.min.map" />
-    <Content Include="Views\CountDown\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Register\List.cshtml" />
     <Content Include="Views\Home\Agenda.cshtml" />
