@@ -8,5 +8,15 @@ namespace dotnetconfpl.Controllers
         {
             return View();
         }
+
+        public ActionResult Agenda()
+        {
+            return View();
+        }
+
+        public ActionResult Speakers()
+        {
+            return View();
+        }
     }
 }

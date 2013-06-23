@@ -183,6 +183,9 @@
     <Content Include="Content\countdown\js\jquery-1.3.2.min.js" />
     <Content Include="Content\CustomStyle.css" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\maciej_aniserowicz.jpg" />
+    <Content Include="Content\images\maciej_grabek.jpg" />
+    <Content Include="Content\images\tomasz_janczuk.jpg" />
     <Content Include="Content\twitterbootstrap\css\bootstrap-responsive.css" />
     <Content Include="Content\twitterbootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Content\twitterbootstrap\css\bootstrap.css" />
@@ -211,6 +214,8 @@
     <Content Include="Views\CountDown\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Register\List.cshtml" />
+    <Content Include="Views\Home\Agenda.cshtml" />
+    <Content Include="Views\Home\Speakers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
