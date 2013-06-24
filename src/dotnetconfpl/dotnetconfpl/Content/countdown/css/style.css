@@ -47,7 +47,7 @@ margin-right: auto;
 
 #container{
 	width: 735px;
-    margin-top: 300px;
+    margin-top: 50px;
 	margin-left:auto;
 	margin-right: auto;
 }
@@ -55,7 +55,7 @@ margin-right: auto;
 .logo{
 	width:735px;
 	margin-left:auto;
-	margin-right:auto;
+    margin-right:auto;
 	height: 140px;
 	margin-bottom: 40px;
 	background-image:url('../img/logo.png');
