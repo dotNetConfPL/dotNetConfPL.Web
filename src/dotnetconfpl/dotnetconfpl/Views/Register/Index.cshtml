@@ -4,30 +4,24 @@
     ViewBag.Name = "Rejestracja";
 }
 
-Rejestracja nie jest obowiązkowa. Wydarzenie nie wymaga byś dokonał/a rejestracji.
-Jednakże potrzebujemy wiedzieć jakie jest zaintereswanie.
 
-@using (Html.BeginForm())
+
+@using (Html.BeginForm(new { @class = "form-horizontal" }))
 {
-    <fieldset>
-     <div class="editor-label">
-          @Html.LabelFor(model => model.Name)
-     </div>
-     <div class="editor-field">
-          @Html.EditorFor(model => model.Name)
-          @Html.ValidationMessageFor(model => model.Name)
-     </div>
-
-     <div class="editor-label">
-          @Html.LabelFor(model => model.Mail)
-     </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Mail)
-            @Html.ValidationMessageFor(model => model.Mail)
+   <p>Rejestracja nie jest obowiązkowa. Wydarzenie nie wymaga byś dokonał/a rejestracji.
+    Jednakże potrzebujemy wiedzieć jakie jest zaintereswanie.</p> 
+    
+    <div class="control-group">
+        @Html.LabelFor(model => model.Name, new { @class = "control-label", @for = "Name" })
+        <div class="controls">
+            @Html.EditorFor(model => model.Name)
         </div>
-
-     <p>
-          <input type="submit" value="Rejestruj" />
-     </p>
-</fieldset>   
+    </div>
+    <div class="control-group">
+        @Html.LabelFor(model => model.Mail, new { @class = "control-label", @for = "Mail" })
+        <div class="controls">
+            @Html.EditorFor(model => model.Mail)
+        </div>
+    </div>
+    <button type="submit" class="btn">Rejestruj</button> 
 }
