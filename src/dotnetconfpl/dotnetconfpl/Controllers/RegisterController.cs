@@ -18,7 +18,7 @@ namespace dotnetconfpl.Controllers
             if (ModelState.IsValid)
             {
                 new RavenDbClient().AddAttende(newAttende);
-                return RedirectToAction("Index");
+                return RedirectToAction("Finish");
             }
             else
             {
@@ -30,6 +30,11 @@ namespace dotnetconfpl.Controllers
         {
             var listOfAttendes = new RavenDbClient().List();
             return View(listOfAttendes);
+        }
+
+        public ActionResult Finish()
+        {
+            return View();
         }
     }
 }
