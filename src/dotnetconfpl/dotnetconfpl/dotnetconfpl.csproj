@@ -214,7 +214,6 @@
     <Content Include="Views\Register\List.cshtml" />
     <Content Include="Views\Home\Agenda.cshtml" />
     <Content Include="Views\Home\Speakers.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <None Include="Views\Register\Finish.cshtml" />
   </ItemGroup>
   <ItemGroup>
