@@ -8,8 +8,10 @@
 
 @using (Html.BeginForm(new { @class = "form-horizontal" }))
 {
-   <p>Rejestracja nie jest obowiązkowa. Chcemy tylko wiedzieć jakie jest zaintereswanie.</p> 
-    
+    <p>Rejestracja nie jest obowiązkowa.</p>
+    <p>Mimo tego prosimy cię, zarejestruj się.</p>
+    <p>Pozwoli nam to oszacować zainteresowanie wydarzeniem.</p>
+     
     <div class="control-group">
         @Html.LabelFor(model => model.Name, new { @class = "control-label", @for = "Name" })
         <div class="controls">
