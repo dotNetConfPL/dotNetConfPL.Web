@@ -27,3 +27,7 @@ body {
     line-height: 150%;
     text-align: center;
 }
+
+a.image-link:hover {
+    text-decoration: none !important;
+}
