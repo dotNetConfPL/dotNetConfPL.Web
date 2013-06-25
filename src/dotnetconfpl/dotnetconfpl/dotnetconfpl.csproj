@@ -214,7 +214,8 @@
     <Content Include="Views\Register\List.cshtml" />
     <Content Include="Views\Home\Agenda.cshtml" />
     <Content Include="Views\Home\Speakers.cshtml" />
-    <None Include="Views\Register\Finish.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Register\Finish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
