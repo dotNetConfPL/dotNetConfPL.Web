@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using dotnetconfpl.App_Start;
 using dotnetconfpl.DAL;
 
@@ -11,7 +12,7 @@ namespace dotnetconfpl.Services
         {
             using (var documentSession = RavenDb.DocumentStore.OpenSession())
             {
-               return documentSession.Query<Attende>();
+                return documentSession.Query<Attende>();
             }
         }
 
@@ -23,6 +24,14 @@ namespace dotnetconfpl.Services
 
                 documentSession.Store(newAttende);
                 documentSession.SaveChanges();
+            }
+        }
+
+        public bool DoesAttendeExist(string email)
+        {
+            using (var documentSession = RavenDb.DocumentStore.OpenSession())
+            {
+                return documentSession.Query<Attende>().Any(x => x.Mail == email);
             }
         }
     }
