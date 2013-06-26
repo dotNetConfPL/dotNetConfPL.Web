@@ -15,10 +15,20 @@ namespace dotnetconfpl.Controllers
         [HttpPost]
         public ActionResult Index(Attende newAttende)
         {
+            var client = new RavenDbClient();
+
             if (ModelState.IsValid)
             {
-                new RavenDbClient().AddAttende(newAttende);
-                return RedirectToAction("Finish");
+                if (!client.DoesAttendeExist(newAttende.Mail))
+                {
+                    client.AddAttende(newAttende);
+                    return RedirectToAction("Finish");
+                }
+                else
+                {
+                    this.ModelState.AddModelError("Email","Użytkownik o podanym mailu został już dodany.");
+                    return View(newAttende);
+                }
             }
             else
             {
