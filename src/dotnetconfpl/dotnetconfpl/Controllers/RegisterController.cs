@@ -26,12 +26,6 @@ namespace dotnetconfpl.Controllers
             }
         }
 
-        public ActionResult List()
-        {
-            var listOfAttendes = new RavenDbClient().List();
-            return View(listOfAttendes);
-        }
-
         public ActionResult Finish()
         {
             return View();
