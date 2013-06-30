@@ -26,7 +26,7 @@ namespace dotnetconfpl.Controllers
                 }
                 else
                 {
-                    this.ModelState.AddModelError("Email","Użytkownik o podanym mailu został już dodany.");
+                    this.ModelState.AddModelError(string.Empty ,"Użytkownik o podanym mailu został już dodany.");
                     return View(newAttende);
                 }
             }

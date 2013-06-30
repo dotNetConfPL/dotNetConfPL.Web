@@ -11,7 +11,8 @@
     <p>Rejestracja nie jest obowiązkowa.</p>
     <p>Mimo tego prosimy cię, zarejestruj się.</p>
     <p>Pozwoli nam to oszacować zainteresowanie wydarzeniem.</p>
-     
+    
+         
     <div class="control-group">
         @Html.LabelFor(model => model.Name, new { @class = "control-label", @for = "Name" })
         <div class="controls">
@@ -24,5 +25,9 @@
             @Html.EditorFor(model => model.Mail)
         </div>
     </div>
+    
     <button type="submit" class="btn">Rejestruj</button> 
+    
+    <br/><br/>     
+    @Html.ValidationSummary()
 }

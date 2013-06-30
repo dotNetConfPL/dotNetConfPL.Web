@@ -31,3 +31,9 @@ body {
 a.image-link:hover {
     text-decoration: none !important;
 }
+
+.validation-summary-errors > ul {
+    color: red;
+    list-style-type: none;
+    font-size: 16px;
+}
