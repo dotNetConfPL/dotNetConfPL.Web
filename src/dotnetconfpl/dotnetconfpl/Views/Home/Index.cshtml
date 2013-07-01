@@ -6,45 +6,47 @@
 
 <script type="text/javascript">
 
-//Edit data below to your personal preferences ----------------------------------
+    //Edit data below to your personal preferences ----------------------------------
 
-//Give the date ---------------------------------
-year = 2013; month = 10; day = 12;
-//Give the point of time ------------------------
-hour= 15; min= 0; sec= 0;
-//-----------------------------------------------
+    //Give the date ---------------------------------
+    year = 2013; month = 10; day = 12;
+    //Give the point of time ------------------------
+    hour = 15; min = 0; sec = 0;
+    //-----------------------------------------------
 
-//Standard text ---------------------------------
-main_titel= 'Rozruszajmy polski .Net';
-sub_titel= '' 
-social_network_titel= '';
-//-----------------------------------------------
+    //Standard text ---------------------------------
+    main_titel = 'Rozruszajmy polski .Net';
+    sub_titel = ''
+    social_network_titel = '';
+    //-----------------------------------------------
 
-//URL's --- (use 'hide' to hide) ----------------
-facebook= 'https://www.facebook.com/dotnetconf.pl.5';
-twitter= 'https://twitter.com/dotNetConfPL';
-rss= 'hide';
-deviantart= 'hide'; 
-myspace= 'hide';
-lastfm= 'hide';
-flikr= 'hide';
-//-----------------------------------------------
+    //URL's --- (use 'hide' to hide) ----------------
+    facebook = 'https://www.facebook.com/dotnetconf.pl.5';
+    twitter = 'https://twitter.com/dotNetConfPL';
+    rss = 'hide';
+    deviantart = 'hide';
+    myspace = 'hide';
+    lastfm = 'hide';
+    flikr = 'hide';
+    //-----------------------------------------------
 
-//End editing -------------------------------------------------------------------
+    //End editing -------------------------------------------------------------------
 </script>
 <link rel="shortcut icon" type="image/x-icon" href="/Content/countdown/img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/Content/countdown/css/style.css">
 <script type="text/javascript" src="/Content/countdown/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="/Content/countdown/js/counter.js"></script>
 
-	<div id="container" style="font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif; color: #ccc; font-size: 20px; line-height: 150%; padding: 20px; text-align: center">
+<div class="container-fluid" style="font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif; color: #ccc; font-size: 20px; line-height: 150%; padding: 20px; text-align: center">
     <!--<h1 style="font-weight: normal; margin: -20px 0 40px 0">Pierwsza wirtualna konferencja .NET w Polsce!</h1>
         <div class="line"></div>-->
-        <div class="row">            
+    <div class="row-fluid">
+        <div class="span12">
             <p>
                 <b>dotNetConfPL</b> to wirtualna konferencja przeznaczona dla .NET developerów.
             </p>
-            <p> Jest to pierwsze takie wydarzenie w Polsce.
+            <p>
+                Jest to pierwsze takie wydarzenie w Polsce.
             </p>
             <p>
                 Konferencja odbędzie się <b>12 października 2013, w godzinach 15:00 - 22:00</b>. 
@@ -58,17 +60,25 @@ flikr= 'hide';
             <p>
                 Będzie także możliwość zadawania pytań do prelegentów poprzez <a href="http://jabbr.net/#/rooms/dotnetConfPL">chat na JabbR</a>.
             </p>
-			<p>
-				ZAPRASZAMY DO <a href="/Register"><b>REJESTRACJI</b></a>
-	
-			</p>
-        </div>
+            <p>
+                ZAPRASZAMY DO <a href="/Register"><b>REJESTRACJI</b></a>
 
-		<div class="line"></div>
-		<div id="countbox"></div>
-		<div class="line"></div>
-		<div class="slogan_social"></div>
-		<div id="social_media"></div>
-	</div>
-		
-<noscript><div id="noscript">(please enable javascript)<span>Nowe wydarzenie na polskiej scenie .Netowej nachodzi</span></div></noscript>
+            </p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="hidden-phone">
+                <div class="line"></div>
+                <div id="countbox" />
+                <div class="line"></div>
+            </div>
+            <div class="slogan_social"></div>
+            <div id="social_media"></div>
+        </div>
+    </div>
+</div>
+
+<noscript>
+    <div id="noscript">(please enable javascript)<span>Nowe wydarzenie na polskiej scenie .Netowej nachodzi</span></div>
+</noscript>
