@@ -154,10 +154,10 @@ function GetCount(){
 
 
                 out=
-				"<div id='days'><span></span>" + days +"<div id='days_text'></div></div>" + 
-				"<div id='hours'><span></span>" + hours +"<div id='hours_text'></div></div>" + 
-				"<div id='mins'><span></span>" + mins +"<div id='mins_text'></div></div>" + 
-				"<div id='secs'><span></span>" + secs +"<div id='secs_text'></div></div>" ;
+				"<div class=<div id='days'><span></span>" + days + "<div id='days_text'></div></div>" +
+				"<div id='hours'><span></span>" + hours + "<div id='hours_text'></div></div>" +
+				"<div id='mins'><span></span>" + mins + "<div id='mins_text'></div></div>" +
+				"<div id='secs'><span></span>" + secs + "<div id='secs_text'></div></div>";
                 document.getElementById('countbox').innerHTML=out;
 			
 
