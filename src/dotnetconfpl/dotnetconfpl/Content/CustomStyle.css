@@ -14,10 +14,19 @@
     margin-bottom: 10px;
     float: none;
 }
+.navbar-inner {
+    padding-left:20px;
+    padding-right:20px;
+    background-color:none;
+    background-image:none;
+    border:none;
+
+}
 
 #mainBody {
     margin-top: 50px;
 }
+
 
 body {
     color: #ccc;
@@ -39,5 +48,5 @@ a.image-link:hover {
 }
 
 #countbox {
-    padding-top: 20px !important;
+    padding-top: 20px !important;    
 }

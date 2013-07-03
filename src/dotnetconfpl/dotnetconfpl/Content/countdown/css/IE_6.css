@@ -20,13 +20,13 @@
 
 #countbox{
 	padding-top: 20px;
-	color: #fff;
+	color: #777777;
 	font-family: Myriad Pro,Helvetica,sans-serif;
 	font-size: 70px;
 	width: 440px;
 	height: 200px;
-	margin-left:auto;
-	margin-right: auto;
+	margin-left:34%;
+	margin-right: auto;    
 }
 
 #days{
