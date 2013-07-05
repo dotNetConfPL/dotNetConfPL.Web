@@ -50,3 +50,17 @@ a.image-link:hover {
 #countbox {
     padding-top: 20px !important;    
 }
+
+
+body {
+    background-color: #2d2d30;
+}
+
+.line {
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: #000;
+    border-bottom: 1px solid #393939;
+}
