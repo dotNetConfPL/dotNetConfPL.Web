@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container-fluid" style="background-color: white; width: 100%;padding-top: 20px">
+    <div class="container-fluid" style="background-color: white; width: 100%; padding-top: 20px">
         <div class="row-fluid">
             <div class="span12">
                 <a class="brand" href="/">
@@ -50,12 +50,22 @@
         </div>
     </div>
     <div class="row-fluid" style="padding-top: 30px">
+        <a title="Facebook" class="image-link"
+            href="http://www.facebook.com/sharer.php?s=100&p[title]=DotNetConf.pl&p[summary]=Rozruszajmy polski .Net&p[url]=www.dotnetconf.pl"
+            target="_blank">
+            <span>
+                <img width="40" height="40" src="~/Content/images/facebook.png" alt="Facebook" />
+            </span>
+        </a>
+
+        <a title="Twitter" class="image-link"
+            href="http://twitter.com/share?text=Wirtualna Konferencja DotNetConf.pl - Rozruszajmy Polski .Net www.dotnetconf.pl &url=www.dotnetconf.pl"
+            target="_blank">
+            <span>
+                <img width="40" height="40" src="~/Content/images/twitter.png" alt="Twitter" />
+            </span>
+        </a>
         @RenderBody()
-        <noscript>
-            <div id="noscript">
-                (please enable javascript)<span>Nowe wydarzenie na polskiej scenie .Netowej nachodzi</span>
-            </div>
-        </noscript>
     </div>
 </body>
 </html>
