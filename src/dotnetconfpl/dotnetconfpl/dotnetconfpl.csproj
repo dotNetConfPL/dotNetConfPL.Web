@@ -141,6 +141,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\CustomStyle.css" />
     <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\fav.ico" />
     <Content Include="Content\images\jakub_gutkowski.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\maciej_aniserowicz.jpg" />
