@@ -125,7 +125,6 @@
   <ItemGroup>
     <Compile Include="App_Start\RavenDB.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="DAL\Attende.cs" />
     <Compile Include="DAL\Session.cs" />
     <Compile Include="DAL\SessionService.cs" />
