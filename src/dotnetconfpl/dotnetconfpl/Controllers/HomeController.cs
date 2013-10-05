@@ -25,5 +25,10 @@ namespace dotnetconfpl.Controllers
         {
             return View();
         }
+
+        public ActionResult Stream()
+        {
+            return View();
+        }
     }
 }
