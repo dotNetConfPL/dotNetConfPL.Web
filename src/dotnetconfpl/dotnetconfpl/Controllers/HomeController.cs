@@ -26,9 +26,9 @@ namespace dotnetconfpl.Controllers
             return View();
         }
 
-        public ActionResult Stream()
+        public ActionResult Stream(string id)
         {
-            return View();
+            return View((id == "Admin"));
         }
     }
 }

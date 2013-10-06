@@ -9,22 +9,26 @@
 
 
 <div id="inject-place">
-    
 </div>
 
-<input id="injecter" />
-<button id="btn-set-stream">Set Stream</button>
+
+@if (Model)
+{
+    <input id="new-stream" />
+    <input id="password" />
+    <button id="btn-set-stream">Set Stream</button>
+}
 
 <script type="text/javascript">
     $(function () {
         var injectHub = $.connection.injectHub;
-        injectHub.client.updateStream= function(stream) {
+        injectHub.client.updateClient = function(stream) {
             $('#inject-place').append(stream);
         };
         
         $.connection.hub.start().done(function () {
-            $('#btn-set-stream').click(function() {
-                injectHub.server.updateStream($('#injecter').val());
+            $('#btn-set-stream').click(function () {
+                injectHub.server.updateStream($('#new-stream').val(), $('#password').val());
             });
         });
     });
