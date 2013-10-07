@@ -50,13 +50,16 @@ namespace dotnetconfpl.Controllers
         [HttpPost]
         public void UpdateStream(string newStream, string password)
         {
-            if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
+            if (PasswordCheck.HashVerified(password))
             {
-                this.HttpContext.Session.Add(CurrentStreamSessionKey, newStream);
-            }
-            else
-            {
-                this.HttpContext.Session[CurrentStreamSessionKey] = newStream;
+                if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
+                {
+                    this.HttpContext.Session.Add(CurrentStreamSessionKey, newStream);
+                }
+                else
+                {
+                    this.HttpContext.Session[CurrentStreamSessionKey] = newStream;
+                }
             }
         }
     }
