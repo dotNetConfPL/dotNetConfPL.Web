@@ -136,6 +136,7 @@
     <Compile Include="Hubs\InjectHub.cs" />
     <Compile Include="PasswordCheck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StreamTypeSelector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />

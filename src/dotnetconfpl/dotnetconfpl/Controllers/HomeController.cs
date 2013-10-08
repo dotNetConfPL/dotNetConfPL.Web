@@ -6,11 +6,61 @@ namespace dotnetconfpl.Controllers
     {
         public bool IsAdmin { get; set; } 
         public string CurrentStream { get; set; } 
+        public string CurrentStreamInfo { get; set; } 
     }
 
     public class HomeController : Controller
     {
         private const string CurrentStreamSessionKey = "CurrentStream";
+        private const string CurrentStreamTypeSessionKey = "CurrentStreamType";
+
+        private string CurrentStream
+        {
+            get
+            {
+                if (this.HttpContext.Session[CurrentStreamSessionKey] != null)
+                {
+                    return this.HttpContext.Session[CurrentStreamSessionKey] as string;
+                }
+
+                return string.Empty;
+            }
+            set
+            {
+                if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
+                {
+                    this.HttpContext.Session.Add(CurrentStreamSessionKey, value);
+                }
+                else
+                {
+                    this.HttpContext.Session[CurrentStreamSessionKey] = value;
+                }
+            }
+        }
+
+        private string CurrentStreamType
+        {
+            get
+            {
+                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] != null)
+                {
+                    return this.HttpContext.Session[CurrentStreamTypeSessionKey] as string;
+                }
+
+                return string.Empty;
+            }
+            set
+            {
+                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] == null)
+                {
+                    this.HttpContext.Session.Add(CurrentStreamTypeSessionKey, value);
+                }
+                else
+                {
+                    this.HttpContext.Session[CurrentStreamTypeSessionKey] = value;
+                }
+            }
+        }
 
         public ActionResult Index()
         {
@@ -34,32 +84,21 @@ namespace dotnetconfpl.Controllers
 
         public ActionResult Stream(string id)
         {
-            var currentStream = string.Empty;
-            if (this.HttpContext.Session[CurrentStreamSessionKey] != null)
-            {
-                currentStream = this.HttpContext.Session[CurrentStreamSessionKey] as string;
-            }
-
             return View(new StreamModel
                 {
-                    CurrentStream = currentStream,
+                    CurrentStream = CurrentStream,
+                    CurrentStreamInfo = StreamInfo.GetMeStreamInfo(CurrentStreamType),
                     IsAdmin = id == "Admin"
                 });
         }
 
         [HttpPost]
-        public void UpdateStream(string newStream, string password)
+        public void UpdateStream(string newStream, string password, string streamType)
         {
             if (PasswordCheck.HashVerified(password))
             {
-                if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
-                {
-                    this.HttpContext.Session.Add(CurrentStreamSessionKey, newStream);
-                }
-                else
-                {
-                    this.HttpContext.Session[CurrentStreamSessionKey] = newStream;
-                }
+                CurrentStream = newStream;
+                CurrentStreamType = streamType;
             }
         }
     }
