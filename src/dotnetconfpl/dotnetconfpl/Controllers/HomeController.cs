@@ -11,56 +11,9 @@ namespace dotnetconfpl.Controllers
 
     public class HomeController : Controller
     {
-        private const string CurrentStreamSessionKey = "CurrentStream";
-        private const string CurrentStreamTypeSessionKey = "CurrentStreamType";
+        private static string CurrentStream { get; set; }
 
-        private string CurrentStream
-        {
-            get
-            {
-                if (this.HttpContext.Session[CurrentStreamSessionKey] != null)
-                {
-                    return this.HttpContext.Session[CurrentStreamSessionKey] as string;
-                }
-
-                return string.Empty;
-            }
-            set
-            {
-                if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
-                {
-                    this.HttpContext.Session.Add(CurrentStreamSessionKey, value);
-                }
-                else
-                {
-                    this.HttpContext.Session[CurrentStreamSessionKey] = value;
-                }
-            }
-        }
-
-        private string CurrentStreamType
-        {
-            get
-            {
-                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] != null)
-                {
-                    return this.HttpContext.Session[CurrentStreamTypeSessionKey] as string;
-                }
-
-                return string.Empty;
-            }
-            set
-            {
-                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] == null)
-                {
-                    this.HttpContext.Session.Add(CurrentStreamTypeSessionKey, value);
-                }
-                else
-                {
-                    this.HttpContext.Session[CurrentStreamTypeSessionKey] = value;
-                }
-            }
-        }
+        private static string CurrentStreamType { get; set; }
 
         public ActionResult Index()
         {
