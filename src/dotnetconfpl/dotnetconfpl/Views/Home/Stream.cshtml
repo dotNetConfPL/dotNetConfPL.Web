@@ -53,5 +53,11 @@
                 $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), streamType: $('#selected-stream').val() });
             });
         });
+        
+        $.connection.hub.disconnected(function () {
+            setTimeout(function () {
+                $.connection.hub.start();
+            }, 10000);
+        });
     });
 </script>
