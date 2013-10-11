@@ -18,22 +18,22 @@ namespace dotnetconfpl.Controllers
         {
             get
             {
-                if (this.HttpContext.Session[CurrentStreamSessionKey] != null)
+                if (this.HttpContext.Application[CurrentStreamSessionKey] != null)
                 {
-                    return this.HttpContext.Session[CurrentStreamSessionKey] as string;
+                    return this.HttpContext.Application[CurrentStreamSessionKey] as string;
                 }
 
                 return string.Empty;
             }
             set
             {
-                if (this.HttpContext.Session[CurrentStreamSessionKey] == null)
+                if (this.HttpContext.Application[CurrentStreamSessionKey] == null)
                 {
-                    this.HttpContext.Session.Add(CurrentStreamSessionKey, value);
+                    this.HttpContext.Application.Add(CurrentStreamSessionKey, value);
                 }
                 else
                 {
-                    this.HttpContext.Session[CurrentStreamSessionKey] = value;
+                    this.HttpContext.Application[CurrentStreamSessionKey] = value;
                 }
             }
         }
@@ -42,22 +42,22 @@ namespace dotnetconfpl.Controllers
         {
             get
             {
-                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] != null)
+                if (this.HttpContext.Application[CurrentStreamTypeSessionKey] != null)
                 {
-                    return this.HttpContext.Session[CurrentStreamTypeSessionKey] as string;
+                    return this.HttpContext.Application[CurrentStreamTypeSessionKey] as string;
                 }
 
                 return string.Empty;
             }
             set
             {
-                if (this.HttpContext.Session[CurrentStreamTypeSessionKey] == null)
+                if (this.HttpContext.Application[CurrentStreamTypeSessionKey] == null)
                 {
-                    this.HttpContext.Session.Add(CurrentStreamTypeSessionKey, value);
+                    this.HttpContext.Application.Add(CurrentStreamTypeSessionKey, value);
                 }
                 else
                 {
-                    this.HttpContext.Session[CurrentStreamTypeSessionKey] = value;
+                    this.HttpContext.Application[CurrentStreamTypeSessionKey] = value;
                 }
             }
         }
