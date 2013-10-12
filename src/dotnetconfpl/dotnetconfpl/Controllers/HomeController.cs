@@ -13,6 +13,7 @@ namespace dotnetconfpl.Controllers
 
     public class StreamDocModel
     {
+        public string _id { get { return "current_stream"; } }
         public string stream { get; set; }
         public string type { get; set; }
     }
@@ -54,14 +55,10 @@ namespace dotnetconfpl.Controllers
 
         private void SetStreamToCouchDb(StreamDocModel value)
         {
-            var client = new RestClient("http://mfranc.cloudant.com/dotnetconf/");
-            var request = new RestRequest(Method.POST);
-            string jsonToSend = JsonConvert.SerializeObject(value);
+            var client = new RestClient(string.Format("http://mfranc.cloudant.com/dotnetconf/_design/update_stream/_update/in-place-query/current_stream?field=stream&value={0}", value.stream));
+            var request = new RestRequest(Method.PUT);
 
-            request.AddParameter("application/json; charset=utf-8", jsonToSend, ParameterType.RequestBody);
-            request.RequestFormat = DataFormat.Json;
-
-            var response = client.Execute<StreamDocModel>(request);
+            var response = client.Execute(request);
         }
 
         private StreamDocModel GetStreamFromCouchDb()
