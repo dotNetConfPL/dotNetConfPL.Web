@@ -1,4 +1,6 @@
 ﻿using System.Web.Mvc;
+using Newtonsoft.Json;
+using RestSharp;
 
 namespace dotnetconfpl.Controllers
 {
@@ -9,24 +11,35 @@ namespace dotnetconfpl.Controllers
         public string CurrentStreamInfo { get; set; } 
     }
 
+    public class StreamDocModel
+    {
+        public string stream { get; set; }
+        public string type { get; set; }
+    }
+
     public class HomeController : Controller
     {
         private const string CurrentStreamSessionKey = "CurrentStream";
-        private const string CurrentStreamTypeSessionKey = "CurrentStreamType";
 
-        private string CurrentStream
+        private StreamDocModel CurrentStream
         {
             get
             {
                 if (this.HttpContext.Application[CurrentStreamSessionKey] != null)
                 {
-                    return this.HttpContext.Application[CurrentStreamSessionKey] as string;
+                    return this.HttpContext.Application[CurrentStreamSessionKey] as StreamDocModel;
                 }
-
-                return string.Empty;
+                else
+                {
+                    var stream = this.GetStreamFromCouchDb();
+                    this.HttpContext.Application.Add(CurrentStreamSessionKey, stream);
+                    return stream;
+                }
             }
             set
             {
+                this.SetStreamToCouchDb(value);
+
                 if (this.HttpContext.Application[CurrentStreamSessionKey] == null)
                 {
                     this.HttpContext.Application.Add(CurrentStreamSessionKey, value);
@@ -38,28 +51,25 @@ namespace dotnetconfpl.Controllers
             }
         }
 
-        private string CurrentStreamType
+        private void SetStreamToCouchDb(StreamDocModel value)
         {
-            get
-            {
-                if (this.HttpContext.Application[CurrentStreamTypeSessionKey] != null)
-                {
-                    return this.HttpContext.Application[CurrentStreamTypeSessionKey] as string;
-                }
+            var client = new RestClient("http://mfranc.cloudant.com/dotnetconf/");
+            var request = new RestRequest(Method.POST);
+            string jsonToSend = JsonConvert.SerializeObject(value);
 
-                return string.Empty;
-            }
-            set
-            {
-                if (this.HttpContext.Application[CurrentStreamTypeSessionKey] == null)
-                {
-                    this.HttpContext.Application.Add(CurrentStreamTypeSessionKey, value);
-                }
-                else
-                {
-                    this.HttpContext.Application[CurrentStreamTypeSessionKey] = value;
-                }
-            }
+            request.AddParameter("application/json; charset=utf-8", jsonToSend, ParameterType.RequestBody);
+            request.RequestFormat = DataFormat.Json;
+
+            var response = client.Execute<StreamDocModel>(request);
+        }
+
+        private StreamDocModel GetStreamFromCouchDb()
+        {
+            var client = new RestClient("http://mfranc.cloudant.com/dotnetconf/current_stream");
+            var request = new RestRequest(Method.GET);
+            var response = client.Execute<StreamDocModel>(request);
+
+            return response.Data;
         }
 
         public ActionResult Index()
@@ -84,10 +94,12 @@ namespace dotnetconfpl.Controllers
 
         public ActionResult Stream(string id)
         {
+            var currentstream = CurrentStream ?? new StreamDocModel {stream = string.Empty, type = string.Empty}; 
+
             return View(new StreamModel
                 {
-                    CurrentStream = CurrentStream,
-                    CurrentStreamInfo = StreamInfo.GetMeStreamInfo(CurrentStreamType),
+                    CurrentStream = currentstream.stream,
+                    CurrentStreamInfo = StreamInfo.GetMeStreamInfo(currentstream.type),
                     IsAdmin = id == "Admin"
                 });
         }
@@ -97,8 +109,7 @@ namespace dotnetconfpl.Controllers
         {
             if (PasswordCheck.HashVerified(password))
             {
-                CurrentStream = newStream;
-                CurrentStreamType = streamType;
+                CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
             }
         }
     }
