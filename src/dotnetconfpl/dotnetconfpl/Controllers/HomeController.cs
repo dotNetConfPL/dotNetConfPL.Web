@@ -106,9 +106,9 @@ namespace dotnetconfpl.Controllers
 
 
         [HttpGet]
-        public ActionResult CheckStream(Guid password)
+        public ActionResult CheckStream(string password)
         {
-            if (password == Guid.Parse("b641e87d-2645-4bb9-811b-3008b6bbc1ce"))
+            if (password != null && PasswordCheck.HashVerified(password))
             {
                 return View();
             }
