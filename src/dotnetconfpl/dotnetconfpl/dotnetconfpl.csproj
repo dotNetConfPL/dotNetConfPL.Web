@@ -187,6 +187,7 @@
     <Content Include="Views\Home\Speakers.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Stream.cshtml" />
+    <Content Include="Views\Home\CheckStream.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

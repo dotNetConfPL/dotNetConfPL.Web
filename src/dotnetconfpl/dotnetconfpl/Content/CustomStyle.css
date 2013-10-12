@@ -83,3 +83,7 @@ body {
 .navbar-inner {
   text-align:center;
 }
+
+.last-chance-text {
+    font-size:10px;
+}
