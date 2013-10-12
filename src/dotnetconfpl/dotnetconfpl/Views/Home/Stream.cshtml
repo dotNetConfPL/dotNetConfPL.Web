@@ -1,5 +1,4 @@
-﻿@using dotnetconfpl
-@model dotnetconfpl.Controllers.StreamModel
+﻿@model dotnetconfpl.Controllers.StreamModel
 
 @{
     ViewBag.Title = "dotnetconf.pl";
@@ -13,7 +12,7 @@
 }
 
 <div id="inject-place">
-    <label id="stream-title">@Model.CurrentStreamInfo</label>
+    <label id="stream-title">@Html.Raw(Model.CurrentStreamInfo)</label>
     <iframe width="420" height="315" src="@url" frameborder="0" allowfullscreen></iframe> 
 </div>
 
@@ -51,8 +50,14 @@
         $.connection.hub.start().done(function () {
             $('#btn-set-stream').click(function () {
                 injectHub.server.updateStream($('#new-stream').val(), $('#password').val(), $('#selected-stream').val());
-                $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), selected_stream: $('#selected-stream').val() });
+                $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), streamType: $('#selected-stream').val() });
             });
+        });
+        
+        $.connection.hub.disconnected(function () {
+            setTimeout(function () {
+                $.connection.hub.start();
+            }, 10000);
         });
     });
 </script>
