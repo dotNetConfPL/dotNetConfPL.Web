@@ -17,6 +17,7 @@ namespace dotnetconfpl.Controllers
         public string type { get; set; }
     }
 
+    [OutputCache(CacheProfile = "CacheTime")]
     public class HomeController : Controller
     {
         private const string CurrentStreamSessionKey = "CurrentStream";
@@ -105,6 +106,7 @@ namespace dotnetconfpl.Controllers
         }
 
         [HttpPost]
+        [OutputCache(Duration = 0)]
         public void UpdateStream(string newStream, string password, string streamType)
         {
             if (PasswordCheck.HashVerified(password))
