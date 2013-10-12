@@ -1,5 +1,8 @@
-﻿@{
+﻿@using dotnetconfpl.Controllers
+@model dotnetconfpl.Controllers.StreamDocModel
+@{
     ViewBag.Title = "CheckStream";
+  
 }
 
 <h2>CheckStream</h2>
@@ -7,7 +10,7 @@
 
 <div class="row-fluid">
     <div class="span4 offset4">
-        <input class="span12" value="@Session["CurrentStream"]" id="stream-value"/>
+        <input class="span12" value="@Model.stream" id="stream-value"/>
     </div>
 </div>
 <div class="row-fluid">
