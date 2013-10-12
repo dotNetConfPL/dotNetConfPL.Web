@@ -1,12 +1,14 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web;
+using System.Web.Mvc;
 
 namespace dotnetconfpl.Controllers
 {
     public class StreamModel
     {
-        public bool IsAdmin { get; set; } 
-        public string CurrentStream { get; set; } 
-        public string CurrentStreamInfo { get; set; } 
+        public bool IsAdmin { get; set; }
+        public string CurrentStream { get; set; }
+        public string CurrentStreamInfo { get; set; }
     }
 
     public class HomeController : Controller
@@ -100,6 +102,33 @@ namespace dotnetconfpl.Controllers
                 CurrentStream = newStream;
                 CurrentStreamType = streamType;
             }
+        }
+
+
+        [HttpGet]
+        public ActionResult CheckStream(Guid password)
+        {
+            if (password == Guid.Parse("b641e87d-2645-4bb9-811b-3008b6bbc1ce"))
+            {
+                return View();
+            }
+            else
+            {
+                throw new HttpException(401, "Unauthorized access");
+            }
+        }
+
+
+        [HttpPost]
+        public ActionResult ReloadSession(string newStream, string password, string streamType)
+        {
+            if (PasswordCheck.HashVerified(password))
+            {
+                CurrentStream = newStream;
+                CurrentStreamType = streamType;
+            }
+
+            return View("~/Views/Home/CheckStream.cshtml");
         }
     }
 }
