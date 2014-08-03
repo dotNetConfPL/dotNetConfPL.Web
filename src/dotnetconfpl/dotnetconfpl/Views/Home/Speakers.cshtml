@@ -16,7 +16,7 @@
             <img src="~/Content/images/@item.Photo" style="margin: 20px; width: 200px" /><br />
             <h2 style="font-weight: normal">@item.Name</h2>
             <p>
-                @item.About
+                @Html.Raw(item.About)
             </p>
             <div class="line"></div>
         </div>
