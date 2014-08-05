@@ -83,7 +83,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 1,
                 Time = "",
-                Title = "GTD",
+                Title = "?",
                 Speaker = maciej_aniserowicz,
                 About = ""
             };
@@ -92,7 +92,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 2,
                 Time = "",
-                Title = "Xamarin",
+                Title = "?",
                 Speaker = maciej_grabek,
                 About = ""
             };
@@ -110,7 +110,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Time = "",
-                Title = "Roslyn",
+                Title = "?",
                 Speaker = filip_woj,
                 About = ""
             };
@@ -119,7 +119,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 5,
                 Time = "",
-                Title = "JavaScript",
+                Title = "?",
                 Speaker = jakub_gutkowski,
                 About = ""
             };
