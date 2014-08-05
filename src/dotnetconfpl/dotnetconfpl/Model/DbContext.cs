@@ -66,7 +66,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 7,
                 Name = "Michał Łusiak",
-                About = "",
+                About = "Michał pochodzi z Trójmiasta, ale aktualnie mieszka w Szwecji i pracuje dla <a href=\"http://tretton37.com/\">tretton37</a>. W ciągu dnia programuje backend dla aplikacji webowych. W nocy wielki fan programowania funkcyjnego. Miał okazje pracować w firmach bardzo dużych i bardzo małych na bardzo wielu platformach programistycznych, ale w tej chwili skupia się głownie na .NET-cie. W wolnych chwilach uwielbia eksperymetować z nowymi technologiami i hardwarem. Kiedy nie programuje, zaspakaja swoje uzależnienie od adrenaliny - lata na paralotni, jeździ na jednej narcie lub wypada z samolotu.",
                 Photo = "michal_lusiak.jpg"
             };
 
@@ -146,9 +146,9 @@ namespace dotnetconfpl.Model
             {
                 Id = 8,
                 Time = "",
-                Title = "F#",
+                Title = "WTF# - czym jest F# i dlaczego powinno Cię to obchodzić",
                 Speaker = michal_lusiak,
-                About = ""
+                About = "Prawdopodobnie coraz więcej słyszysz o programowaniu funkcyjnym. W modzie jest programować w Clojure, Scali albo Haskellu. .NET nie pozostał w tyle i ma swój język funkcyjny - F#. W tej prezentacji Michał opowie trochę o tym czym właściwie jest F#, do czego może Ci się przydać i jak zacząć z nim przygodę. Pokaże też kilka możliwości tego języka, które uważa za najbardziej interesujace. Nie będzie natomiast zbyt dużo mówił o programowaniu funkcyjnym."
             };
 
             _speakers.Add(maciej_aniserowicz);
