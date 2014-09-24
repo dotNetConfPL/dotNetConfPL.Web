@@ -110,9 +110,9 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Time = "",
-                Title = "?",
+                Title = "Wszystko co chciałbyś wiedzieć o Roslyn",
                 Speaker = filip_woj,
-                About = ""
+                About = "Swoistą tradycją kompilowanych języków jest to, że kompilator napisany jest w języku który kompiluje (klasyczny \"dogfooding\"). Przez blisko 15 lat, sztandarowa implementacja C#, Microsoft Visual C#, była kompilowana przy użyciu kompilatora napisanego w C++. Poprzez Roslyn, kompilatora open source następnej generacji, który napędza Visual Studio 14, doczekaliśmy się wreszcie od Microsoftu kompilatora C#, napisanego właśnie w C#. Podczas tej sesji przedyskutujemy co tak naprawdę Roslyn daje programistom: zajrzymy w Roslyn Language Services, Roslyn Compiler-as-a-Service oraz możliwości analizy kodu przy pomocy Roslyn. Na koniec zastanowimy się na gigantycznymi zmianami dla .NET, jakie niesie za sobą Roslyn."
             };
 
             var session5 = new Session
