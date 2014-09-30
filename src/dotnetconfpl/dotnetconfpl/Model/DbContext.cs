@@ -83,9 +83,9 @@ namespace dotnetconfpl.Model
             {
                 Id = 1,
                 Time = "15:00 - 16:00",
-                Title = "?",
+                Title = "Testy jednostkowe w praktyce, vol 2",
                 Speaker = maciej_aniserowicz,
-                About = ""
+                About = "W poprzedniej edycji <a href=\"http://dotnetconf.pl/2013\">dotNetConfPL</a> przyjrzeliśmy się narzędziom wykorzystywanym podczas pisania testów na platformie .NET oraz jednemu z wielu scenariuszy, w których testy okazują się niezmiernie pomocne w pracy programisty - eksplorowaniu zewnętrznych systemów i dokumentowaniu komunikacji z nimi. Podczas tegorocznego wystąpienia będziemy kontynuować temat przyglądając się innym zastosowaniom testów. Zobaczymy jak testy jednostkowe sprawdzają się w charakterze \"project-specific-compilator (tm)\". Brzmi enigmatycznie? I dobrze :). Spojrzymy też na testy bazy danych. Kiedy warto je pisać i jak robić to w miarę bezboleśnie? Podywagujemy również nad tematem czytelności testów. Testy powinny służyć za dokumentację tworzonego systemu, więc ich treść musi być czytelna i zrozumiała już na pierwszy rzut oka. Jak można to osiągnąć? Warto obejrzeć <a href=\"http://www.youtube.com/watch?v=gQaShMN_tN8\">prezentację Maćka z ubiegłorocznej edycji</a>."
             };
 
             var session2 = new Session

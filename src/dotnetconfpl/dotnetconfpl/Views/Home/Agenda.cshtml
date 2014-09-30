@@ -15,7 +15,7 @@
             <h2 style="font-weight: normal">@item.Title</h2>
             @Html.ActionLink(item.Speaker.Name, "Speakers")
             <p>
-               @item.About
+               @Html.Raw(item.About)
             </p>
             @if (item.YoutubeUrl.IsEmpty() == false) 
             {
