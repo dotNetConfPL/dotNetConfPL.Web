@@ -42,8 +42,8 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Name = "Maciej Grabek",
-                About = "MVP, <a href=\"http://maciejgrabek.com/\">blogger</a>, głównie zajmuje się platformą Windows Phone. Prelegent na <a href=\"http://www.mtskonferencja.pl/\">Microsoft Technology Summit</a> w 2011 i 2012 roku, redaktor <a href=\"http://codeguru.geekclub.pl/\">CodeGuru.pl</a>, współtwórca serii webcastów poświęconych technologii <a href=\"http://channel9.msdn.com/Series/Kurs-programowania-Windows-Phone-7\">Windows Phone 7</a> oraz <a href=\"http://channel9.msdn.com/Series/Tworzenie-aplikacji-dla-systemu-Windows-Phone-8\">Windows Phone 8</a>. Ponadto współzałożyciel <a href=\"http://wss.pl/group-134/Default.aspx\">Toruńskiej Grupy Developerów .NET</a>. Zajmuje się .NETem od czasów studiów i wersji 1.1.",
-                Photo = "maciej_grabek.jpg"
+                About = "MVP, <a href=\"http://maciejgrabek.com/\">blogger</a>, głównie zajmuje się platformą Windows Phone. Prelegent na <a href=\"http://www.mtskonferencja.pl/\">Microsoft Technology Summit</a> w 2011, 2012 i 2013 roku, były redaktor <a href=\"http://codeguru.geekclub.pl/\">CodeGuru.pl</a>, współtwórca serii webcastów poświęconych technologii <a href=\"http://channel9.msdn.com/Series/Kurs-programowania-Windows-Phone-7\">Windows Phone 7</a> oraz <a href=\"http://channel9.msdn.com/Series/Tworzenie-aplikacji-dla-systemu-Windows-Phone-8\">Windows Phone 8</a>. Ponadto współzałożyciel <a href=\"http://wss.pl/group-134/Default.aspx\">Toruńskiej Grupy Developerów .NET</a>. Zajmuje się .NETem od czasów studiów i wersji 1.1. Obecnie pracuje dla <a href=\"http://www.nordeamarkets.com\">Nordea Capital Markets IT</a>.",
+                Photo = "maciej_grabek.png"
             };
 
             var jakub_gutkowski = new Speaker
@@ -91,16 +91,16 @@ namespace dotnetconfpl.Model
             var session2 = new Session
             {
                 Id = 2,
-                Time = "",
-                Title = "?",
+                Time = "21:00 - 22:00",
+                Title = "Wymagania biznesowe w formie kodu, czyli kilka słów na temat BDD z użyciem SpecFlow",
                 Speaker = maciej_grabek,
-                About = ""
+                About = "Testy są niezmiernie ważną częścią procesu wytwarzania oprogramowania. Okazuje się, że w formie testów jednostkowych możemy przechowywać wymagania biznesowe, które będą zrozumiałe nie tylko dla programistów, ale również dla klientów. Co więcej - klient sam (lub z niewielką pomocą) może stworzyć szereg wymagań opisujących zachowanie (behaviour) elementów systemu, które następnie mogą zostać zamienione na  odpowiedni zbiór testów. Tego typu podejście można określić jako BDD (Behaviour Driven Development). Podczas prezentacji wspólnie przyjrzymy się temu jaka siła drzemie w tym narzędziu i jakie ma ono wady."
             };
 
             var session3 = new Session
             {
                 Id = 3,
-                Time = "",
+                Time = "22:00 - 23:00",
                 Title = "Node.js",
                 Speaker = tomasz_janczuk,
                 About = ""
@@ -118,16 +118,16 @@ namespace dotnetconfpl.Model
             var session5 = new Session
             {
                 Id = 5,
-                Time = "",
-                Title = "?",
+                Time = "18:00 - 19:00",
+                Title = "Server Side czy/i Client Side MVC???",
                 Speaker = jakub_gutkowski,
-                About = ""
+                About = "Coraz częściej stoimy przed wyborem przy nowym projekcie - pójść w pełni w MVC po stronie serwera? Czy może wykorzystać jQuery? Czy możne jeden z super frameworków (<a href=\"http://todomvc.com\">www.todomvc.com</a>, który \"załatwi\" wszystko? A może...da się to rozsądnie pożenić? O rozwiązaniu tych jak i innych problemów na podstawie AngularJS (ale i nie tylko) i ASP.NET MVC (to tylko framework) dowiesz się na prezentacji."
             };
 
             var session6 = new Session
             {
                 Id = 6,
-                Time = "",
+                Time = "17:00 - 18:00",
                 Title = "Programowanie zorientowane aspektowo (AOP)",
                 Speaker = barbara_fusinska,
                 About = ""
@@ -136,7 +136,7 @@ namespace dotnetconfpl.Model
             var session7 = new Session
             {
                 Id = 7,
-                Time = "",
+                Time = "20:00 - 21:00",
                 Title = "Talent za 2 dolary. Skusisz się!",
                 Speaker = patryk_goralowski,
                 About = ""
@@ -145,7 +145,7 @@ namespace dotnetconfpl.Model
             var session8 = new Session
             {
                 Id = 8,
-                Time = "",
+                Time = "19:00 - 20:00",
                 Title = "WTF# - czym jest F# i dlaczego powinno Cię to obchodzić",
                 Speaker = michal_lusiak,
                 About = "Prawdopodobnie coraz więcej słyszysz o programowaniu funkcyjnym. W modzie jest programować w Clojure, Scali albo Haskellu. .NET nie pozostał w tyle i ma swój język funkcyjny - F#. W tej prezentacji Michał opowie trochę o tym czym właściwie jest F#, do czego może Ci się przydać i jak zacząć z nim przygodę. Pokaże też kilka możliwości tego języka, które uważa za najbardziej interesujace. Nie będzie natomiast zbyt dużo mówił o programowaniu funkcyjnym."

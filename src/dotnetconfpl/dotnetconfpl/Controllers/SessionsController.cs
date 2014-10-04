@@ -14,7 +14,7 @@ namespace dotnetconfpl.Controllers
         // GET api/sessions
         public IEnumerable<Session> Get()
         {
-            return _context.Sessions;
+            return _context.Sessions.OrderBy(x => x.Time);
         }
 
         // GET api/sessions/5
