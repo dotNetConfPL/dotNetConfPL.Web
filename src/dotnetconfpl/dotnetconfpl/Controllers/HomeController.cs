@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using Newtonsoft.Json;
 using RestSharp;
 using System.Web;
@@ -81,7 +82,7 @@ namespace dotnetconfpl.Controllers
 
         public ActionResult Agenda()
         {
-            return View(_context.Sessions);
+            return View(_context.Sessions.OrderBy(x => x.Time));
         }
 
         public ActionResult Speakers()
