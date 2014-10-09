@@ -130,7 +130,7 @@ namespace dotnetconfpl.Model
                 Time = "17:00 - 18:00",
                 Title = "Programowanie zorientowane aspektowo (AOP)",
                 Speaker = barbara_fusinska,
-                About = ""
+                About = "Programowanie zorientowane aspektowo (AOP) przydaje się wszędzie tam, gdzie pojawiają się tzw. cross cutting concerns. Aspekty mogą pomóc programistom w pisaniu piękniejszego kodu, nie po to jedynie, by dobrze się go czytało, ale przede wszystkim by tworzyć logikę biznesową w sposób spójny z tym jak ją projektujemy. Skupię się nie tyle na samej idei, co na przedstawieniu mniej sztandarowych zastosowań niż logowanie wywołań metod czy bezpieczeństwo. Pokażę przypadki użycia aspektów w rzeczywistych sytuacjach, gdy ich wykorzystanie uporządkowało projekt, implementację oraz ułatwiło testowanie kodu."
             };
 
             var session7 = new Session
