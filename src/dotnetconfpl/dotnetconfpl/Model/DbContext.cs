@@ -136,16 +136,16 @@ namespace dotnetconfpl.Model
             var session7 = new Session
             {
                 Id = 7,
-                Time = "20:00 - 21:00",
+                Time = "19:00 - 20:00",
                 Title = "Talent za 2 dolary. Skusisz się!",
                 Speaker = patryk_goralowski,
-                About = ""
+                About = "Czasami zdarza się, że ktoś pyta Cię kim jesteś? Pyta w różnych sytuacjach życiowych, mniej i bardziej ważnych. Niełatwo na to pytanie  jest odpowiedzieć, zwłaszcza kiedy ma się 3 minuty. Niełatwo - jednak są sposoby by było łatwiej i pewniej było. O jednym z takich sposobów będzie dziś. O jednej z takich inwestycji w siebie opowiem Wam w prostych, nieskomplikowanych słowach. Wystarczy mieć 2$ i 20 minut czasu by zdobyć o sobie wiedzę o tym w czym jesteś utalentowany lub utalentowana. Potem już trzeba wiedzą tą zarządzać i rozwijać swoje talenty. Zainwestuj! Warto! Dopóki robisz to co zawsze - będziesz miał to co zwykle! Zapraszam."
             };
 
             var session8 = new Session
             {
                 Id = 8,
-                Time = "19:00 - 20:00",
+                Time = "20:00 - 21:00",
                 Title = "WTF# - czym jest F# i dlaczego powinno Cię to obchodzić",
                 Speaker = michal_lusiak,
                 About = "Prawdopodobnie coraz więcej słyszysz o programowaniu funkcyjnym. W modzie jest programować w Clojure, Scali albo Haskellu. .NET nie pozostał w tyle i ma swój język funkcyjny - F#. W tej prezentacji Michał opowie trochę o tym czym właściwie jest F#, do czego może Ci się przydać i jak zacząć z nim przygodę. Pokaże też kilka możliwości tego języka, które uważa za najbardziej interesujace. Nie będzie natomiast zbyt dużo mówił o programowaniu funkcyjnym."
