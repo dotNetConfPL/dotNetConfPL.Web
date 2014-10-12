@@ -25,7 +25,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 2,
                 Name = "Barbara Fusińska",
-                About = "Basia pracowała w małej, średniej oraz dużej firmie, pełniąc role zarówno programistki, architekta, jak i kierownika. Od samego początku związana jest z platformą .NET, tworząc najpierw aplikacje desktopowe, a następnie webowe. Obecnie szuka inspiracji by rozpoczac nowa przygodę, jeżdzi na koferencje i <a href=\"http://barbarafusinska.com/\">blogguje</a>. Jest zwolennikiem współodpowiedzialności za wyniki pracy zespołu oraz teorii mówiącej, że to co tworzy grupa jest większe niż suma wyników poszczególnych osób. Żywiołowo reaguje na hasło rozwój we wszystkich odmianach - szkolenia, konferencje, zwykle i niezwykle rozmowy. Wciąż szuka okazji, by odkrywać potencjał drzemiący w każdym człowieku.",
+                About = "Basia pracowała w małej, średniej oraz dużej firmie, pełniąc role zarówno programistki, architekta, jak i kierownika. Od samego początku związana jest z platformą .NET, tworząc najpierw aplikacje desktopowe, a następnie webowe. Obecnie szuka inspiracji by rozpoczac nowa przygodę, jeździ na koferencje i <a href=\"http://barbarafusinska.com/\">blogguje</a>. Jest zwolennikiem współodpowiedzialności za wyniki pracy zespołu oraz teorii mówiącej, że to co tworzy grupa jest większe niż suma wyników poszczególnych osób. Żywiołowo reaguje na hasło rozwój we wszystkich odmianach - szkolenia, konferencje, zwykłe i niezwykłe rozmowy. Wciąż szuka okazji, by odkrywać potencjał drzemiący w każdym człowieku.",
                 Photo = "barbara_fusinska.jpg"
 
             };
@@ -50,7 +50,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 5,
                 Name = "Jakub Gutkowski",
-                About = "MVP oraz <a href=\"http://blog.gutek.pl/\">blogger</a>. Absolwent Polsko-Japońskiej Wyższej Szkoły Technik Komputerowych w Warszawie nie potrafiący zagrzać sobie miejsca, więc teraz grzeje – zdalnie bo mu tak łatwiej, raz w kawiarniach, raz domu. Daje mu to okazję bawić się zawodowo różnymi technologiami i wieloma językami, choć próbuje być cool i rubinem też się bawi.",
+                About = "MVP oraz <a href=\"http://blog.gutek.pl/\">blogger</a>. Absolwent Polsko-Japońskiej Wyższej Szkoły Technik Komputerowych w Warszawie, nie potrafiący zagrzać sobie miejsca. Obecnie pracuje zdalnie bo tak mu łatwiej, raz w kawiarniach, raz w domu. Daje mu to okazję bawić się zawodowo różnymi technologiami i wieloma językami, choć próbuje być cool i rubinem też się bawi.",
                 Photo = "jakub_gutkowski.png"
             };
 
@@ -58,7 +58,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 7,
                 Name = "Michał Łusiak",
-                About = "Michał pochodzi z Trójmiasta, ale aktualnie mieszka w Szwecji i pracuje dla <a href=\"http://tretton37.com/\">tretton37</a>. W ciągu dnia programuje backend dla aplikacji webowych. W nocy wielki fan programowania funkcyjnego. Miał okazje pracować w firmach bardzo dużych i bardzo małych na bardzo wielu platformach programistycznych, ale w tej chwili skupia się głownie na .NET-cie. W wolnych chwilach uwielbia eksperymetować z nowymi technologiami i hardwarem. Kiedy nie programuje, zaspakaja swoje uzależnienie od adrenaliny - lata na paralotni, jeździ na jednej narcie lub wypada z samolotu.",
+                About = "Michał pochodzi z Trójmiasta, ale aktualnie mieszka w Szwecji i pracuje dla <a href=\"http://tretton37.com/\">tretton37</a>. W ciągu dnia programuje backend dla aplikacji webowych. W nocy wielki fan programowania funkcyjnego. Miał okazje pracować w firmach bardzo dużych i bardzo małych na bardzo wielu platformach programistycznych, ale w tej chwili skupia się głownie na .NET-cie. W wolnych chwilach uwielbia eksperymentować z nowymi technologiami i hardwarem. Kiedy nie programuje, zaspakaja swoje uzależnienie od adrenaliny - lata na paralotni, jeździ na jednej narcie lub wypada z samolotu.",
                 Photo = "michal_lusiak.jpg"
             };
 
