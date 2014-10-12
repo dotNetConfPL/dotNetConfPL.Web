@@ -54,14 +54,6 @@ namespace dotnetconfpl.Model
                 Photo = "jakub_gutkowski.png"
             };
 
-            var tomasz_janczuk = new Speaker
-            {
-                Id = 6,
-                Name = "Tomasz Janczuk",
-                About = "Do września 2013 pracownik Microsoftu w Redmond (USA). Ostatnio zajmował się Node.js, JavaScript i Windows Azure. Wcześniej pracował przy .NET Framework i Silverlight, a dokładniej przy technologiach Web Service: Windows Communication Foundation (WCF), SOAP, WS-*, REST, AJAX. Prelegent na konferencji <a href=\"http://buildwindows.com/\">build 2013</a>. Odszedł z Microsoft, aby rozkręcić własny biznes: <a href=\"http://mobilechapters.com\">http://mobilechapters.com</a>.",
-                Photo = "tomasz_janczuk.jpg"
-            };
-
             var michal_lusiak = new Speaker
             {
                 Id = 7,
@@ -77,7 +69,7 @@ namespace dotnetconfpl.Model
                 About = "MVP, <a href=\"http://www.strathweb.com/\">blogger</a>, autor, aktywny członek społeczności Open Source (m.in. koordynator <a href=\"http://scriptcs.net/\">scriptcs</a> i <a href=\"https://github.com/WebApiContrib\">WebAPIContrib</a>). Członek ASP.NET Web API Advisory Board. Doświadczony w tworzeniu dużych aplikacji webowych w Polsce, Wielkiej Brytanii, Finlandii, Kanadzie. Obecnie mieszka w Szwajcarii i pracuje w Arcmedia AG. Dostępny na Twitterze jako <a href=\"http://twitter.com/filip_woj\">@filip_woj</a>.",
                 Photo = "filip_woj.jpg"
             };
-
+            
 
             var session1 = new Session
             {
@@ -95,15 +87,6 @@ namespace dotnetconfpl.Model
                 Title = "Wymagania biznesowe w formie kodu, czyli kilka słów na temat BDD z użyciem SpecFlow",
                 Speaker = maciej_grabek,
                 About = "Testy są niezmiernie ważną częścią procesu wytwarzania oprogramowania. Okazuje się, że w formie testów jednostkowych możemy przechowywać wymagania biznesowe, które będą zrozumiałe nie tylko dla programistów, ale również dla klientów. Co więcej - klient sam (lub z niewielką pomocą) może stworzyć szereg wymagań opisujących zachowanie (behaviour) elementów systemu, które następnie mogą zostać zamienione na  odpowiedni zbiór testów. Tego typu podejście można określić jako BDD (Behaviour Driven Development). Podczas prezentacji wspólnie przyjrzymy się temu jaka siła drzemie w tym narzędziu i jakie ma ono wady."
-            };
-
-            var session3 = new Session
-            {
-                Id = 3,
-                Time = "22:00 - 23:00",
-                Title = "Node.js",
-                Speaker = tomasz_janczuk,
-                About = ""
             };
 
             var session4 = new Session
@@ -156,13 +139,11 @@ namespace dotnetconfpl.Model
             _speakers.Add(patryk_goralowski);
             _speakers.Add(maciej_grabek);
             _speakers.Add(jakub_gutkowski);
-            _speakers.Add(tomasz_janczuk);
             _speakers.Add(michal_lusiak);
             _speakers.Add(filip_woj);            
 
             _sessions.Add(session1);
             _sessions.Add(session2);
-            _sessions.Add(session3);
             _sessions.Add(session4);
             _sessions.Add(session5);
             _sessions.Add(session6);
