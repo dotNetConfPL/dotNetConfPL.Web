@@ -122,7 +122,7 @@ namespace dotnetconfpl.Model
                 Time = "19:00 - 20:00",
                 Title = "Talent za 2 dolary. Skusisz się!",
                 Speaker = patryk_goralowski,
-                About = "Czasami zdarza się, że ktoś pyta Cię kim jesteś? Pyta w różnych sytuacjach życiowych, mniej i bardziej ważnych. Niełatwo na to pytanie  jest odpowiedzieć, zwłaszcza kiedy ma się 3 minuty. Niełatwo - jednak są sposoby by było łatwiej i pewniej było. O jednym z takich sposobów będzie dziś. O jednej z takich inwestycji w siebie opowiem Wam w prostych, nieskomplikowanych słowach. Wystarczy mieć 2$ i 20 minut czasu by zdobyć o sobie wiedzę o tym w czym jesteś utalentowany lub utalentowana. Potem już trzeba wiedzą tą zarządzać i rozwijać swoje talenty. Zainwestuj! Warto! Dopóki robisz to co zawsze - będziesz miał to co zwykle! Zapraszam. Przygotuj kartkę papieru i ołówek. Będzie to sesja interaktywna."
+                About = "Czasami zdarza się, że ktoś pyta Cię kim jesteś? Pyta w różnych sytuacjach życiowych, mniej i bardziej ważnych. Niełatwo na to pytanie  jest odpowiedzieć, zwłaszcza kiedy ma się 3 minuty. Niełatwo - jednak są sposoby by było łatwiej i pewniej było. O jednym z takich sposobów będzie dziś. O jednej z takich inwestycji w siebie opowiem Wam w prostych, nieskomplikowanych słowach. Wystarczy mieć 2$ i 20 minut czasu by zdobyć o sobie wiedzę o tym w czym jesteś utalentowany lub utalentowana. Potem już trzeba wiedzą tą zarządzać i rozwijać swoje talenty. Zainwestuj! Warto! Dopóki robisz to co zawsze - będziesz miał to co zwykle! Przygotuj kartkę papieru i ołówek. Będzie to sesja interaktywna."
             };
 
             var session8 = new Session
