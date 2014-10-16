@@ -83,7 +83,7 @@ namespace dotnetconfpl.Model
             var session2 = new Session
             {
                 Id = 2,
-                Time = "21:00 - 22:00",
+                Time = "20:00 - 21:00",
                 Title = "Wymagania biznesowe w formie kodu, czyli kilka słów na temat BDD z użyciem SpecFlow",
                 Speaker = maciej_grabek,
                 About = "Testy są niezmiernie ważną częścią procesu wytwarzania oprogramowania. Okazuje się, że w formie testów jednostkowych możemy przechowywać wymagania biznesowe, które będą zrozumiałe nie tylko dla programistów, ale również dla klientów. Co więcej - klient sam (lub z niewielką pomocą) może stworzyć szereg wymagań opisujących zachowanie (behaviour) elementów systemu, które następnie mogą zostać zamienione na  odpowiedni zbiór testów. Tego typu podejście można określić jako BDD (Behaviour Driven Development). Podczas prezentacji wspólnie przyjrzymy się temu jaka siła drzemie w tym narzędziu i jakie ma ono wady."
@@ -128,7 +128,7 @@ namespace dotnetconfpl.Model
             var session8 = new Session
             {
                 Id = 8,
-                Time = "20:00 - 21:00",
+                Time = "21:00 - 22:00",
                 Title = "WTF# - czym jest F# i dlaczego powinno Cię to obchodzić",
                 Speaker = michal_lusiak,
                 About = "Prawdopodobnie coraz więcej słyszysz o programowaniu funkcyjnym. W modzie jest programować w Clojure, Scali albo Haskellu. .NET nie pozostał w tyle i ma swój język funkcyjny - F#. W tej prezentacji Michał opowie trochę o tym czym właściwie jest F#, do czego może Ci się przydać i jak zacząć z nim przygodę. Pokaże też kilka możliwości tego języka, które uważa za najbardziej interesujace. Nie będzie natomiast zbyt dużo mówił o programowaniu funkcyjnym."
