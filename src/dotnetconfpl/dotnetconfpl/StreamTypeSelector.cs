@@ -7,17 +7,19 @@
             switch (selectedStream)
             {
                 case "maniserowicz" :
-                    return "Maciej Aniserowicz <br/> Testy jednostkowe w .NET";
+                    return "Maciej Aniserowicz <br/> Testy jednostkow, vol 2";
                 case "filipwoj":
-                    return "Filip Wojcieszyn <br/> scriptcs - C# na diecie";
-                case "lukaszgasior":
-                    return "Łukasz Gąsior <br/> ReSharper i inne dopalacze programisty";
+                    return "Filip Wojcieszyn <br/> Wszystko co chciałbyś wiedzieć o Roslyn";
+                case "basiafusinska":
+                    return "Barbara Fusińska <br/> Programowanie zorientowane aspektowo (AOP)";
                 case "gutek":
-                    return "Jakub Gutkowski <br/> JavaScript dla C# developera";
-                case "mgrabek":
-                    return "Maciej Grabek <br/> Windows Phone 8 Tips & Tricks";
-                case "tjanczuk":
-                    return "Tomasz Janczuk <br/> Node.js, Edge.js i Windows Azure";
+                    return "Jakub Gutkowski <br/> Server Side czy/i Client Side MVC?";
+                case "patrykgoralowski":
+                    return "Patryk Góralowski <br/> Talent za 2 dolary. Skusisz się!";
+                case "maciejgrabek":
+                    return "Maciej Grabek <br/> Wymagania biznesowe w formie kodu, czyli kilka słów na temat BDD z użyciem SpecFlow";
+                case "michallusiak":
+                    return "Michał Łusiak <br/> WTF# - czym jest F# i dlaczego powinno Cię to obchodzić";
                 default:
                     return string.Empty;
             }
