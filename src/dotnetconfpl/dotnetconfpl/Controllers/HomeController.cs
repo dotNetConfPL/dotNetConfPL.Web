@@ -142,6 +142,11 @@ namespace dotnetconfpl.Controllers
 
             return View("~/Views/Home/CheckStream.cshtml");
         }
+
+        public string google518e43aa497595a5()
+        {
+            return "google-site-verification: google518e43aa497595a5.html";
+        }
     }    
 
 }
