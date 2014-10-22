@@ -220,6 +220,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Stream.cshtml" />
     <Content Include="Views\Home\CheckStream.cshtml" />
+    <Content Include="Views\Home\google518e43aa497595a5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\2013\Models\" />

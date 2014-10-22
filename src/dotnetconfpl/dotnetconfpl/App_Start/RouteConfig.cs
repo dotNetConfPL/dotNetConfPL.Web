@@ -9,11 +9,13 @@ namespace dotnetconfpl
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.RouteExistingFiles = true;
+
             routes.MapRoute(
-                name: "YtChannelConfirmation",
-                url: "{page}.html",
-                defaults: new { controller = "Home", action = "Html", page = UrlParameter.Optional }
-            );
+                "YtChannelConfirmation",
+                "{action}.html",
+                new { controller = "Home", action = UrlParameter.Optional },
+                new[] { "dotnetconfpl.Controllers" });
 
             routes.MapRoute(
                 "HomeRoute",
