@@ -1,0 +1,89 @@
+﻿.nav-collapse > .nav-bar > a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #777777;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.nav-collapse {
+    text-align: center;
+}
+
+.nav-bar {
+    margin-bottom: 10px;
+    float: none;
+}
+.navbar-inner {
+    padding-left:20px;
+    padding-right:20px;
+    background-color:none;
+    background-image:none;
+    border:none;
+
+}
+
+#mainBody {
+    margin-top: 50px;
+}
+
+
+body {
+    color: #ccc;
+    font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+}
+
+a.image-link:hover {
+    text-decoration: none !important;
+}
+
+.validation-summary-errors > ul {
+    color: red;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+#countbox {
+    padding-top: 20px !important;    
+}
+
+
+body {
+    background-color: #2d2d30;
+}
+
+.line {
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: #000;
+    border-bottom: 1px solid #393939;
+}
+
+.footer {
+    padding-top: 30px;
+    font-size: 14px;
+}
+
+/* center menu */
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+}
+
+.last-chance-text {
+    font-size:10px;
+}

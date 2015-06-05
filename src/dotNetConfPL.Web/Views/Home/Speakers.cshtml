@@ -1,0 +1,25 @@
+﻿@model IEnumerable<dotNetConfPL.Web.Model.Speaker>
+
+
+<div class="container-fluid" style="font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif; color: #ccc; font-size: 20px; line-height: 150%; padding: 20px; text-align: center">
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 style="font-weight: normal; margin: -20px 0 40px 0">Prelegenci</h1>
+            <div class="line"></div>
+        </div>
+    </div>
+
+@foreach (var item in Model) {
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <img src="~/images/@item.Photo" style="margin: 20px; width: 200px" /><br />
+            <h2 style="font-weight: normal">@item.Name</h2>
+            <p>
+                @Html.Raw(item.About)
+            </p>
+            <div class="line"></div>
+        </div>
+    </div>
+}
+</div>

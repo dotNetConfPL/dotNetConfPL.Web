@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>dotNetConfPL</title>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-touch-carousel/css/bootstrap-touch-carousel.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />        
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/fav.png">
+    
+
+    <link rel="canonical" href="http://dotnetconf.pl/" />
+
+    <!-- Open Graph Tags -->
+    <meta property='og:locale' content='pl_PL' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='dotNetConfPL - wirtualna konferencja dla .NET developerów' />
+    <meta property='og:url' content='http://dotnetconf.pl/' />
+    <meta property='og:site_name' content='dotNetConfPL' />
+    <!-- End Open Graph Tags -->
+
+    <meta content="dotNetConfPL,.NET,C#,ASP.NET,wirtualna,konferencja,developer,Open Source,Azure,Node.js,Windows,Phone" name="keywords" />
+    <meta name="description" content="Oficjalna strona wirtualnej konferencji dla developerów dotNetConfPL." />
+    <meta name="author" content="Michał Franc, Jakub Jedryszek, Paweł Sawicz" />
+    <link rel="author" href="https://plus.google.com/110590039840710973077?rel=author" />
+    <meta name="application-name" content="dotNetConfPL" />
+    <meta name="msapplication-tooltip" content="dotNetConfPL" />
+</head>
+<body>
+    <div class="container-fluid" style="background-color: white; padding-top: 20px">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="brand" href="/">
+                    <img src="~/images/logo.png" />
+                </a>
+                <a title="Facebook" class="image-link"
+                   href="https://www.facebook.com/dotnetconfpl"
+                   target="_blank">
+                    <span>
+                        <img width="40" height="40" src="~/images/facebook.png" alt="Facebook" />
+                    </span>
+                </a>
+
+                <a title="Twitter" class="image-link"
+                   href="https://twitter.com/dotNetConfPL"
+                   target="_blank">
+                    <span>
+                        <img width="40" height="40" src="~/images/twitter.png" alt="Twitter" />
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/2014/Speakers">Prelegenci</a></li>
+                                    <li><a href="/2014/Agenda">Agenda</a></li>
+                                    <li><a href="/2014/Contact">Organizatorzy</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Poprzednie edycje <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="/2014">2014</a></li>
+                                            <li><a href="/2013">2013</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+        @RenderBody()
+    </div>
+    <div class="row footer">
+        <div class="col-md-12">
+            <p>Copyright © 2013 - @DateTime.Now.Year dotnetConfPL - dotnetConf.pl, logo by <a href="http://www.facebook.com/ProjectJeziorka">Project Jeziorka</a>. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+
+    <environment names="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.2.min.js"
+                asp-fallback-src="~/lib/jquery/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+    </environment>
+
+    <script type="text/javascript">
+        window.appInsights = window.appInsights || function (ai) {
+            function f(t) { ai[t] = function () { var i = arguments; ai.queue.push(function () { ai[t].apply(ai, i) }) } }
+            var t = document, r = "script", u = t.createElement(r), i; for (u.src = ai.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", t.getElementsByTagName(r)[0].parentNode.appendChild(u), ai.cookie = t.cookie, ai.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) f("track" + i.pop());
+            return ai;
+        }({
+            iKey: "845509c9-9912-40cd-b3d2-d1bdc37bd60b"
+        });
+
+        appInsights.trackPageView();
+    </script>    
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-15894596-5']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
