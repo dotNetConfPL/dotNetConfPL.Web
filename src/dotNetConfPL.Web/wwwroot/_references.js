@@ -5,7 +5,6 @@
 /// <reference path="js/classie.js" />
 /// <reference path="js/contact_me.js" />
 /// <reference path="js/freelancer.js" />
-/// <reference path="js/jqBootstrapValidation.js" />
 /// <reference path="js/jquery.js" />
 /// <reference path="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" />
 /// <reference path="lib/jquery-validation/jquery.validate.js" />
