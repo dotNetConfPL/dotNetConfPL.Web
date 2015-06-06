@@ -67,13 +67,14 @@ namespace dotNetConfPL.Web
             // Add MVC to the request pipeline.
             app.UseMvc(routes =>
             {
+                routes.MapRoute(name: "areaRoute",
+                    template: "{area:exists}/{controller}/{action}",
+                    defaults: new { controller = "Home", action = "Index" });
+
                 routes.MapRoute(
                     name: "default",
                     template: "{area?}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" });
-
-                // Uncomment the following line to add a route for porting Web API 2 controllers.
-                // routes.MapWebApiRoute("DefaultApi", "api/{controller}/{id?}");
             });
         }
     }
