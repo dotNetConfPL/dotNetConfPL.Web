@@ -43,8 +43,6 @@ namespace dotNetConfPL.Web
         // Configure is called after ConfigureServices is called.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
         {
-            // Configure the HTTP request pipeline.
-
             // Add the console logger.
             loggerfactory.AddConsole();
 
