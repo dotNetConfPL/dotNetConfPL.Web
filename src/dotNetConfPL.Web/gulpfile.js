@@ -11,11 +11,14 @@ var paths = {
   lib: "./" + project.webroot + "/lib/"
 };
 
+gulp.task("default", ["init"], function (cb) {
+});
+
 gulp.task("clean", function (cb) {
   rimraf(paths.lib, cb);
 });
 
-gulp.task("copy", ["clean"], function () {
+gulp.task("init", ["clean"], function () {
   var bower = {
     "bootstrap": "bootstrap/dist/**/*.{js,map,css,ttf,svg,woff,eot}",
     "jquery": "jquery/jquery*.{js,map}",
