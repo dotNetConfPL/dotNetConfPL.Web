@@ -16,6 +16,16 @@ p.small {
     font-size: 16px;
 }
 
+.navbar-header a.navbar-brand:hover {
+    outline: 0;
+    color: #18bc9c;
+}
+
+ul.nav li.page-scroll a:hover {
+    outline: 0;
+    color: #18bc9c;
+}
+
 a,
 a:hover,
 a:focus,
@@ -136,6 +146,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        color: #fff;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -147,10 +158,15 @@ header .intro-text .skills {
     }
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background-color: #2c3e50;
 }
 
 .navbar a:focus {
