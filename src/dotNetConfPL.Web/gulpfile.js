@@ -18,7 +18,6 @@ gulp.task("clean", function (cb) {
 gulp.task("copy", ["clean"], function () {
   var bower = {
     "bootstrap": "bootstrap/dist/**/*.{js,map,css,ttf,svg,woff,eot}",
-    "bootstrap-touch-carousel": "bootstrap-touch-carousel/dist/**/*.{js,css}",
     "jquery": "jquery/jquery*.{js,map}",
     "jquery-validation": "jquery-validation/jquery.validate.js",
     "jquery-validation-unobtrusive": "jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
