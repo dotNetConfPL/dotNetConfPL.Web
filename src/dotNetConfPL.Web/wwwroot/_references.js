@@ -7,4 +7,3 @@
 /// <reference path="lib/jquery/jquery.js" />
 /// <reference path="lib/jquery/jquery-migrate.js" />
 /// <reference path="lib/bootstrap/js/bootstrap.js" />
-/// <reference path="js/cbpAnimatedHeader.min.js" />
