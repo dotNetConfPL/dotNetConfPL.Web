@@ -52,7 +52,8 @@ h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.partners-primary {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -72,6 +73,16 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
+hr.partners-primary:after{
+    content: "\e005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: 'Glyphicons Halflings';
+    font-size: 2em;
+}
+
 hr.star-light {
     border-color: #fff;
 }
@@ -81,11 +92,13 @@ hr.star-light:after {
     background-color: #18bc9c;
 }
 
-hr.star-primary {
+hr.star-primary,
+hr.partners-primary  {
     border-color: #2c3e50;
 }
 
-hr.star-primary:after {
+hr.star-primary:after,
+hr.partners-primary:after {
     color: #2c3e50;
     background-color: #fff;
 }
@@ -477,4 +490,9 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.devday{
+    width:210px;
+    height:47px;
 }
