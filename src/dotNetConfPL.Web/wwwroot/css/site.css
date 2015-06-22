@@ -14,13 +14,13 @@
     margin-bottom: 10px;
     float: none;
 }
-.navbar-inner {
-    padding-left:20px;
-    padding-right:20px;
-    background-color:none;
-    background-image:none;
-    border:none;
 
+.navbar-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: none;
+    background-image: none;
+    border: none;
 }
 
 #mainBody {
@@ -48,7 +48,7 @@ a.image-link:hover {
 }
 
 #countbox {
-    padding-top: 20px !important;    
+    padding-top: 20px !important;
 }
 
 
@@ -73,17 +73,17 @@ body {
 /* center menu */
 .navbar .nav,
 .navbar .nav > li {
-  float:none;
-  display:inline-block;
-  *display:inline; /* ie7 fix */
-  *zoom:1; /* hasLayout ie7 trigger */
-  vertical-align: top;
+    float: none;
+    display: inline-block;
+    *display: inline; /* ie7 fix */
+    *zoom: 1; /* hasLayout ie7 trigger */
+    vertical-align: top;
 }
 
 .navbar-inner {
-  text-align:center;
+    text-align: center;
 }
 
 .last-chance-text {
-    font-size:10px;
+    font-size: 10px;
 }
