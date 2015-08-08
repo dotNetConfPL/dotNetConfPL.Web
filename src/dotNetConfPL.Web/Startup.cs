@@ -49,7 +49,7 @@ namespace dotNetConfPL.Web
             // Add the following to the request pipeline only in development environment.
             if (env.IsEnvironment("Development"))
             {
-                app.UseBrowserLink();
+                //app.UseBrowserLink();
                 app.UseErrorPage(ErrorPageOptions.ShowAll);
             }
             else
