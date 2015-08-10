@@ -18,7 +18,7 @@ namespace dotNetConfPL.Web.Controllers
         [HttpGet]
         public IEnumerable<Speaker> Get()
         {
-            return _context.Speakers;
+            return _context.Speakers.OrderBy(x => x.Name);
         }
 
         // GET api/values/5

@@ -23,8 +23,7 @@
   },
 
   "frameworks": {
-    "dnx451": { },
-    "dnxcore": { }
+    "dnx451": { }
   },
 
   "exclude": [
