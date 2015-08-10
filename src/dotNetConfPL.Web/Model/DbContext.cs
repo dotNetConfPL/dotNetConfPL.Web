@@ -64,7 +64,7 @@ namespace dotNetConfPL.Web.Model
                 Id = 7,
                 Name = "Arkadiusz Benedykt",
                 About = "Developer z zamiłowania. Pierwszy kontakt z komputerami miał mając raptem kilka lat, na polskim komputerze Odra. To wystarczyło, aby złapał bakcyla. Pierwsze aplikacje pisał mając 15 lat. Od ponad 10 lat aktywny zawodowo w pełnym wymiarze. Tworzył aplikacje desktopowe, serwerowe, usługi, a ostatnio skupia się na aplikacjach webowych. Od lat związany z technologiami Microsoft. Czasem zagląda również do innych ekosystemów. Poza działalnością zawodową, realizuje się pracując jako trener oraz prowadzi zajęcia na uczelni wyższej z zakresu inżynierii oprogramowania. Prowadzi również bloga pod adresem <a href=\"http://www.benedykt.net\">www.benedykt.net</a>",
-                Photo = "arkadiusz_benedykt.jpeg"
+                Photo = "arkadiusz_benedykt.jpg"
             };
 
 
