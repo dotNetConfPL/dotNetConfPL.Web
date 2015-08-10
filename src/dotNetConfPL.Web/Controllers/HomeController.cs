@@ -25,7 +25,7 @@ namespace dotNetConfPL.Web.Controllers
         [Route("[action]")]
         public IActionResult Speakers()
         {
-            return View(_context.Speakers);
+            return View(_context.Speakers.OrderBy(x => x.Name));
         }
 
         [Route("[action]")]
