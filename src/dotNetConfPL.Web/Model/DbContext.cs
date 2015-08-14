@@ -40,7 +40,7 @@ namespace dotNetConfPL.Web.Model
                 Id = 4,
                 Name = "Marcin Malinowski",
                 About = "Tata^2, mąż humanistki, mól książkowy, uparciuch, programista, konferencjoholik. Don Kichot walczący z entropią. Kocha sprzeczności i humor. Wierzy w przypadek. Piwny filozof. W nielicznych wolnych chwilach harata w gałę (na bramce). Basic, Turbo Pascal / C, Assembler, Clipper, MS Access, Visual Basic, Java - XML :), C++, C#, JavaScript, F#... i ze wszystkiego miałem frajdę, ale nie za wszystkim tęsknię. Absolwent informatyki i matematyki na UW.Tech lead w firmie Piątka.",
-                Photo = "orientmen.png"
+                Photo = "marcin_malinowski.jpg"
             };
 
             var jakub_gutkowski = new Speaker
