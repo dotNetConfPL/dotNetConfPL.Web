@@ -11,7 +11,7 @@ using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
 using Microsoft.Framework.Configuration;
-using Microsoft.Framework.Runtime;
+using Microsoft.Dnx.Runtime;
 
 namespace dotNetConfPL.Web
 {
@@ -28,12 +28,12 @@ namespace dotNetConfPL.Web
             Configuration = builder.Build();
         }
 
-        public IConfiguration Configuration { get; set; }
+        public IConfigurationRoot Configuration { get; set; }
 
         // This method gets called by the runtime.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<AppSettings>(Configuration.GetConfigurationSection("AppSettings"), optionsName: null);
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
             // Add MVC services to the services container.
             services.AddMvc();
