@@ -1,7 +1,7 @@
 ﻿{
   "webroot": "wwwroot",
   "version": "1.0.0-*",
-  "authors": ["Jakub Jedryszek", "Michal Franc", "Pawel Sawicz"],
+  "authors": [ "Jakub Jedryszek", "Michal Franc", "Pawel Sawicz" ],
 
   "dependencies": {
     "Microsoft.Framework.Runtime": "1.0.0-beta6",
@@ -15,7 +15,10 @@
     "Microsoft.Framework.Configuration.Json": "1.0.0-beta6",
     "Microsoft.Framework.Logging": "1.0.0-beta6",
     "Microsoft.Framework.Logging.Console": "1.0.0-beta6",
-    "Newtonsoft.Json": "7.0.1"
+    "Newtonsoft.Json": "7.0.1",
+    "RestSharp": "105.2.3",
+    "Microsoft.AspNet.Session": "1.0.0-beta6",
+    "Microsoft.AspNet.SignalR.Server": "3.0.0-beta6"
   },
 
   "commands": {
