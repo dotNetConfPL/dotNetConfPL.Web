@@ -98,11 +98,11 @@ namespace dotNetConfPL.Web.Controllers
         {
             return View();
         }
-        
+
         [Route("[action]")]
         public IActionResult Live()
         {
-            return View(new Stream { Url = @"https://www.youtube.com/embed/es_qdXKSh7M"});
+            return View(this.CurrentStream);
         }
     }
 }

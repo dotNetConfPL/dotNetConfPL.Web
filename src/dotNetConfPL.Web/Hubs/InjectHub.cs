@@ -6,13 +6,12 @@ namespace dotNetConfPL.Web.Hubs
     [HubName("injectHub")]
     public class InjectHub : Hub
     {
-        public void UpdateStream(string newStream, string password, string selectedStream)
+        public void UpdateStream(string newStream, string password)
         {
-            if (PasswordCheck.HashVerified(password))
-            {
-                //var streamInfo = StreamInfo.GetMeStreamInfo(selectedStream);
-                //Clients.All.UpdateClient(newStream, streamInfo);
-            }
+            //if (PasswordCheck.HashVerified(password))
+            //{
+                Clients.All.UpdateClient(newStream);
+            //}
         }
     }
 }

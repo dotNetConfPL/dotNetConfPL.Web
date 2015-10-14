@@ -29,19 +29,21 @@ namespace dotNetConfPL.Web
 
             // Add MVC services to the services container.
             services.AddMvc();
+            services.AddSignalR();
             services.AddSession();
             services.AddCaching();
 
             // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
             // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
             // services.AddWebApiConventions();
-
-            services.AddSignalR();
         }
 
         // Configure is called after ConfigureServices is called.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
         {
+            app.UseSession();
+            app.UseSignalR();
+            
             // Add the console logger.
             loggerfactory.AddConsole();
 
@@ -74,7 +76,6 @@ namespace dotNetConfPL.Web
                     defaults: new { controller = "Home", action = "Index" });
             });
 
-            app.UseSignalR();
         }
     }
 }

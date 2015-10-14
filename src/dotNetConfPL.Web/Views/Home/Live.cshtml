@@ -1,15 +1,20 @@
-﻿@model dotNetConfPL.Web.Model.Stream
+﻿@model dotNetConfPL.Web.Controllers.StreamDocModel
 
+@* TODO
+    2. Fix the internal cache so that we dont get the url from cloudant all the time
+    3. Set set stream button ( maybe on separate site ? )
+        - Add action to update internal cache
+    4. Manual Stream Refresh
+    5. add logic that converts watch to embed so that we can just use youtube link
+    6. generate new password hash
+    7. enable password logic
+ *@
 @{
     ViewBag.Title = "dotnetconf.pl";
 }
 
-<script src="~/lib/jquery/jquery.min.js"></script>
-<script src="~/lib/signalr/jquery.signalR.min.js"></script>
-<script src="/signalr/hubs"></script>
-
 @{
-    var url = @Model.Url;
+    var url = @Model.stream;
 }
 
 <div id="inject-place">
@@ -35,25 +40,37 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    $(function () {
-        var injectHub = $.hubConnection.injectHub;
-        injectHub.client.updateClient = function(stream, streaimInfo) {
-            $('#inject-place iframe').attr('src', stream);
-            $('#stream-title').html(streaimInfo);
-        };
+<div>
+    <input id="new-stream"/>
+    <button id="btn-set-stream">SET STREAM</button>
+</div>
 
-        $.connection.hub.start().done(function () {
-            $('#btn-set-stream').click(function () {
-                injectHub.server.updateStream($('#new-stream').val(), $('#password').val(), $('#selected-stream').val());
-                $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), streamType: $('#selected-stream').val() });
+@section scripts
+{
+    <script src="~/lib/signalr/jquery.signalR.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var injectHub = $.connection.injectHub;
+            injectHub.client.updateClient = function(stream) {
+                $('#inject-place iframe').attr('src', stream);
+            };
+
+            $.connection.hub.start().done(function () {
+                $('#btn-set-stream').click(function () {
+                    injectHub.server.updateStream($('#new-stream').val(), $('#password').val());
+
+                    //TODO: this will update the internal cache
+                    //$.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val()});
+                });
+            });
+
+            $.connection.hub.disconnected(function () {
+                setTimeout(function () {
+                    $.connection.hub.start();
+                }, 10000);
             });
         });
+    </script>
+}
 
-        $.connection.hub.disconnected(function () {
-            setTimeout(function () {
-                $.connection.hub.start();
-            }, 10000);
-        });
-    });
-</script>
