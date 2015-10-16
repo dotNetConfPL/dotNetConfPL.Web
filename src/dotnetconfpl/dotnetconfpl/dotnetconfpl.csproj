@@ -22,6 +22,13 @@
     <IISExpressUseClassicPipelineMode />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -141,6 +148,8 @@
   <ItemGroup>
     <Compile Include="Areas\2013\_2013AreaRegistration.cs" />
     <Compile Include="Areas\2013\Controllers\HomeController.cs" />
+    <Compile Include="Areas\2014\Controllers\HomeController.cs" />
+    <Compile Include="Areas\2014\_2014AreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SessionsController.cs" />
     <Compile Include="Controllers\SpeakersController.cs" />
@@ -201,6 +210,13 @@
     <Content Include="Areas\2013\Views\Home\Speakers.cshtml" />
     <Content Include="Areas\2013\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\2013\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\2014\Views\Home\Agenda.cshtml" />
+    <Content Include="Areas\2014\Views\Home\Contact.cshtml" />
+    <Content Include="Areas\2014\Views\Home\Index.cshtml" />
+    <Content Include="Areas\2014\Views\Home\Speakers.cshtml" />
+    <Content Include="Areas\2014\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\2014\Views\Web.config" />
+    <Content Include="Areas\2014\Views\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
