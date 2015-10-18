@@ -1,4 +1,4 @@
-@model IEnumerable<dotNetConfPL.Web.Model.Speaker>
+@model IEnumerable<dotnetconfpl.Model.Speaker>
 
 <div class="success">
     <div class="container text-center">
@@ -13,7 +13,7 @@
         {
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <img src="~/images/@item.Photo" style="margin: 20px; width: 200px; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px;"  /><br />
+                    <img src="~/Content/images/@item.Photo" style="margin: 20px; width: 200px; border-radius: 100px; -moz-border-radius: 100px; -webkit-border-radius: 100px;"  /><br />
                     <h2 style="font-weight: normal">@item.Name</h2>
                     <p>
                         @Html.Raw(item.About)
