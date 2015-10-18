@@ -1,20 +1,147 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>dotnetconf.pl</title>
-    <!--Stylesheets-->
-    <link href="@Url.Content("~/Content/twitterbootstrap/css/bootstrap.css")" rel="stylesheet" type="text/css" />
-    <link href="@Url.Content("~/Content/twitterbootstrap/css/bootstrap-responsive.css")" rel="stylesheet" type="text/css" />
-    <link href="@Url.Content("~/Content/CustomStyle.css")" rel="stylesheet" type="text/css" />
-    <!--Scripts-->
-    <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Content/twitterbootstrap/js/bootstrap.js")" type="text/javascript"></script>
+    <title>dotNetConfPL</title>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/Content/lib/bootstrap/css/bootstrap.css" />
+        <link href="~/Content/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/css/bootstrap.min.css"
+              asp-fallback-href="~/Content/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="hidden" asp-fallback-test-property="visibility" asp-fallback-test-value="hidden" />
+        <link href="~/Content/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    </environment>
 
+    <link href="~/Content/css/freelancer.css" rel="stylesheet">
+    <style>
+        .valign {
+            float:none;
+            display:table-cell;
+            vertical-align:middle;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/Content/images/fav.png">
-    <script type="text/javascript">
+    <link rel="icon" type="image/png" href="~/Content/images/fav.png" />
 
+    <link rel="canonical" href="http://dotnetconf.pl/" />
+
+    <!-- Open Graph Tags -->
+    <meta property='og:locale' content='pl_PL' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='dotNetConfPL - wirtualna konferencja dla .NET developerów' />
+    <meta property='og:url' content='http://dotnetconf.pl/' />
+    <meta property='og:site_name' content='dotNetConfPL' />
+    <!-- End Open Graph Tags -->
+
+    <meta content="dotNetConfPL,.NET,C#,ASP.NET,wirtualna,konferencja,developer,Open Source,Azure,Node.js,Windows,Phone" name="keywords" />
+    <meta name="description" content="Oficjalna strona wirtualnej konferencji dla developerów dotNetConfPL." />
+    <meta name="author" content="Michał Franc, Jakub Jedryszek, Paweł Sawicz" />
+    <link rel="author" href="https://plus.google.com/110590039840710973077?rel=author" />
+    <meta name="application-name" content="dotNetConfPL" />
+    <meta name="msapplication-tooltip" content="dotNetConfPL" />
+</head>
+<body id="page-top" class="index">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink" style="background-color: #fff">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img class="img-responsive" src="~/images/logo.png" style="background-color:#fff" width="250" alt="dotNetConfPL"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <h4 style="padding:10px"><a href="/Speakers" style="color: #000" onmouseover='this.style.textDecoration="underline"' onmouseout='this.style.textDecoration="none"'>Prelegenci</a></h4>
+                    </li>
+                    <li>
+                        <h4 style="padding:10px"><a href="/Agenda" style="color: #000" onmouseover='this.style.textDecoration="underline"' onmouseout='this.style.textDecoration="none"'>Agenda</a></h4>
+                    </li>
+                    <li>
+                        <h4 style="padding:10px"><a href="/Contact" style="color: #000" onmouseover='this.style.textDecoration="underline"' onmouseout='this.style.textDecoration="none"'>Organizatorzy</a></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row" style="padding-top: 30px">
+        @RenderBody()
+    </div>
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-12">
+                        <h3>Polajkuj, Tweetnij</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/dotnetconfpl" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCs3oPPpRdETQTsxVF-Wvqbg" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/dotnetconfpl" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Poprzednie edycje: <a href="/2013">2013</a>, <a href="/2014">2014</a>.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright © 2013 - @DateTime.Now.Year dotnetConfPL - dotnetConf.pl, logo by <a href="http://www.facebook.com/ProjectJeziorka">Project Jeziorka</a>. Wszelkie prawa zastrzeżone. Theme based on <a href="http://ironsummitmedia.github.io/startbootstrap-freelancer/">Freelancer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <environment names="Development">
+        <script src="~/Content/lib/jquery/jquery.js"></script>
+        <script src="~/Content/lib/bootstrap/js/bootstrap.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.2.min.js"
+                asp-fallback-src="~/Content/lib/jquery/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+
+        </script>
+        <script src="//ajax.aspnetcdn.com/ajax/bootstrap/3.0.0/bootstrap.min.js"
+                asp-fallback-src="~/Content/lib/bootstrap/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery">
+
+        </script>
+    </environment>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="~/Content/js/freelancer.js"></script>
+
+    <script type="text/javascript">
+        window.appInsights = window.appInsights || function (ai) {
+            function f(t) { ai[t] = function () { var i = arguments; ai.queue.push(function () { ai[t].apply(ai, i) }) } }
+            var t = document, r = "script", u = t.createElement(r), i; for (u.src = ai.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", t.getElementsByTagName(r)[0].parentNode.appendChild(u), ai.cookie = t.cookie, ai.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) f("track" + i.pop());
+            return ai;
+        }({
+            iKey: "845509c9-9912-40cd-b3d2-d1bdc37bd60b"
+        });
+
+        appInsights.trackPageView();
+    </script>
+
+    <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-15894596-5']);
         _gaq.push(['_trackPageview']);
@@ -26,111 +153,6 @@
         })();
     </script>
 
-    <link rel="canonical" href="http://dotnetconf.pl/" />
-
-    <!-- Open Graph Tags -->
-    <meta property='og:locale' content='pl_PL'/>
-    <meta property='og:type' content='website'/>
-    <meta property='og:title' content='dotNetConfPL - wirtualna konferencja dla .NET developerów'/>
-    <meta property='og:url' content='http://dotnetconf.pl/'/>
-    <meta property='og:site_name' content='dotNetConfPL'/>
-    <!-- End Open Graph Tags -->
-
-    <meta content="dotNetConfPL,.NET,C#,ASP.NET,wirtualna,konferencja,developer,Open Source,Azure,Node.js,Windows,Phone" name="keywords" />
-    <meta name="description" content="Oficjalna strona wirtualnej konferencji dla developerów dotNetConfPL." />
-    <meta name="author" content="Michał Franc, Jakub Jedryszek, Paweł Sawicz" />
-    <link rel="author" href="https://plus.google.com/110590039840710973077?rel=author" />
-    <meta name="application-name" content="dotNetConfPL" />
-    <meta name="msapplication-tooltip" content="dotNetConfPL" />
-    
-    <!-- For Azure monitoring -->
-    <script type="text/javascript">
-    window.appInsights = window.appInsights || function (ai) {
-        function f(t) { ai[t] = function () { var i = arguments; ai.queue.push(function () { ai[t].apply(ai, i) }) } }
-        var t = document, r = "script", u = t.createElement(r), i; for (u.src = ai.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", t.getElementsByTagName(r)[0].parentNode.appendChild(u), ai.cookie = t.cookie, ai.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) f("track" + i.pop());
-        return ai;
-    }({
-        iKey: "845509c9-9912-40cd-b3d2-d1bdc37bd60b"
-    });
-
-    appInsights.trackPageView();
-    </script>
-</head>
-<body>    
-    <div class="container-fluid" style="background-color: white; padding-top: 20px">
-        <div class="row-fluid">
-            <div class="span12">
-                <a class="brand" href="/">
-                    <img src="~/Content/images/logo.png" />
-                </a>
-                <a title="Facebook" class="image-link"
-                    href="https://www.facebook.com/dotnetconfpl"
-                    target="_blank">
-                    <span>
-                        <img width="40" height="40" src="~/Content/images/facebook.png" alt="Facebook" />
-                    </span>
-                </a>
-
-                <a title="Twitter" class="image-link"
-                    href="https://twitter.com/dotNetConfPL"
-                    target="_blank">
-                    <span>
-                        <img width="40" height="40" src="~/Content/images/twitter.png" alt="Twitter" />
-                    </span>
-                </a>
-            </div>
-        </div>
-        <div class="row-fluid">
-            <div class="span12">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <div class="container">
-                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </a>
-                            <div class="nav-collapse collapse">
-                                <ul class="nav" style="font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif; font-size: 24px; padding: 20px; text-align: center">
-                                    @*<li><a href="http://dotnetconfpl.eventbrite.com/">Rejestracja</a></li>*@
-                                    <li><a href="@Url.Action("Speakers")">Prelegenci</a></li>
-                                    <li><a href="@Url.Action("Agenda")">Agenda</a></li>
-                                    <li><a href="@Url.Action("Contact")">Organizatorzy</a></li>
-                                    <li><a href="https://jabbr.net/#/rooms/dotNetConfPL2014">JabbR</a></li>
-                                    <li class="dropdown">
-                                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Poprzednie edycje</a>
-                                        <ul class="dropdown-menu">
-                                            @*<li><a href="@Url.Action("")">2014</a></li>*@
-                                            <li><a href="@Url.Action("", new { area = "2013" })">2013</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row-fluid" style="padding-top: 30px">
-        @RenderBody()
-    </div>
-    <div class="row-fluid footer">
-        <div class="span12">
-            <p>Copyright © 2013 - @DateTime.Now.Year dotnetConfPL - dotnetConf.pl, logo by <a href="http://www.facebook.com/ProjectJeziorka">Project Jeziorka</a>. Wszelkie prawa zastrzeżone.</p>
-        </div>
-    </div>  
-    <script type="text/javascript">
-    window.appInsights = window.appInsights || function (ai) {
-        function f(t) { ai[t] = function () { var i = arguments; ai.queue.push(function () { ai[t].apply(ai, i) }) } }
-        var t = document, r = "script", u = t.createElement(r), i; for (u.src = ai.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", t.getElementsByTagName(r)[0].parentNode.appendChild(u), ai.cookie = t.cookie, ai.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) f("track" + i.pop());
-        return ai;
-    }({
-        iKey: "845509c9-9912-40cd-b3d2-d1bdc37bd60b"
-    });
-
-    appInsights.trackPageView();
-    </script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>

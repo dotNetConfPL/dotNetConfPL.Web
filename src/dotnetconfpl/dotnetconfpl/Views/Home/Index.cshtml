@@ -1,58 +1,55 @@
-﻿@model dynamic
+@model dynamic
 
 @{
     ViewBag.Title = "dotnetconf.pl";
 }
-<div class="container-fluid" style="font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif; color: #ccc; font-size: 20px; line-height: 150%; padding: 20px; text-align: center">
-    <div class="row-fluid">
-        <div class="span6 offset3">
-            <h1 style="font-weight: normal;">18 października 2014</h1>
-            <h2 style="font-weight: normal;">15:00 - 22:00</h2>
-        </div>
-    </div>    
 
-    <div class="row-fluid">
-        <iframe width="640" height="360" src="http://www.youtube.com/embed/XzgZLIn3ASg?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-    </div>   
-
-
-    <div class="row-fluid">
-        <div class="span12">
-            <p>
-                <b>dotNetConfPL</b> to wirtualna konferencja przeznaczona dla .NET developerów.
-            </p>
-            <p>
-                W tym roku odbyła się druga edycja.
-            </p>
-            <p> 
-                Nagrania z poprzedniej edycji są dostępne <a href="@Url.Action("Agenda", new { area = "2013"})">tutaj</a> oraz na <a href="http://www.youtube.com/playlist?feature=edit_ok&list=PLrl3kkmpoDclo5jArWvstH-jxnKKweL0f">youtube</a>.
-            </p>
-            <p>
-                W tegorocznej edycji rozlosowaliśmy 6 licencji ReSharpera oraz 3 licencje NCrunch.
-            </p>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <span class="name">31 października 2015</span>
+                    <span class="skills">15:00 - 23:00</span>
+                    <hr class="star-light">
+                    <span class="skills">
+                        Wirtualna konferencja dla .NET developerów.
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
+</header>
 
-    <div class="row-fluid">
-        <div class="line"></div>
-        <h1 style="font-weight: normal;">Losowanie nagród + outro</h1>
-        <iframe width="640" height="360" src="http://www.youtube.com/embed/rBKXRCvaqYM?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<section id="news">
+    <div class="container text-center">
+        <h2><a href="/Speakers">Tegoroczni prelegenci</a></h2>
+        <h3>oraz</h3>
+        <h2><a href="/Agenda">sesje</a></h2>
     </div>
-    
-    <div class="row-fluid">        
-        <div class="span6 offset3">
-            <div class="line"></div>
-            <h1 style="font-weight: normal;">Wsparcie zapewnia</h1>
-            <p>
-                <a href="http://www.jetbrains.com/"><img src="~/Content/images/logo_jetbrains.gif" style="width: 200px;" /></a> 
-            </p>
-            <p>
-                <a href="http://www.ncrunch.net/"><img src="~/Content/images/N-logo.png" style="width: 200px;" /></a> 
-            </p>
-            <p>
-                <a href="http://www.webio.pl/"><img src="~/Content/images/webio.png" style="width: 200px;" /></a> 
-            </p>            
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Partnerzy</h2>
+                <hr class="partners-primary">
+            </div>
         </div>
-        
+        <div class="col-lg-12 text-center" style="margin-top: 20px">
+            <a href="http://devday.pl/" style="display:inline-block; margin-right: 20px;">
+                <img src="~/images/devday_logo_2015.jpg" style="pointer-events: none;" />
+            </a>
+            <a href="http://buildstuff.lt/" style="display:inline-block; margin-right: 20px;">
+                <img src="~/images/buildstuff-logo.png" style="pointer-events: none;" />
+            </a>
+            <a href="http://devwarsztaty.pl" style="display:inline-block; margin-right: 20px;">
+                <img src="~/images/devWarsztaty.jpg" style="pointer-events: none;" />
+            </a>
+            <a href="http://devtalk.pl" style="display:inline-block; margin-right: 20px;">
+                <img src="~/images/devtalk.png" style="pointer-events: none;" />
+            </a>
+        </div>
     </div>
-</div>
+</section>
