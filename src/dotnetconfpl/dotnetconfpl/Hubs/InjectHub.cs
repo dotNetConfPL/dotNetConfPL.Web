@@ -6,11 +6,16 @@ namespace dotnetconfpl.Hubs
     {
         public void UpdateStream(string newStream, string password, string selectedStream)
         {
-            if (PasswordCheck.HashVerified(password))
+            if (newStream.Contains("watch?v="))
             {
+                newStream = newStream.Replace("watch?v=", "embed/");
+            }
+
+            //if (PasswordCheck.HashVerified(password))
+            //{
                 var streamInfo = StreamInfo.GetMeStreamInfo(selectedStream);
                 Clients.All.UpdateClient(newStream, streamInfo);
-            }
+            //}
         }
     }
 }

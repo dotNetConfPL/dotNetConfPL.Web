@@ -111,37 +111,15 @@ namespace dotnetconfpl.Controllers
         [OutputCache(Duration = 0)]
         public void UpdateStream(string newStream, string password, string streamType)
         {
-            if (PasswordCheck.HashVerified(password))
+            if (newStream.Contains("watch?v="))
             {
+                newStream = newStream.Replace("watch?v=", "embed/");
+            }
+
+            //if (PasswordCheck.HashVerified(password))
+            //{
                 CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
-            }
-        }
-
-        [HttpGet]
-        public ActionResult CheckStream(string password)
-        {
-            if (password != null && PasswordCheck.HashVerified(password))
-            {
-                return View(CurrentStream);
-            }
-            else
-            {
-                throw new HttpException(401, "Unauthorized access");
-            }
-        }
-
-
-        [HttpPost]
-        public ActionResult ReloadSession(string newStream, string password, string streamType)
-        {
-            if (PasswordCheck.HashVerified(password))
-            {
-                CurrentStream.stream = newStream;
-                CurrentStream.type = streamType;
-            }
-
-            return View("~/Views/Home/CheckStream.cshtml");
+            //}
         }
     }    
-
 }
