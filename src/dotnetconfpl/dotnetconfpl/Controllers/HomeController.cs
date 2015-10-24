@@ -1,10 +1,12 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 using RestSharp;
 using System.Web;
 using System.Collections.Generic;
 using dotnetconfpl.Model;
+using JustGiving.EventStore.Http.Client;
 
 namespace dotnetconfpl.Controllers
 {
@@ -12,7 +14,8 @@ namespace dotnetconfpl.Controllers
     {
         public bool IsAdmin { get; set; } 
         public string CurrentStream { get; set; } 
-        public string CurrentStreamInfo { get; set; } 
+        public string CurrentStreamInfo { get; set; }
+        public bool CanVote { get; set; }
     }
 
     public class StreamDocModel
@@ -20,6 +23,7 @@ namespace dotnetconfpl.Controllers
         public string _id { get { return "current_stream"; } }
         public string stream { get; set; }
         public string type { get; set; }
+        public string talkId { get; set; }
     }
 
     [OutputCache(CacheProfile = "CacheTime")]
@@ -97,13 +101,16 @@ namespace dotnetconfpl.Controllers
 
         public ActionResult Stream(string id)
         {
-            var currentstream = CurrentStream ?? new StreamDocModel {stream = string.Empty, type = string.Empty}; 
+            var currentstream = CurrentStream ?? new StreamDocModel {stream = string.Empty, type = string.Empty};
+
+            var cookieData = this.HttpContext.Request.Cookies["dotnetconfpl_magic_cookie"];
 
             return View(new StreamModel
                 {
                     CurrentStream = currentstream.stream,
                     CurrentStreamInfo = StreamInfo.GetMeStreamInfo(currentstream.type),
-                    IsAdmin = id == "Admin"
+                    IsAdmin = id == "Admin",
+                    CanVote = cookieData == null || cookieData.Values[currentstream.talkId] == null
                 });
         }
 
@@ -111,15 +118,50 @@ namespace dotnetconfpl.Controllers
         [OutputCache(Duration = 0)]
         public void UpdateStream(string newStream, string password, string streamType)
         {
-            if (newStream.Contains("watch?v="))
-            {
-                newStream = newStream.Replace("watch?v=", "embed/");
-            }
-
             //if (PasswordCheck.HashVerified(password))
             //{
                 CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
             //}
         }
-    }    
+
+        [HttpPost]
+        public void Vote(string votetype, string comment, int talkId)
+        {
+            //TODO: Store the info if someone voted in the cookie ? ( we dont have to make it really bullet proof )
+            //TODO: but there will be multiple votes per id
+            //TODO: its allways like that , idea is simple and everything gets complicated
+            //TODO: this code will be refactored later now its only POC
+
+            if (this.HttpContext.Request.Cookies["dotnetconfpl_magic_cookie"] == null)
+            {
+                var magicCookie = new System.Web.HttpCookie("dotnetconfpl_magic_cookie");
+                this.HttpContext.Request.Cookies.Add(magicCookie);
+            }
+
+            var cookieData = this.HttpContext.Request.Cookies["dotnetconfpl_magic_cookie"];
+
+            if (cookieData.Values[talkId.ToString()] != null)
+            {
+                //TODO: inject config value for external store
+                var eventStoreClient = EventStoreHttpConnection.Create("http://localhost:2113");
+                var testEvent = new UserVotedV2 {Type = votetype, Comment = comment, Id = talkId};
+                var result = eventStoreClient.AppendToStreamAsync("Vote", testEvent);
+
+                if (result.IsFaulted)
+                {
+                    throw new Exception($"Oops - {result.Exception?.InnerException.Message}");
+                }
+                cookieData.Values.Add(talkId.ToString(), "true");
+                this.HttpContext.Request.Cookies.Set(cookieData);
+            }
+
+        }
+    }
+
+    public class UserVotedV2
+    {
+        public string Type { get; set; }
+        public string Comment { get; set; }
+        public int Id { get; set; }
+    }
 }

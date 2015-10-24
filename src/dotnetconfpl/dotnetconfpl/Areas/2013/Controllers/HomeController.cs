@@ -30,6 +30,5 @@ namespace dotnetconfpl.Areas._2013.Controllers
         {
             return View();
         }
-
     }
 }

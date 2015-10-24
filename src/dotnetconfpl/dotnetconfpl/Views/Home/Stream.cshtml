@@ -5,23 +5,35 @@
 }
 
 @* 1. Enable password, generate new hash
-   2. Refactor the stream change to embed so its not everywhere
    3. Create new Admin panel
-   4. Try adding voting system, get event store *@
+   4. Try adding voting system, get event store 
+      - display 3 cards red, yellow, green + edit box with comment
+      - add validation for comment around 250 chars *@
 
 @{
     var url = @Model.CurrentStream;
 }
 
-<div id="inject-place">
-    <label id="stream-title">@Html.Raw(Model.CurrentStreamInfo)</label>
-    <iframe width="420" height="315" src="@url" frameborder="0" allowfullscreen></iframe> 
-</div>
+<section id="news">
+    <div class="container text-center">
+        <div id="inject-place">
+            <label id="stream-title">@Html.Raw(Model.CurrentStreamInfo)</label>
+            <iframe width="420" height="315" src="@url" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <p class="last-chance-text">
+                Stream odświeża się automatycznie, w razie awarii
+                <a style="font-size: 10px;" id="ForceRefresh" href="@Url.Action("Stream")">Odświeżenie ostatniej szansy :)</a>
+            </p>
+        </div>
 
-<div>
-   <p class="last-chance-text">Stream odświeża się automatycznie, w razie awarii
-    <a style="font-size:12px;"id="ForceRefresh" href="@Url.Action("Stream")"  >Odświeżenie ostatniej szansy :)</a></p>
-</div>
+        @* TODO STYLING AROUND HERE *@
+        <input id="vote-comment"/>
+        <span class="vote-div" id="green" style="background-color: green">Green</span>
+        <span class="vote-div" id="yellow" style="background-color: yellow">Yellow</span>
+        <span class="vote-div" id="red" style="background-color: red">Red</span>
+    </div>
+</section>
 
 @if (Model.IsAdmin)
 {
@@ -42,6 +54,9 @@
         <option value="michallusiak">michallusiak</option>
     </select>
     <button id="btn-set-stream">Set Stream</button>
+    //TODO: add loading overlay and simplifed notification
+    //TODO: get the ip of the requester ? 
+    //TODO: we need to send talk id for projection
 }
 
 @section scripts {
@@ -49,23 +64,43 @@
     <script src="/signalr/hubs"></script>
 
     <script type="text/javascript">
-        $(function () {
+        $(function() {
             $.connection.hub.logging = true;
             var injectHub = $.connection.injectHub;
             injectHub.client.updateClient = function(stream, streaimInfo) {
                 $('#inject-place iframe').attr('src', stream);
                 $('#stream-title').html(streaimInfo);
             };
-            
-            $.connection.hub.start().done(function () {
-                $('#btn-set-stream').click(function () {
-                    injectHub.server.updateStream($('#new-stream').val(), $('#password').val(), $('#selected-stream').val());
-                    $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), streamType: $('#selected-stream').val() });
+
+            $.connection.hub.start().done(function() {
+                $('#btn-set-stream').click(function() {
+                    var newStream = $('#new-stream').val();
+                    if (newStream.includes("watch?v=")) {
+                        newStream = newStream.replace("watch?v=", "embed/");
+                    }
+                    injectHub.server.updateStream(newStream, $('#password').val(), $('#selected-stream').val());
+                    $.post("@Url.Action("UpdateStream")",
+                        {
+                            newStream: newStream,
+                            password: $('#password').val(),
+                            streamType: $('#selected-stream').val()
+                        });
                 });
+
             });
-            
-            $.connection.hub.disconnected(function () {
-                setTimeout(function () {
+
+            $('.vote-div').click(function () {
+                var type = $(this).attr("id");
+                $.post("@Url.Action("Vote")",
+                    {
+                        votetype: type,
+                        talkId: 1,
+                        comment: $('#vote-comment').val()
+                    });
+            });
+
+            $.connection.hub.disconnected(function() {
+                setTimeout(function() {
                     $.connection.hub.start();
                 }, 10000);
             });
