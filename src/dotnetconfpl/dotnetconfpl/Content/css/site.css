@@ -30,11 +30,12 @@
 
 body {
     color: #ccc;
-    font-family: 'Segoe UI', Segoe, Arial, Verdana, sans-serif;
+    font-family: 'Segoe UI Light', Segoe, Arial, Verdana, sans-serif;
     color: #ccc;
     font-size: 20px;
     line-height: 150%;
     text-align: center;
+    background-color: #2d2d30;
 }
 
 a.image-link:hover {
@@ -49,11 +50,6 @@ a.image-link:hover {
 
 #countbox {
     padding-top: 20px !important;
-}
-
-
-body {
-    background-color: #2d2d30;
 }
 
 .line {
