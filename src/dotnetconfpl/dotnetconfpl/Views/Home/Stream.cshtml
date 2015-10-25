@@ -50,7 +50,6 @@
 
     <script type="text/javascript">
         $(function () {
-            $.connection.hub.logging = true;
             var injectHub = $.connection.injectHub;
             injectHub.client.updateClient = function(stream, streaimInfo) {
                 $('#inject-place iframe').attr('src', stream);
