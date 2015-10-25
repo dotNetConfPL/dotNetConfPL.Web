@@ -1,3 +1,4 @@
+using dotNetConfPL.Web.Areas._2014.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace dotnetconfpl.Areas._2014.Controllers
         //
         // GET: /2014/Home/
 
+        private DbContext _context = new DbContext();
+
         public ActionResult Index()
         {
             return View();
@@ -18,17 +21,17 @@ namespace dotnetconfpl.Areas._2014.Controllers
 
         public ActionResult Agenda()
         {
-            return View();
+            return View(_context.Sessions.OrderBy(x => x.Time));
         }
 
         public ActionResult Speakers()
         {
-            return View();
+            return View(_context.Speakers);
         }
 
         public ActionResult Contact()
         {
-            return View();
+            return Redirect("/Contact");
         }
 
     }
