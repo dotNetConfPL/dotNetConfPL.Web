@@ -59,8 +59,14 @@
             
             $.connection.hub.start().done(function () {
                 $('#btn-set-stream').click(function () {
-                    injectHub.server.updateStream($('#new-stream').val(), $('#password').val(), $('#selected-stream').val());
-                    $.post("@Url.Action("UpdateStream")", { newStream: $('#new-stream').val(), password: $('#password').val(), streamType: $('#selected-stream').val() });
+
+                    var newStream = $('#new-stream').val();
+                    if (newStream.includes("watch?v=")) {
+                        newStream = newStream.replace("watch?v=", "embed/");
+                    }
+
+                    injectHub.server.updateStream(newStream, $('#password').val(), $('#selected-stream').val());
+                    $.post("@Url.Action("UpdateStream")", { newStream: newStream, password: $('#password').val(), streamType: $('#selected-stream').val() });
                 });
             });
             
