@@ -11,11 +11,11 @@ namespace dotnetconfpl.Hubs
                 newStream = newStream.Replace("watch?v=", "embed/");
             }
 
-            //if (PasswordCheck.HashVerified(password))
-            //{
+            if (PasswordCheck.HashVerified(password))
+            {
                 var streamInfo = StreamInfo.GetMeStreamInfo(selectedStream);
                 Clients.All.UpdateClient(newStream, streamInfo);
-            //}
+            }
         }
     }
 }

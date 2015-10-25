@@ -116,10 +116,10 @@ namespace dotnetconfpl.Controllers
                 newStream = newStream.Replace("watch?v=", "embed/");
             }
 
-            //if (PasswordCheck.HashVerified(password))
-            //{
+            if (PasswordCheck.HashVerified(password))
+            {
                 CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
-            //}
+            }
         }
     }    
 }
