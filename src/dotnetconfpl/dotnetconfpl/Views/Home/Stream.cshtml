@@ -10,8 +10,11 @@
 
 <section id="news">
     <div class="container text-center">
-        <div id="inject-place">
+        <div>
             <label id="stream-title">@Html.Raw(Model.CurrentStreamInfo)</label>
+        </div>
+        <div id="inject-place">
+
             <iframe width="420" height="315" src="@url" frameborder="0" allowfullscreen></iframe>
         </div>
         <div>
@@ -23,20 +26,20 @@
         @if (Model.IsAdmin)
         {
             <label>Stream Url</label>
-            <input id="new-stream" />
-            <br />
+            <input id="new-stream"/>
+            <br/>
             <label>Password</label>
-            <input id="password" />
-            <br />
+            <input id="password"/>
+            <br/>
             <select id="selected-stream">
                 <option value="brak">brak</option>
-                <option value="maniserowicz">maniserowicz</option>
-                <option value="filipwoj">filipwoj</option>
-                <option value="basiafusinska">basiafusinska</option>
                 <option value="gutek">gutek</option>
-                <option value="patrykgoralowski">patrykgoralowski</option>
-                <option value="maciejgrabek">maciejgrabek</option>
-                <option value="michallusiak">michallusiak</option>
+                <option value="maniserowicz">maniserowicz</option>
+                <option value="stappmaniszewski">stappmaniszewski</option>
+                <option value="wmekal">wmekal</option>
+                <option value="mmalinowski">mmalinowski</option>
+                <option value="ssobotka">ssobotka</option>
+                <option value="abenedykt">abenedykt</option>
             </select>
             <button id="btn-set-stream">Set Stream</button>
         }
