@@ -11,18 +11,20 @@
 <section id="news">
     <div class="container text-center">
         <div>
-            <label id="stream-title">@Html.Raw(Model.CurrentStreamInfo)</label>
+            <p class="bg-info" style="background-color: azure">
+                @Html.Raw(Model.CurrentStreamInfo)
+            </p>
         </div>
         <div id="inject-place">
 
-            <iframe width="420" height="315" src="@url" frameborder="0" allowfullscreen></iframe>
+            <iframe width="640" height="360" src="@url" frameborder="0" allowfullscreen></iframe>
         </div>
         <div>
             <p>
-                <a style="font-size: 15px;" href="https://jabbr.net/#/rooms/dotNetConfPl2015" target="_blank">Dołącz do dyskusji - Chat</a>
+                <a class="btn btn-danger btn-lg" href="https://jabbr.net/#/rooms/dotNetConfPl2015" target="_blank">Dołącz do dyskusji na JabbRze</a>
             </p>
             <p class="last-chance-text">
-                <a style="font-size: 10px;" id="ForceRefresh" href="@Url.Action("Stream")"> Stream odświeża się automatycznie, w razie awarii. Odświeżenie ostatniej szansy :)</a>
+                <a id="ForceRefresh" href="@Url.Action("Stream")"> Stream odświeża się automatycznie, w razie awarii. Odświeżenie ostatniej szansy :)</a>
             </p>
         </div>
 
