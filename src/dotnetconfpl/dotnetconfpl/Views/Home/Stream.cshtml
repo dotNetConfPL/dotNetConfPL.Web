@@ -11,8 +11,10 @@
 <section id="news">
     <div class="container text-center">
         <div>
-            <p class="bg-info" style="background-color: azure">
-                @Html.Raw(Model.CurrentStreamInfo)
+            <p class="bg-info" style="background-color: azure; width: 100%">
+                <marquee>
+                    @Html.Raw(Model.CurrentStreamInfo)
+                </marquee>
             </p>
         </div>
         <div id="inject-place">
