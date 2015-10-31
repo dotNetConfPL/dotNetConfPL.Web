@@ -21,7 +21,7 @@
                 case "abenedykt":
                     return "Arkadiusz Benedykt <br/> Internet of Things gdzie zacząć";
                 default:
-                    return string.Empty;
+                    return "dotnetconf.pl - start o 15:00";
             }
         }
     }
