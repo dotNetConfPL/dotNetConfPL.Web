@@ -5,6 +5,7 @@ using RestSharp;
 using System.Web;
 using System.Collections.Generic;
 using dotnetconfpl.Model;
+using System.Text;
 
 namespace dotnetconfpl.Controllers
 {
@@ -121,6 +122,11 @@ namespace dotnetconfpl.Controllers
             {
                 CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
             }
+        }
+
+        public ActionResult Html(string page)
+        {
+            return Content("google-site-verification: google518e43aa497595a5.html");
         }
     }    
 }

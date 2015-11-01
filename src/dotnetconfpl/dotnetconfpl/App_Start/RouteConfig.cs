@@ -8,6 +8,13 @@ namespace dotnetconfpl
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.RouteExistingFiles = true;
+            routes.MapRoute(
+                name: "GoogleVerification",
+                url: "{page}.html",
+                defaults: new { controller = "Home", action = "Html", page = UrlParameter.Optional },
+                namespaces: new string[] { "dotnetconfpl.Controllers" }
+            );
 
             routes.MapRoute(
                 "HomeRoute",
