@@ -77,7 +77,7 @@ namespace dotnetconfpl.Model
                 Title = "Testy jednostkowe w praktyce, vol 3: testy konwencji",
                 Speaker = maciej_aniserowicz,
                 About = "Po dwóch prezentacjach o testach na dotNetConfPL (<a href=\"https://youtu.be/gQaShMN_tN8\">Testy jednostkowe w .NET</a>, <a href=\"https://youtu.be/zfyUQKktc4w\">Testy jednostkowe w praktyce, vol 2</a>) czas na coś z zupełnie innej beczki: prelekcję o testach! Tym razem skupimy się na zupełnie innym przypadku, w którym testy automatyczne mogą okazać się niezwykle pomocne. Będzie o tzw \"convention tests\". Co mają wspólnego testy z kompilatorem ? Jak upewnić się, że nawet nowe osoby w zespole programują \"tak jak trzeba\"? Albo że bug, na który natknęliśmy się dzisiaj, nie powtórzy się nigdy więcej w skali całego systemu? To tylko kilka pytań, na które odpowiem podczas swojego wystąpienia. Zapraszam!",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/zvrxNubED_E"
             };
 
             var session2 = new Session
@@ -87,7 +87,7 @@ namespace dotnetconfpl.Model
                 Title = "Vagrant with Windows czyli włóczęga z oknami",
                 Speaker = stapp_janiszewski,
                 About = "Tworzenie reprodukowalnych środowisk na Windows zawsze było dużą bolączką. Ale świat poszedł do przodu i narzędzia typowo Linuxowe stały się dostępne na Windows. W naszej sesji pokażemy od zera do bohatera jak postawić własne środowisko testowe dla programisty .NET.",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/EHFpMHhUFXQ"
             };
 
             var session3 = new Session
@@ -97,7 +97,7 @@ namespace dotnetconfpl.Model
                 Title = "Co było pierwsze: kod czy architektura?",
                 Speaker = slawomir_sobotka,
                 About = "Kim jest architekt? Czasem dostajesz taki tytuł zamiast podwyżki. Czasem jest to powód do dumy a czasem nie. Zastanowimy się od innej strony: czasem bywasz architektem - co powinieneś wiedzieć i umieć? Podejdziemy również coachingowo: co ma w głowie architekt i jak rozumuje i podejmuje decyzje? Problem jest taki, że są w naszej branży trzy słowa, których nikt nie rozumie: architektura, moduł i komponent.Pokażę jakie są poziomy architektury, jak je wizualizować, po co i jakie wprowadzamy ograniczenia na każdym z poziomów. Zastanowimy się też kiedy da się zakładać z góry architekturą a kiedy może ona wyłaniać się z niskopoziomowych decyzji w kodzie.Aby móc wyłaniać architekturę poznamy nieco wzorców architektury aplikacyjnej i systemowej oraz kodowania w notatniku. Tak przy okazji: czy REST ma zawsze sens?",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/JvzRYDpclJ8"
             };
 
             var session4 = new Session
@@ -107,7 +107,7 @@ namespace dotnetconfpl.Model
                 Title = "Funkcyjne zabawki w obiektowej piaskownicy",
                 Speaker = marcin_malinowski,
                 About = "Wiedza o tym, skąd autorzy języka C# czerpali inspiracje, jakie były ich intencje i jakie są ich długofalowe plany, nie jest powszechna. Tymczasem uważam, że bez niej nie można w pełni wykorzystać potencjału zawartego w tym języku. Silne przenikanie paradygmatu funkcyjnego do obiektowego, w pierwotnych założeniach języka, nie będzie zaskoczeniem, gdy uświadomimy sobie, że ci sami autorzy stworzyli również język F#. Ten młodszy i biedniejszy kuzyn poczyna sobie całkiem nieźle i stał się główną inspiracją dla najnowszego wcielenia swojego starszego krewnego. Niedawne otwarcie przez Microsoft platformy .NET i upublicznienie zapisów spotkań komitetu projektowego, daje nam niemożliwy wcześniej wgląd w proces powstawania przyszłych wersji tego języka. Jedno wiemy już na pewno: funkcyjnych zabawek będzie jeszcze więcej!",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/zml5Q2kU0u0"
             };
 
             var session5 = new Session
@@ -117,7 +117,7 @@ namespace dotnetconfpl.Model
                 Title = "Double Loop TDD z MVC 6 w praktyce",
                 Speaker = waldemar_mekal,
                 About = "W trakcie wystąpienia pokażę jak praktycznie stosować Double Loop TDD w aplikacjach pisanych w oparciu o MVC 6 i EF 7. Zaimplementuję nowy feature zaczynając od stworzenia testu akceptacyjnego UI. Następnie będe tworzył kolejne testy jednostkowe i kod aplikacji, tak by uzyskać działającą funkcjonalność.",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/c9FdwL1_TBE"
 
             };
 
@@ -128,7 +128,7 @@ namespace dotnetconfpl.Model
                 Title = "Internet of Things gdzie zacząć",
                 Speaker = arkadiusz_benedykt,
                 About = "Internet of Things to wielki buzz word ostatnich miesięcy. Jeśli coś nie jest Internet of Things to nie ma sensu tego kupować. Na początek pokażę w telegraficznym skrócie co to jest Internet of Things i dlaczego warto się tym zainteresować a potem pokażę od czego zacząć aby stworzyć swój pierwszy rewolucyjny produkt. Czyli zaglądniemy w podstawy - podstawy elektroniki oraz zastanowimy się w co trzeba zainwestować i jak później poskładać pierwsze działające urządzenie.",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/9wqnnsCBl1U"
             };
 
             var session7 = new Session
@@ -138,7 +138,7 @@ namespace dotnetconfpl.Model
                 Title = "ASP.NET vNext - Na co zwrócić uwagę",
                 Speaker = jakub_gutkowski,
                 About = "ASP.NET vNext mimo że jeszcze w beta, dostarcza już szereg ciekawych rozwiązań które nie tylko ułatwią nam programistom tworzenie oprogramowania, ale także pozwolą na większą swobodę pracy, nie ograniczając nas do jedynego słusznego systemu operacyjnego. Większa część nowości przelała się już po sieci, jednak wciąż są rejony vNext o których dużo niema, a są na tyle interesująe i praktyczne, że aż dziw iż musieliśmy tyle na nie czekać :) Jakie to elementy? Zapraszam na sesję na której pominiemy dnx'y, a skoncentrujemy się na tym co dają nam już dostępne biblioteki i paczki NuGet.",
-                YoutubeUrl = null
+                YoutubeUrl = "https://www.youtube.com/embed/VweIDqCs_tI"
             };
 
             _speakers.Add(maciej_aniserowicz);
