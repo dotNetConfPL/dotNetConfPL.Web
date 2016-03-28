@@ -1,11 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 using RestSharp;
-using System.Web;
-using System.Collections.Generic;
 using dotnetconfpl.Model;
-using System.Text;
 
 namespace dotnetconfpl.Controllers
 {

@@ -1,8 +1,5 @@
 using dotNetConfPL.Web.Areas._2014.Model;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace dotnetconfpl.Areas._2014.Controllers

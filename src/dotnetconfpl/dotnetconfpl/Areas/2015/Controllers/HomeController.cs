@@ -1,10 +1,6 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 using RestSharp;
-using System.Web;
-using System.Collections.Generic;
-using System.Text;
 using dotnetconfpl.Areas._2015.Model;
 
 namespace dotnetconfpl.Areas._2015.Controllers
