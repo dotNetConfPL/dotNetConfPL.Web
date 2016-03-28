@@ -154,8 +154,6 @@
     <Compile Include="Areas\2014\Models\Speaker.cs" />
     <Compile Include="Areas\2014\_2014AreaRegistration.cs" />
     <Compile Include="Areas\2015\Controllers\HomeController.cs" />
-    <Compile Include="Areas\2015\Controllers\SessionsController.cs" />
-    <Compile Include="Areas\2015\Controllers\SpeakersController.cs" />
     <Compile Include="Areas\2015\Models\DbContext.cs" />
     <Compile Include="Areas\2015\Models\Session.cs" />
     <Compile Include="Areas\2015\Models\Speaker.cs" />
