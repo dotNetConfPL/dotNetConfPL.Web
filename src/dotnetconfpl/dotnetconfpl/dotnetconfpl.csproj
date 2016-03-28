@@ -188,6 +188,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\buildstuff-logo.png" />
+    <Content Include="Content\images\call-for-papers2.png" />
     <Content Include="Content\images\devday_logo_2015.jpg" />
     <Content Include="Content\images\devtalk.png" />
     <Content Include="Content\images\devWarsztaty.jpg" />
@@ -478,6 +479,7 @@
     <Content Include="Views\Home\Speakers.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Stream.cshtml" />
+    <Content Include="Views\Home\CallOfPapers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\2013\Models\" />
