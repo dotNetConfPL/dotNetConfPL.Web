@@ -93,7 +93,7 @@ namespace dotnetconfpl.Controllers
             return View();
         }
 
-        public ActionResult CallOfPapers()
+        public ActionResult CallForPapers()
         {
             return View();
         }

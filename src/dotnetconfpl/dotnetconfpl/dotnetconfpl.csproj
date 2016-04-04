@@ -479,7 +479,7 @@
     <Content Include="Views\Home\Speakers.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Stream.cshtml" />
-    <Content Include="Views\Home\CallOfPapers.cshtml" />
+    <Content Include="Views\Home\CallForPapers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\2013\Models\" />
