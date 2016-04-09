@@ -24,7 +24,7 @@ namespace dotnetconfpl.Areas._2013.Controllers
 
         public ActionResult Contact()
         {
-            return View();
+            return Redirect("/Contact");
         }
 
     }

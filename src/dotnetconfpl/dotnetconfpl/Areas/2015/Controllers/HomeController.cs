@@ -90,7 +90,7 @@ namespace dotnetconfpl.Areas._2015.Controllers
 
         public ActionResult Contact()
         {
-            return View();
+            return Redirect("/Contact");
         }
 
         public ActionResult Stream(string id)
