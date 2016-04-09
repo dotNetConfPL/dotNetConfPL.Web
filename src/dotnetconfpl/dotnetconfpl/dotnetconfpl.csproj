@@ -481,6 +481,7 @@
     <Content Include="Views\Home\Stream.cshtml" />
     <Content Include="Views\Home\CallForPapers.cshtml" />
     <Content Include="Views\Shared\Partials\_MailinglistPartial.cshtml" />
+    <Content Include="Views\Home\OnSiteEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\2013\Models\" />
