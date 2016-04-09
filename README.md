@@ -8,3 +8,10 @@ dotnetconf.pl
 www.dotnetconf.pl
 
 Test Site  - http://dotnetconfpl.apphb.com/
+
+Setup
+
+1. Clone repository
+2. Setup IIS website with domain name `http://dev.dotnetconf.pl`
+3. In host file add `127.0.0.2 http://dev.dotnetconf.pl`
+4. Run project
