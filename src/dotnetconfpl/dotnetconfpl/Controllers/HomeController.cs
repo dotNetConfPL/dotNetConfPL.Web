@@ -98,6 +98,11 @@ namespace dotnetconfpl.Controllers
             return View();
         }
 
+        public ActionResult OnSiteEvents()
+        {
+            return View();
+        }
+
         public ActionResult Stream(string id)
         {
             var currentstream = CurrentStream ?? new StreamDocModel {stream = string.Empty, type = string.Empty}; 
