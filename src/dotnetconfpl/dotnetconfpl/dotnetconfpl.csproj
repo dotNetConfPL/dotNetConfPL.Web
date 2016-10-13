@@ -239,6 +239,9 @@
     <Content Include="Content\images\michal_lusiak.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\Ministerstwo_Cyfryzacji_poziom.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\images\miroslaw_praglowski.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
