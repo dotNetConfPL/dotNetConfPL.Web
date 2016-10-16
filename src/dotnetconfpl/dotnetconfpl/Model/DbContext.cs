@@ -14,7 +14,7 @@ namespace dotnetconfpl.Model
                 Id = 1,
                 Name = "Piotr Stapp",
                 About = "",
-                Photo = ""
+                Photo = "piotr_stapp.jpg"
             };
 
             var pawel_lukasik = new Speaker
@@ -22,7 +22,7 @@ namespace dotnetconfpl.Model
                 Id = 2,
                 Name = "Paweł Łukasik",
                 About = "",
-                Photo = ""
+                Photo = "pawel_lukasik.jpeg"
 
             };
 
@@ -31,7 +31,7 @@ namespace dotnetconfpl.Model
                 Id = 3,
                 Name = "Daniel Krzyczkowski",
                 About = "",
-                Photo = ""
+                Photo = "DKrzyczkowski.jpg"
             };
 
             var szymon_kulec = new Speaker
@@ -39,7 +39,7 @@ namespace dotnetconfpl.Model
                 Id = 4,
                 Name = "Szymon Kulec",
                 About = "",
-                Photo = ""
+                Photo = "szymon_kulec.jpg"
             };
 
             var marek_zając = new Speaker
@@ -47,7 +47,7 @@ namespace dotnetconfpl.Model
                 Id = 5,
                 Name = "Marek Zając",
                 About = "",
-                Photo = ""
+                Photo = "marek_zając.jpeg"
             };
 
             var dariusz_pawlukiewicz = new Speaker
@@ -63,14 +63,14 @@ namespace dotnetconfpl.Model
                 Id = 7,
                 Name = "Szymon Warda",
                 About = "",
-                Photo = ""
+                Photo = "szymon_warda.jpg"
             };
 
             var session1 = new Session
             {
                 Id = 1,
                 Time = "15:00 - 16:00",
-                Title = "",
+                Title = "Pogromcy mitów: HTTP/2 i wydajność",
                 Speaker = piotr_stapp,
                 About = "",
                 YoutubeUrl = ""
@@ -80,7 +80,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 1,
                 Time = "16:00 - 17:00",
-                Title = "",
+                Title = "Hackowanie ILa",
                 Speaker = pawel_lukasik,
                 About = "",
                 YoutubeUrl = ""
@@ -90,7 +90,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 2,
                 Time = "17:00 - 18:00",
-                Title = "",
+                Title = "Universal Windows 10 Platform",
                 Speaker = daniel_krzyczkowski,
                 About = "",
                 YoutubeUrl = ""
@@ -100,7 +100,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 3,
                 Time = "20:00 - 21:00",
-                Title = "",
+                Title = "Zrozumieć współbieżność",
                 Speaker = szymon_kulec,
                 About = "",
                 YoutubeUrl = ""
@@ -110,7 +110,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Time = "19:00 - 20:00",
-                Title = "",
+                Title = "Uwierzytelnianie w systemach rozproszonych",
                 Speaker = marek_zając,
                 About = "",
                 YoutubeUrl = ""
@@ -120,7 +120,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 5,
                 Time = "18:00 - 19:00",
-                Title = "",
+                Title = "Aurelia – Create next generation JavaScript apps today",
                 Speaker = dariusz_pawlukiewicz,
                 About = "",
                 YoutubeUrl = ""
@@ -131,7 +131,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 6,
                 Time = "21:00 - 22:00",
-                Title = "",
+                Title = "Jak przestałem się bać i pokochałem przetwarzanie równoległe",
                 Speaker = szymon_warda,
                 About = "",
                 YoutubeUrl = ""
