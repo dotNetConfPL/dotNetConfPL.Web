@@ -189,6 +189,7 @@
     </Content>
     <Content Include="Content\images\buildstuff-logo.png" />
     <Content Include="Content\images\call-for-papers2.png" />
+    <Content Include="Content\images\dariusz_pawlukiewicz.jpg" />
     <Content Include="Content\images\devday_logo_2015.jpg" />
     <Content Include="Content\images\developer_days.png" />
     <Content Include="Content\images\devtalk.png" />
