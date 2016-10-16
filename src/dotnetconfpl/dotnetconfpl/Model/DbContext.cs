@@ -38,7 +38,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Name = "Szymon Kulec",
-                About = "",
+                About = "Lider warszawskiej grupy .NET, prelegent, specjalista IT. Zainteresowany zarówno IT w skali makro (architektura), jak i mikro (performance, zrozumienie współczesnego hardware'u). Miłośnik DDD i zorientowania na zdarzenia a także dobrze wyseparowanych usług.",
                 Photo = "szymon_kulec.jpg"
             };
 
@@ -102,7 +102,7 @@ namespace dotnetconfpl.Model
                 Time = "20:00 - 21:00",
                 Title = "Zrozumieć współbieżność",
                 Speaker = szymon_kulec,
-                About = "",
+                About = "W świecie .NET, wspieranym obecnie przez async/await, zrozumienie programowania współbieżnego staje się pożądaną cechą każdego developera .NET. Podczas prezentacji przyjżymy się niskopoziomowym API dostarczanym przez platformę .NET, które umożliwiają tworzenie wydajnych współbieżnych struktur takich jak ConcurrentStack czy ConcurrentQueue. Skutkiem ubocznym prezentacji może być także całkowite zrozumienie architektury dzisiejszych procesorów oraz magii stojącej za volatile.",
                 YoutubeUrl = ""
             };
 
