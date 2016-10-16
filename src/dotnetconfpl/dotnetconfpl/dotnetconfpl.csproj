@@ -194,6 +194,7 @@
     <Content Include="Content\images\devtalk.png" />
     <Content Include="Content\images\devWarsztaty.jpg" />
     <Content Include="Content\images\dotNetConfPL-background.jpg" />
+    <Content Include="Content\images\ekanet.png" />
     <Content Include="Content\images\facebook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
