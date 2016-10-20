@@ -47,7 +47,7 @@ namespace dotnetconfpl.Model
                 Id = 5,
                 Name = "Marek Zając",
                 About = "Zawodowo programista .NET, hobbystycznie JAVA. Od 6 lat zajmuję się tworzeniem systemów informatycznych dla biznesu. Moimi głównymi zainteresowaniami jest architektura oprogramowania, systemy rozproszone, integracja systemów.",
-                Photo = "marek_zając.jpeg"
+                Photo = "marek_zajac.jpeg"
             };
 
             var dariusz_pawlukiewicz = new Speaker
