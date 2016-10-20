@@ -189,10 +189,12 @@
     </Content>
     <Content Include="Content\images\buildstuff-logo.png" />
     <Content Include="Content\images\call-for-papers2.png" />
+    <Content Include="Content\images\dariusz_pawlukiewicz.jpg" />
     <Content Include="Content\images\devday_logo_2015.jpg" />
     <Content Include="Content\images\developer_days.png" />
     <Content Include="Content\images\devtalk.png" />
     <Content Include="Content\images\devWarsztaty.jpg" />
+    <Content Include="Content\images\DKrzyczkowski.jpg" />
     <Content Include="Content\images\dotNetConfPL-background.jpg" />
     <Content Include="Content\images\ekanet.png" />
     <Content Include="Content\images\facebook.png">
@@ -234,6 +236,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\marcin_malinowski.jpg" />
+    <Content Include="Content\images\marek_zajac.jpeg" />
     <Content Include="Content\images\michal-franc.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -256,8 +259,12 @@
     <Content Include="Content\images\pawel-sawicz.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\pawel_lukasik.jpeg" />
+    <Content Include="Content\images\piotr_stapp.jpeg" />
     <Content Include="Content\images\piotr_stapp.jpg" />
     <Content Include="Content\images\slawomir_sobotka.jpg" />
+    <Content Include="Content\images\szymon_kulec.jpg" />
+    <Content Include="Content\images\szymon_warda.jpg" />
     <Content Include="Content\images\tomasz_janczuk.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
