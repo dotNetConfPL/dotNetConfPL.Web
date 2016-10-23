@@ -75,7 +75,7 @@ namespace dotnetconfpl.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(_context.Sessions.OrderBy(x => x.Time));
         }
 
         public ActionResult Agenda()
