@@ -99,7 +99,7 @@ namespace dotnetconfpl.Model
             var session4 = new Session
             {
                 Id = 3,
-                Time = "20:00 - 21:00",
+                Time = "18:00 - 19:00",
                 Title = "Zrozumieć współbieżność",
                 Speaker = szymon_kulec,
                 About = "W świecie .NET, wspieranym obecnie przez async/await, zrozumienie programowania współbieżnego staje się pożądaną cechą każdego developera .NET. Podczas prezentacji przyjżymy się niskopoziomowym API dostarczanym przez platformę .NET, które umożliwiają tworzenie wydajnych współbieżnych struktur takich jak ConcurrentStack czy ConcurrentQueue. Skutkiem ubocznym prezentacji może być także całkowite zrozumienie architektury dzisiejszych procesorów oraz magii stojącej za volatile.",
@@ -119,7 +119,7 @@ namespace dotnetconfpl.Model
             var session6 = new Session
             {
                 Id = 5,
-                Time = "18:00 - 19:00",
+                Time = "20:00 - 21:00",
                 Title = "Aurelia – Create next generation JavaScript apps today",
                 Speaker = dariusz_pawlukiewicz,
                 About = "Trendy w świecie frontendu zmieniają się bardzo szybko – to fakt.  Czasy knockout.js i Backbone przemijają, a w ich miejsce zagościły na stałe React i AngularJs. Kto więc zostanie kolejnym trendsetterem? Wielu developerów typuje Angulara 2.0, inni przewidują utrzymanie obecnych liderów na rynku. Istnieje jednak framework, który pozostaje w cieniu Googla i Facebooka, a który ma szanse na odebranie bardzo dużego kawałka tego frontendowego tortu. Zapraszam na sesję, na której poznacie Aurelię!",
