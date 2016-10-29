@@ -54,7 +54,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 6,
                 Name = "Dariusz Pawlukiewicz",
-                About = "Programista pasjonat. Za sprawą konkursu „Daj się poznać” świeżo upieczony blogger oraz podcaster. Uwielbia poznawać nowe, ciekawe technologie i nie boi się używać ich w swoich projektach. Fan TypeScript oraz frameworku Aurelia. Entuzjasta DDD, CQRS i Event Sourcingu. Na co dzień pracuje, jako Full Stack Developer w firmie Connectis_.",
+                About = "Programista pasjonat. Za sprawą konkursu „Daj się poznać” świeżo upieczony blogger oraz podcaster. Uwielbia poznawać nowe, ciekawe technologie i nie boi się używać ich w swoich projektach. Fan TypeScript oraz frameworku Aurelia. Entuzjasta DDD, CQRS i Event Sourcingu. Na co dzień pracuje, jako Full Stack Developer w firmie Connectis.",
                 Photo = "dariusz_pawlukiewicz.jpg"
             };
 
