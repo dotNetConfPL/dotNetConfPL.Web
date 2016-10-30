@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using RestSharp;
 using dotnetconfpl.Model;
-using SlackAPI;
+using System;
 
 namespace dotnetconfpl.Controllers
 {
@@ -135,13 +135,6 @@ namespace dotnetconfpl.Controllers
         [OutputCache(Duration = 0)]
         public void AddQuestion(string question)
         {
-            SlackSocketClient client = new SlackSocketClient("23768367328-28894996465-98000367954-3f1dae252acedac9026ff16f235f53d3");
-            client.Connect((connected) => {
-                client.GetChannelList((clr) => { });
-                var c = client.Channels.Find(x => x.name.Equals("dotnetconfpl"));
-                client.SendMessage((b) => { }, c.id, question);
-            }, () => {
-            });
         }
 
         public ActionResult Html(string page)
