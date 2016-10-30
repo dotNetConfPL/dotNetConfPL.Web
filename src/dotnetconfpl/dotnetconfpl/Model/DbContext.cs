@@ -31,7 +31,7 @@ namespace dotnetconfpl.Model
                 Id = 3,
                 Name = "Daniel Krzyczkowski",
                 About = "Pasjonat programowania na urządzenia mobilne. Prowadzi bloga, na którym opisuje swoje doswiadczenia zwiazane z programowaniem aplikacji mobilnych: <a href=\"http://mobileprogrammer.pl\">mobileprogrammer.pl</a> Aktywny uczestnik społeczności związanej z technologiami firmy Microsoft (prelegent konferencji oraz warsztatów). Redaktor w magazynie: Warszawski Programista. Dzielenie się wiedzą jest u Daniela nie tylko częścią pracy, lecz także sposobem na życie.",
-                Photo = "DKrzyczkowski.jpg"
+                Photo = "DanielKrzyczkowski.jpg"
             };
 
             var szymon_kulec = new Speaker
