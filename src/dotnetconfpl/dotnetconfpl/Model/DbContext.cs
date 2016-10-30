@@ -13,7 +13,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 1,
                 Name = "Piotr Stapp",
-                About = "Programista, inżynier, rzemieślnik, projektant i rowerzysta. Korzystający z każdej technologii, która prowadzi do celu. Wierzący w ludzi a nie w papiery. Wyznawca DevOps i automatyzacji wszelakiej Bloga ma i czasem na nim coś pisze http://stapp.space/ Na co dzień Ekspert IT w mBanku",
+                About = "Programista, inżynier, rzemieślnik, projektant i rowerzysta. Korzystający z każdej technologii, która prowadzi do celu. Wierzący w ludzi a nie w papiery. Wyznawca DevOps i automatyzacji wszelakiej. Bloga ma i czasem na nim coś pisze <a href=\"http://stapp.space/\">http://stapp.space/</a>. Na co dzień Ekspert IT w mBanku.",
                 Photo = "piotr_stapp.jpg"
             };
 
@@ -21,7 +21,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 2,
                 Name = "Paweł Łukasik",
-                About = "CxO w Octal Solutions. Pasjonat programowania, blogger, od czasu do czasu spiker, człowiek odpowiedzialny za dotnetomaniak.pl,  jeden z liderów Wrocławskiej Grupy .NET",
+                About = "CxO w Octal Solutions. Pasjonat programowania, blogger, od czasu do czasu spiker, człowiek odpowiedzialny za <a href=\"http://dotnetomaniak.pl\">dotnetomaniak.pl</a>, jeden z liderów Wrocławskiej Grupy .NET.",
                 Photo = "pawel_lukasik.jpeg"
 
             };
@@ -30,7 +30,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 3,
                 Name = "Daniel Krzyczkowski",
-                About = "Pasjonat programowania na urządzenia mobilne. Prowadzi blog, na którym opisuje swoje doswiadczenia zwiazane z programowaniem aplikacji mobilnych: mobileprogrammer.pl Aktywny uczestnik społeczności związanej z technologiami firmy Microsoft(prelegent konferencji oraz warsztatów). Redaktor w magazynie: Warszawski Programista. Dzielenie się wiedza jest u Daniela nie tylko częścią pracy, lecz także sposobem na życie.",
+                About = "Pasjonat programowania na urządzenia mobilne. Prowadzi bloga, na którym opisuje swoje doswiadczenia zwiazane z programowaniem aplikacji mobilnych: <a href=\"http://mobileprogrammer.pl\">mobileprogrammer.pl</a> Aktywny uczestnik społeczności związanej z technologiami firmy Microsoft (prelegent konferencji oraz warsztatów). Redaktor w magazynie: Warszawski Programista. Dzielenie się wiedzą jest u Daniela nie tylko częścią pracy, lecz także sposobem na życie.",
                 Photo = "DKrzyczkowski.jpg"
             };
 
@@ -38,7 +38,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 4,
                 Name = "Szymon Kulec",
-                About = "Lider warszawskiej grupy .NET, prelegent, specjalista IT. Zainteresowany zarówno IT w skali makro (architektura), jak i mikro (performance, zrozumienie współczesnego hardware'u). Miłośnik DDD i zorientowania na zdarzenia a także dobrze wyseparowanych usług.",
+                About = "Lider Warszawskiej Grupy .NET, prelegent, specjalista IT. Zainteresowany zarówno IT w skali makro (architektura), jak i mikro (performance, zrozumienie współczesnego hardware'u). Miłośnik DDD i zorientowania na zdarzenia a także dobrze wyseparowanych usług.",
                 Photo = "szymon_kulec.jpg"
             };
 
@@ -46,7 +46,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 5,
                 Name = "Marek Zając",
-                About = "Zawodowo programista .NET, hobbystycznie JAVA. Od 6 lat zajmuję się tworzeniem systemów informatycznych dla biznesu. Moimi głównymi zainteresowaniami jest architektura oprogramowania, systemy rozproszone, integracja systemów.",
+                About = "Zawodowo programista .NET, hobbystycznie JAVA. Od 6 lat zajmuje się tworzeniem systemów informatycznych dla biznesu. Jego głównymi zainteresowaniami są architektura oprogramowania, systemy rozproszone oraz integracja systemów.",
                 Photo = "marek_zajac.jpeg"
             };
 
@@ -54,7 +54,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 6,
                 Name = "Dariusz Pawlukiewicz",
-                About = "Programista pasjonat. Za sprawą konkursu „Daj się poznać” świeżo upieczony blogger oraz podcaster. Uwielbia poznawać nowe, ciekawe technologie i nie boi się używać ich w swoich projektach. Fan TypeScript oraz frameworku Aurelia. Entuzjasta DDD, CQRS i Event Sourcingu. Na co dzień pracuje, jako Full Stack Developer w firmie Connectis.",
+                About = "Programista pasjonat. Za sprawą konkursu <a href=\"http://devstyle.pl/daj-sie-poznac/\">Daj się poznać</a> świeżo upieczony blogger oraz podcaster. Uwielbia poznawać nowe, ciekawe technologie i nie boi się używać ich w swoich projektach. Fan TypeScript oraz frameworku Aurelia. Entuzjasta DDD, CQRS i Event Sourcingu. Na co dzień pracuje, jako Full Stack Developer w firmie Connectis.",
                 Photo = "dariusz_pawlukiewicz.jpg"
             };
 
@@ -62,7 +62,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 7,
                 Name = "Szymon Warda",
-                About = "Z .net od wersji 1.1, a z webem od czasów kiedy IE6 był tą lepszą przeglądarką. Przez pierwsze pół dnia główny architekt w ITMagination, drugie pół jako odpowiedzialny za jeden z większych projektów .net w Polsce. Tam architekt/team leader/developer/devops/człowiek od rozwiązywania problemów. Po pracy (trzecie pół) rozwijam pet project http://cookit.pl gdzie realizuję mokry sen nie jednego programisty - procesuję setki gigabajtów danych korzystając z tego co najlepiej pasuje do problemu (Bazy grafowe/ML/C#/F#/PowerShell/Lucene itp) Bywalec konferencji, prelegent Warszawskiej grupy .net., blogger (IndexOutOfRange.com)",
+                About = "Z .NET od wersji 1.1, a z webem od czasów kiedy IE6 był tą lepszą przeglądarką. Przez pierwsze pół dnia główny architekt w ITMagination, drugie pół jako odpowiedzialny za jeden z większych projektów .NET w Polsce. Tam architekt/team leader/developer/devops/człowiek od rozwiązywania problemów. Po pracy (trzecie pół) rozwija pet project <a hre=\"http://cookit.pl\">cookit.pl</a> gdzie realizuje mokry sen nie jednego programisty - procesuje setki gigabajtów danych korzystając z tego co najlepiej pasuje do problemu (Bazy grafowe/ML/C#/F#/PowerShell/Lucene itp.). Bywalec konferencji, prelegent Warszawskiej grupy .NET., blogger (<a href=\"http://IndexOutOfRange.com\">IndexOutOfRange.com</a>)",
                 Photo = "szymon_warda.jpg"
             };
 
