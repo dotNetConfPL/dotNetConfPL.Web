@@ -62,7 +62,7 @@ namespace dotnetconfpl.Model
             {
                 Id = 7,
                 Name = "Szymon Warda",
-                About = "Z .NET od wersji 1.1, a z webem od czasów kiedy IE6 był tą lepszą przeglądarką. Przez pierwsze pół dnia główny architekt w ITMagination, drugie pół jako odpowiedzialny za jeden z większych projektów .NET w Polsce. Tam architekt/team leader/developer/devops/człowiek od rozwiązywania problemów. Po pracy (trzecie pół) rozwija pet project <a hre=\"http://cookit.pl\">cookit.pl</a> gdzie realizuje mokry sen nie jednego programisty - procesuje setki gigabajtów danych korzystając z tego co najlepiej pasuje do problemu (Bazy grafowe/ML/C#/F#/PowerShell/Lucene itp.). Bywalec konferencji, prelegent Warszawskiej grupy .NET., blogger (<a href=\"http://IndexOutOfRange.com\">IndexOutOfRange.com</a>)",
+                About = "Z .NET od wersji 1.1, a z webem od czasów kiedy IE6 był tą lepszą przeglądarką. Przez pierwsze pół dnia główny architekt w ITMagination, drugie pół jako odpowiedzialny za jeden z większych projektów .NET w Polsce. Tam architekt/team leader/developer/devops/człowiek od rozwiązywania problemów. Po pracy (trzecie pół) rozwija pet project <a href=\"http://cookit.pl\">cookit.pl</a> gdzie realizuje mokry sen nie jednego programisty - procesuje setki gigabajtów danych korzystając z tego co najlepiej pasuje do problemu (Bazy grafowe/ML/C#/F#/PowerShell/Lucene itp.). Bywalec konferencji, prelegent Warszawskiej grupy .NET., blogger (<a href=\"http://IndexOutOfRange.com\">IndexOutOfRange.com</a>)",
                 Photo = "szymon_warda.jpg"
             };
 
