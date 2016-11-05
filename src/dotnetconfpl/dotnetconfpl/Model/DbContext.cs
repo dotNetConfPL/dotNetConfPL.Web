@@ -73,7 +73,7 @@ namespace dotnetconfpl.Model
                 Title = "Pogromcy mitów: HTTP/2 i wydajność",
                 Speaker = piotr_stapp,
                 About = "Wydajność webowa była, jest i będzie istotna. Wielu deweloperów pokłada nadzieje w HTTP / 2, który już wkrótce ma być powszechny. Jednakże, czy wszystkie problemy zostaną magicznie rozwiązane ? Zaczniemy od historii, dotkniemy tego co jest dzisiaj, a potem skupimy się na najbliższej przyszłości.Uwzględniając m.in: HTTP / 2, FLIF i WebP czy Google HTML/ CSS Style Guide. Kilka mitów i pseudo-faktów zostanie sprawdzonych i obalonych na żywo. Będzie niezła zabawa!",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/S1zSno9Pxvs"
             };
 
             var session2 = new Session
@@ -83,7 +83,7 @@ namespace dotnetconfpl.Model
                 Title = "Hackowanie ILa",
                 Speaker = pawel_lukasik,
                 About = "W codziennej pracy używamy .NETa kodując w C#, F# czy VB. Ale siedzący pod spodem IL daje nam trochę większe możliwości niż to co mamy dostępne na co dzień. W prezentacji pokażę przydatne, nieprzydatne oraz ciekawe możliwości które daje nam IL jeśli tylko pozwolimy sobie na jego poznanie.",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/7-H6W0EAGv4"
             };
 
             var session3 = new Session
@@ -93,7 +93,7 @@ namespace dotnetconfpl.Model
                 Title = "Universal Windows 10 Platform",
                 Speaker = daniel_krzyczkowski,
                 About = "Podczas prezentacji uczestnicy zostaną wprowadzeni w temat Uniwersalnej Platformy Windows 10. Będą mogli zdobyć wiedzę na temat tworzenia responsywnych aplikacji dla rożnych urządzeń z systemem Windows 10.",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/PlbwGEdKMQM"
             };
 
             var session4 = new Session
@@ -103,7 +103,7 @@ namespace dotnetconfpl.Model
                 Title = "Zrozumieć współbieżność",
                 Speaker = szymon_kulec,
                 About = "W świecie .NET, wspieranym obecnie przez async/await, zrozumienie programowania współbieżnego staje się pożądaną cechą każdego developera .NET. Podczas prezentacji przyjżymy się niskopoziomowym API dostarczanym przez platformę .NET, które umożliwiają tworzenie wydajnych współbieżnych struktur takich jak ConcurrentStack czy ConcurrentQueue. Skutkiem ubocznym prezentacji może być także całkowite zrozumienie architektury dzisiejszych procesorów oraz magii stojącej za volatile.",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/Z1PxYAszW6U"
             };
 
             var session5 = new Session
@@ -113,7 +113,7 @@ namespace dotnetconfpl.Model
                 Title = "Uwierzytelnianie w systemach rozproszonych",
                 Speaker = marek_zając,
                 About = "Rosnąca popularność usług oferowanych przez zewnętrznych dostawców w modelu SaaS, czy ostatnio popularnej architektury serverless, sprawia, że istotnym elementem integracji systemów znajdujących się w publicznej chmurze i systemów znajdujących się w siedzibie przedsiębiorstwa staje się zapewnienie bezpiecznej komunikacji pomiędzy tymi systemami. Jednym z takich przypadków może być sytuacja, gdy baza danych użytkowników znajduje się wewnątrz przedsiębiorstwa, a aplikacja na serwerach dostawcy aplikacji. Prezentacja przedstawia możliwe sposoby uwierzytelniania użytkowników w systemach rozproszonych  z uwzględnieniem technologii pojedyńczego logowania Single Sign-On.",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/L0-Qv-oSrLA"
             };
 
             var session6 = new Session
@@ -122,8 +122,8 @@ namespace dotnetconfpl.Model
                 Time = "20:00 - 21:00",
                 Title = "Aurelia – Create next generation JavaScript apps today",
                 Speaker = dariusz_pawlukiewicz,
-                About = "Trendy w świecie frontendu zmieniają się bardzo szybko – to fakt.  Czasy knockout.js i Backbone przemijają, a w ich miejsce zagościły na stałe React i AngularJs. Kto więc zostanie kolejnym trendsetterem? Wielu developerów typuje Angulara 2.0, inni przewidują utrzymanie obecnych liderów na rynku. Istnieje jednak framework, który pozostaje w cieniu Googla i Facebooka, a który ma szanse na odebranie bardzo dużego kawałka tego frontendowego tortu. Zapraszam na sesję, na której poznacie Aurelię!",
-                YoutubeUrl = ""
+                About = "Trendy w świecie frontendu zmieniają się bardzo szybko – to fakt. Czasy knockout.js i Backbone przemijają, a w ich miejsce zagościły na stałe React i AngularJs. Kto więc zostanie kolejnym trendsetterem? Wielu developerów typuje Angulara 2.0, inni przewidują utrzymanie obecnych liderów na rynku. Istnieje jednak framework, który pozostaje w cieniu Googla i Facebooka, a który ma szanse na odebranie bardzo dużego kawałka tego frontendowego tortu. Zapraszam na sesję, na której poznacie Aurelię!",
+                YoutubeUrl = "https://www.youtube.com/embed/1gND88KjLtc"
 
             };
 
@@ -134,7 +134,7 @@ namespace dotnetconfpl.Model
                 Title = "Jak przestałem się bać i pokochałem przetwarzanie równoległe",
                 Speaker = szymon_warda,
                 About = "Procesowanie wielowątkowe od dawna nie jest już tylko optymalizacją ale koniecznością. Wprowadzenie biblioteki Task Parallel Library (TPL) najlepiej znanej z .AsParallel() dodanego do LINQ może wydawać się rozwiązaniem wszystkich problemów, jednak próba użycia go przy zrównoleglaniu dużych procesów prawdopodobnie skończy się procesorem zajętym głównie przełączaniem się między wątkami. Tu na pomoc przychodzi Task Parallel Library Dataflow. Zaczniemy od idei, przez elementy z których składa się TPL Dataflow, po ważne ustawienia jak i sposoby na kontrolowanie pamięci i zużycia procesora. To poparte przykładami na żywo i własnym doświadczeniem.",
-                YoutubeUrl = ""
+                YoutubeUrl = "https://www.youtube.com/embed/Dup24FdDYj4"
             };
 
             _speakers.Add(piotr_stapp);
