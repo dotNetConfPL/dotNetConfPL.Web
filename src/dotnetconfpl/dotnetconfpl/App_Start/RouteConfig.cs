@@ -19,7 +19,7 @@ namespace dotnetconfpl
             routes.MapRoute(
                 "HomeRoute",
                 "{action}/{id}",
-                new { controller = "Home", action = "Stream", id = UrlParameter.Optional },
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 new[] { "dotnetconfpl.Controllers" });
 
             //routes.MapRoute(
