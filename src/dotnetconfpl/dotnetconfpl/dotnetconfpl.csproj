@@ -277,6 +277,7 @@
     <Content Include="Content\images\twitter.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\unknown.jpg" />
     <Content Include="Content\images\waldemar_mekal.jpeg" />
     <Content Include="Content\images\webio.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
