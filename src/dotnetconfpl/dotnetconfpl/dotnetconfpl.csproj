@@ -29,6 +29,7 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -188,14 +189,17 @@
     <Content Include="Content\CustomStyle.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\adam_furmanek2017.jpg" />
     <Content Include="Content\images\arkadiusz_benedykt.jpg" />
     <Content Include="Content\images\barbara_fusinska.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\buildstuff-logo.png" />
     <Content Include="Content\images\call-for-papers2.png" />
+    <Content Include="Content\images\damian_antonowicz2017.png" />
     <Content Include="Content\images\DanielKrzyczkowski.jpg" />
     <Content Include="Content\images\dariusz_pawlukiewicz.jpg" />
+    <Content Include="Content\images\dariusz_pawlukiewicz2017.jpg" />
     <Content Include="Content\images\devday_logo_2015.jpg" />
     <Content Include="Content\images\developer_days.png" />
     <Content Include="Content\images\devstyle.png" />
@@ -221,6 +225,8 @@
     <Content Include="Content\images\jakub_gutkowski.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\konrad_kokosa.jpg" />
+    <Content Include="Content\images\krzysztof_owsiany2017.png" />
     <Content Include="Content\images\logo-white.png" />
     <Content Include="Content\images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -232,6 +238,7 @@
     <Content Include="Content\images\lukasz_gasior.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\lukasz_pyrzyk2017.jpg" />
     <Content Include="Content\images\maciej_aniserowicz.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -242,7 +249,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\marcin_malinowski.jpg" />
+    <Content Include="Content\images\marcin_zajkowski2017.jpeg" />
     <Content Include="Content\images\marek_zajac.jpeg" />
+    <Content Include="Content\images\marian_dziubak2017.jpg" />
     <Content Include="Content\images\michal-franc.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -265,9 +274,11 @@
     <Content Include="Content\images\pawel-sawicz.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\pawel_klimczyk.jpg" />
     <Content Include="Content\images\pawel_lukasik.jpeg" />
     <Content Include="Content\images\piotr_stapp.jpeg" />
     <Content Include="Content\images\piotr_stapp.jpg" />
+    <Content Include="Content\images\piotr_stapp2017.jpeg" />
     <Content Include="Content\images\slawomir_sobotka.jpg" />
     <Content Include="Content\images\szymon_kulec.jpg" />
     <Content Include="Content\images\szymon_warda.jpg" />
