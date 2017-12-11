@@ -203,9 +203,11 @@
     <Content Include="Content\images\devday_logo_2015.jpg" />
     <Content Include="Content\images\developer_days.png" />
     <Content Include="Content\images\devstyle.png" />
+    <Content Include="Content\images\devstyle2017.png" />
     <Content Include="Content\images\devtalk.png" />
     <Content Include="Content\images\devWarsztaty.jpg" />
     <Content Include="Content\images\dotNetConfPL-background.jpg" />
+    <Content Include="Content\images\DotNetConfPL-Entrian-Logo-300.png" />
     <Content Include="Content\images\ekanet.png" />
     <Content Include="Content\images\facebook.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -225,6 +227,7 @@
     <Content Include="Content\images\jakub_gutkowski.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\jetbrains.png" />
     <Content Include="Content\images\konrad_kokosa.jpg" />
     <Content Include="Content\images\krzysztof_owsiany2017.png" />
     <Content Include="Content\images\logo-white.png" />
@@ -267,6 +270,7 @@
     <Content Include="Content\images\N-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\NDependLogoBig.png" />
     <Content Include="Content\images\orientmen.png" />
     <Content Include="Content\images\patryk_goralowski.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -279,6 +283,7 @@
     <Content Include="Content\images\piotr_stapp.jpeg" />
     <Content Include="Content\images\piotr_stapp.jpg" />
     <Content Include="Content\images\piotr_stapp2017.jpeg" />
+    <Content Include="Content\images\PostSharpText_Light_402x78.png" />
     <Content Include="Content\images\slawomir_sobotka.jpg" />
     <Content Include="Content\images\szymon_kulec.jpg" />
     <Content Include="Content\images\szymon_warda.jpg" />
