@@ -109,7 +109,7 @@ namespace dotnetconfpl.Model
                 Time = "17:00 - 18:00",
                 Title = "Grywalizacja + projektowanie na wybranym przykładzie.",
                 Speaker = krzysztof_owsiany,
-                About = "Omówienie Grywalizacji poparte przykładowym modelem funkcjonowania na wybranym przykładzie.",
+                About = "Grywalizacja – jak sama nazwa wskazuje wiąże się z grami komputerowymi. W czasie prezentacji przedstawię czym jest grywalizacja. Gdzie można ją użyć. Jakie korzyści niesie ze sobą ten ciekawy mechanizm wydarty prosto ze światka gier komputerowych. Zaprezentuję zestaw mechanizmów składających się na mechanikę gier, jakie można wykorzystać budując oprogramowanie komputerowe. Omówię kilka przykładów wykorzystania mechaniki gier w codziennym życiu. Na koniec pokuszę się o zaprojektowanie mechanizmu grywalizacji na prostym przykładzie.",
                 YoutubeUrl = string.Empty
             };
 
