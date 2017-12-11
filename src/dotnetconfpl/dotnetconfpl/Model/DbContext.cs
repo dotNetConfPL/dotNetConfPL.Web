@@ -76,7 +76,7 @@ namespace dotnetconfpl.Model
             var session1 = new Session
             {
                 Id = 1,
-                Time = string.Empty,
+                Time = "14:00 - 15:00",
                 Title = "Co nowego w C#7, 7.x i....8!",
                 Speaker = marcin_zajkowski,
                 About = "Wielu programistów .NET nie przywykła (bądź nawet nie próbowała przywyknąć - #smuteczek) do stosowania wszystkich udogodnień, które udostępnione zostały nam w wersji 6 języka C#. Tymczasem na mapie wydanych wersji widnieje już wersja 7, 7.1 i 7.2, a na Githubie trwają burzliwe dyskusje na temat zakresu zmian w C# 8! Co nowego szykują nam twórcy języka? Czy powinniśmy obawiać się nadchodzących zmian i wyjścia poza strefę naszych programistycznych nawyków? Czy powinniśmy refaktoryzować nasze projekty, aby być zawsze na bieżąco w ramach platformy? Na te i inne pytania odpowiemy w trakcie tej prezentacji.",
@@ -85,38 +85,39 @@ namespace dotnetconfpl.Model
 
             var session2 = new Session
             {
-                Id = 2,
-                Time = string.Empty,
-                Title = "Ręczne zarządzanie pamięcią w .NET",
-                Speaker = adam_furmanek,
-                About = "Obiekty referencyjne na stercie, obiekty wartościowe na stosie — to typowa odpowiedź na pytanie o położenie w pamięci alokowanych instancji. Ale co dokładnie na temat struktury pamięci mówi standard .NET? Czy wymaga konkretnego zachowania w tym obszarze, czy może istnieją mechanizmy pozwalające nam przejąć kontrolę nad alokacją? Czy da się przenieść obiekt referencyjny na stos? A jeżeli tak, to co jeszcze można zrobić w języku, w którym tworzeniem i niszczeniem obiektów zajmuje się platforma? W trakcie prezentacji pokażę, jak ręcznie zaalokować obiekt w dowolnym miejscu i napisać własny operator new.Będzie trochę asemblera, podglądania zrzutów pamięci, słów kluczowych nierozpoznawanych przez ReSharpera, a wszystko to w C# — języku, w którym na pierwszy rzut oka nie da się tego zrobić.",
-                YoutubeUrl = string.Empty
-            };
-
-            var session3 = new Session
-            {
-                Id = 3,
-                Time = string.Empty,
-                Title = "Grywalizacja + projektowanie na wybranym przykładzie.",
-                Speaker = krzysztof_owsiany,
-                About = "Omówienie Grywalizacji poparte przykładowym modelem funkcjonowania na wybranym przykładzie.",
-                YoutubeUrl = string.Empty
-            };
-
-            var session4 = new Session
-            {
                 Id = 4,
-                Time = string.Empty,
+                Time = "15:00 - 16:00",
                 Title = "CCC - Cloud, Continious, Configuration",
                 Speaker = piotr_stapp,
                 About = "CCC na pierwszy rzut oka kojarzy się z firmą obuwniczą, ale o niej w tej sesji nic nie będzie. Co innego chmura tu skojarzenia idą dużo dalej. W większości przypadków jest to marzenie dla deweloperów, architektów czy nawet PM. Cały zestaw usług 'As A Service' + serverless to cała masa pomysłów. Jednak zarządzanie i wdrażanie ich nie jest aż tak proste. Dla dużej ilości usług i aplikacji konfiguracja prosta nie jest. Szczególnie, że maszyny wirtualne są bleee i fuj, a usług do wyboru bez liku. W trakcie sesji pokażę jak to robimy w FinAi (młodym statrtup z kategorii FinTech), w prawdziwej chmurze (tu wystąpi Azure), z punktu widzenia deweloperów (bo administratorów za bardzo u nas nie ma), na naszym CI (w głównej roli Visual Studio Team Services).",
                 YoutubeUrl = string.Empty
             };
 
+            var session3 = new Session
+            {
+                Id = 7,
+                Time = "16:00 - 17:00",
+                Title = "It's all about the state, czyli co skrywa async/await w C#?",
+                Speaker = dariusz_pawlukiewicz,
+                About = "Przez ostatnie lata programowanie asynchroniczne mocno się spopularyzowało, a jego użycie np. przy wykonywaniu żądań HTTP nikogo już nie dziwi. Język C# umożliwia nam bardzo prostą i przyjemną implementację kodu asynchronicznego przy wykorzystaniu async/await. Czy aby na pewno? Na sesji uczestnicy zostaną zapoznani z mechaniką async/await, aby następnie zanurkować prosto do świata kodu pośredniego (Intermediate Language) gdzie dowiedzą się jak ciężko musi napracować się kompilator, aby życie programisty było łatwe i przyjemne.",
+                YoutubeUrl = string.Empty
+            };
+
+            var session4 = new Session
+            {
+                Id = 3,
+                Time = "17:00 - 18:00",
+                Title = "Grywalizacja + projektowanie na wybranym przykładzie.",
+                Speaker = krzysztof_owsiany,
+                About = "Omówienie Grywalizacji poparte przykładowym modelem funkcjonowania na wybranym przykładzie.",
+                YoutubeUrl = string.Empty
+            };
+
+
             var session5 = new Session
             {
                 Id = 5,
-                Time = string.Empty,
+                Time = "18:00 - 19:00",
                 Title = "Porównanie MVC w F# z Suave oraz w C# z ASP.NET Core",
                 Speaker = marian_dziubak,
                 About = "Odświeżymy sobie informację o wzorcu projektowym Model-View-Controller oraz przeanalizujemy aplikację napisaną w dwóch odmiennych środowiskach: w F# z biblioteką Suave oraz w C# z ASP.NET Core. Przejdziemy od konfiguracji środowiska, przez modele, widoki, kontrolery, aż do podłączenia do naszej aplikacji bazy danych. Po prezentacji będziecie posiadali wiedzę na temat tego jak napisać prostą aplikację Suave lub ASP.NET Core oraz jak niektóre konstrukcje języków C# i F# przyczyniają się do używania określonych wzorców programistycznych.",
@@ -125,28 +126,28 @@ namespace dotnetconfpl.Model
 
             var session6 = new Session
             {
+                Id = 2,
+                Time = "19:00 - 20:00",
+                Title = "Ręczne zarządzanie pamięcią w .NET",
+                Speaker = adam_furmanek,
+                About = "Obiekty referencyjne na stercie, obiekty wartościowe na stosie — to typowa odpowiedź na pytanie o położenie w pamięci alokowanych instancji. Ale co dokładnie na temat struktury pamięci mówi standard .NET? Czy wymaga konkretnego zachowania w tym obszarze, czy może istnieją mechanizmy pozwalające nam przejąć kontrolę nad alokacją? Czy da się przenieść obiekt referencyjny na stos? A jeżeli tak, to co jeszcze można zrobić w języku, w którym tworzeniem i niszczeniem obiektów zajmuje się platforma? W trakcie prezentacji pokażę, jak ręcznie zaalokować obiekt w dowolnym miejscu i napisać własny operator new.Będzie trochę asemblera, podglądania zrzutów pamięci, słów kluczowych nierozpoznawanych przez ReSharpera, a wszystko to w C# — języku, w którym na pierwszy rzut oka nie da się tego zrobić.",
+                YoutubeUrl = string.Empty
+            };
+
+            var session7 = new Session
+            {
                 Id = 6,
-                Time = string.Empty,
+                Time = "20:00 - 21:00",
                 Title = "Xamarin - jak się do tego zabrać?",
                 Speaker = damian_antonowicz,
                 About = "Zastanawiałeś się nad tym jak tworzyć efektywniej natywne mobilne aplikacje cross-platform? Podczas tej sesji dowiesz się jak może Ci w tym pomóc znajomość Xamarina, którego popularność stale rośnie. Dowiesz się czym jest Xamarin i jak tak naprawdę działa oraz kiedy warto go użyć. Podzielę się z Tobą nabytym doświadczeniem, najlepszymi praktykami oraz wskażę kierunek, w którym możesz dalej się rozwijać.",
                 YoutubeUrl = string.Empty
             };
 
-            var session7 = new Session
-            {
-                Id = 7,
-                Time = string.Empty,
-                Title = "It's all about the state, czyli co skrywa async/await w C#?",
-                Speaker = dariusz_pawlukiewicz,
-                About = "Przez ostatnie lata programowanie asynchroniczne mocno się spopularyzowało, a jego użycie np. przy wykonywaniu żądań HTTP nikogo już nie dziwi. Język C# umożliwia nam bardzo prostą i przyjemną implementację kodu asynchronicznego przy wykorzystaniu async/await. Czy aby na pewno? Na sesji uczestnicy zostaną zapoznani z mechaniką async/await, aby następnie zanurkować prosto do świata kodu pośredniego (Intermediate Language) gdzie dowiedzą się jak ciężko musi napracować się kompilator, aby życie programisty było łatwe i przyjemne.",
-                YoutubeUrl = string.Empty
-            };
-
             var session8 = new Session
             {
                 Id = 8,
-                Time = string.Empty,
+                Time = "21:00 - 22:00",
                 Title = "Ile (nie) wiesz o strukturach w .NET",
                 Speaker = lukasz_pyrzyk,
                 About = "Kiedy ostatnio stworzyłeś nową strukturę pisząc aplikację w .NET? Wiesz do czego wykorzystywać struktury i jak mogą one zwiększyć wydajność Twojego programu? W prezentacji pokażę czym charakteryzują się struktury, jak dużo różni je od klas oraz opowiem o kilku ciekawych eksperymentach.",
