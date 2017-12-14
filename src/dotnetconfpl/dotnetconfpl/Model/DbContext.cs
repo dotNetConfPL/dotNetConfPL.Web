@@ -85,7 +85,7 @@ namespace dotnetconfpl.Model
 
             var session2 = new Session
             {
-                Id = 4,
+                Id = 2,
                 Time = "15:00 - 16:00",
                 Title = "CCC - Cloud, Continious, Configuration",
                 Speaker = piotr_stapp,
@@ -95,24 +95,23 @@ namespace dotnetconfpl.Model
 
             var session3 = new Session
             {
-                Id = 7,
+                Id = 3,
                 Time = "16:00 - 17:00",
-                Title = "It's all about the state, czyli co skrywa async/await w C#?",
-                Speaker = dariusz_pawlukiewicz,
-                About = "Przez ostatnie lata programowanie asynchroniczne mocno się spopularyzowało, a jego użycie np. przy wykonywaniu żądań HTTP nikogo już nie dziwi. Język C# umożliwia nam bardzo prostą i przyjemną implementację kodu asynchronicznego przy wykorzystaniu async/await. Czy aby na pewno? Na sesji uczestnicy zostaną zapoznani z mechaniką async/await, aby następnie zanurkować prosto do świata kodu pośredniego (Intermediate Language) gdzie dowiedzą się jak ciężko musi napracować się kompilator, aby życie programisty było łatwe i przyjemne.",
+                Title = "Ile (nie) wiesz o strukturach w .NET",
+                Speaker = lukasz_pyrzyk,
+                About = "Kiedy ostatnio stworzyłeś nową strukturę pisząc aplikację w .NET? Wiesz do czego wykorzystywać struktury i jak mogą one zwiększyć wydajność Twojego programu? W prezentacji pokażę czym charakteryzują się struktury, jak dużo różni je od klas oraz opowiem o kilku ciekawych eksperymentach.",
                 YoutubeUrl = string.Empty
             };
 
             var session4 = new Session
             {
-                Id = 3,
+                Id = 4,
                 Time = "17:00 - 18:00",
                 Title = "Grywalizacja + projektowanie na wybranym przykładzie.",
                 Speaker = krzysztof_owsiany,
                 About = "Grywalizacja – jak sama nazwa wskazuje wiąże się z grami komputerowymi. W czasie prezentacji przedstawię czym jest grywalizacja. Gdzie można ją użyć. Jakie korzyści niesie ze sobą ten ciekawy mechanizm wydarty prosto ze światka gier komputerowych. Zaprezentuję zestaw mechanizmów składających się na mechanikę gier, jakie można wykorzystać budując oprogramowanie komputerowe. Omówię kilka przykładów wykorzystania mechaniki gier w codziennym życiu. Na koniec pokuszę się o zaprojektowanie mechanizmu grywalizacji na prostym przykładzie.",
                 YoutubeUrl = string.Empty
             };
-
 
             var session5 = new Session
             {
@@ -126,7 +125,7 @@ namespace dotnetconfpl.Model
 
             var session6 = new Session
             {
-                Id = 2,
+                Id = 6,
                 Time = "19:00 - 20:00",
                 Title = "Ręczne zarządzanie pamięcią w .NET",
                 Speaker = adam_furmanek,
@@ -136,7 +135,7 @@ namespace dotnetconfpl.Model
 
             var session7 = new Session
             {
-                Id = 6,
+                Id = 7,
                 Time = "20:00 - 21:00",
                 Title = "Xamarin - jak się do tego zabrać?",
                 Speaker = damian_antonowicz,
@@ -148,9 +147,9 @@ namespace dotnetconfpl.Model
             {
                 Id = 8,
                 Time = "21:00 - 22:00",
-                Title = "Ile (nie) wiesz o strukturach w .NET",
-                Speaker = lukasz_pyrzyk,
-                About = "Kiedy ostatnio stworzyłeś nową strukturę pisząc aplikację w .NET? Wiesz do czego wykorzystywać struktury i jak mogą one zwiększyć wydajność Twojego programu? W prezentacji pokażę czym charakteryzują się struktury, jak dużo różni je od klas oraz opowiem o kilku ciekawych eksperymentach.",
+                Title = "It's all about the state, czyli co skrywa async/await w C#?",
+                Speaker = dariusz_pawlukiewicz,
+                About = "Przez ostatnie lata programowanie asynchroniczne mocno się spopularyzowało, a jego użycie np. przy wykonywaniu żądań HTTP nikogo już nie dziwi. Język C# umożliwia nam bardzo prostą i przyjemną implementację kodu asynchronicznego przy wykorzystaniu async/await. Czy aby na pewno? Na sesji uczestnicy zostaną zapoznani z mechaniką async/await, aby następnie zanurkować prosto do świata kodu pośredniego (Intermediate Language) gdzie dowiedzą się jak ciężko musi napracować się kompilator, aby życie programisty było łatwe i przyjemne.",
                 YoutubeUrl = string.Empty
             };
 
