@@ -7,8 +7,9 @@ namespace dotnetconfpl
     {
         public static bool HashVerified(string password)
         {
-            var hashedPassword = "22F36417CBB2228C9581E2E73F98F4CE";
-
+            // Odziedziczione, nadpisane
+            //var hashedPassword = "22F36417CBB2228C9581E2E73F98F4CE";
+            var hashedPassword = "FEA003D5F02931FA38B943A4D0FF85F7";
             return CalculateMd5Hash(password) == hashedPassword.ToUpperInvariant();
         }
 

@@ -6,22 +6,24 @@
         {
             switch (selectedStream)
             {
-                case "gutek":
-                    return "Jakub Gutkowski <br/> ASP.NET vNext - Na co zwrócić uwagę";
-                case "maniserowicz":
-                    return "Maciej Aniserowicz <br/> Testy jednostkowe w praktyce, vol 3: testy konwencji";
-                case "stappmaniszewski":
-                    return "Piotr Stapp i Mateusz Janiszewski <br/> Vagrant with Windows czyli włóczęga z oknami";
-                case "wmekal":
-                    return "Jakub Gutkowski <br/> Double Loop TDD z MVC 6 w praktyce";
-                case "mmalinowski":
-                    return "Marcin Malinowski <br/> Funkcyjne zabawki w obiektowej piaskownicy";
-                case "ssobotka":
-                    return "Sławomir Sobótka <br/> Co było pierwsze: kod czy architektura?";
-                case "abenedykt":
-                    return "Arkadiusz Benedykt <br/> Internet of Things gdzie zacząć";
+                case "zajkowski":
+                    return "Marcin Zajkowski <br/> Co nowego w C#7, 7.x i....8!";
+                case "stapp":
+                    return "Piotr Stapp <br/> CCC - Cloud, Continious, Configuration";
+                case "pawlukiewicz":
+                    return "Dariusz Pawlukiewicz <br/> It's all about the state, czyli co skrywa async/await w C#?";
+                case "owsiany":
+                    return "Krzysztof Owsiany <br/> Grywalizacja + projektowanie na wybranym przykładzie";
+                case "dziubiak":
+                    return "Marian Dziubiak <br/> Porównanie MVC w F# z Suave oraz w C# z ASP.NET Core";
+                case "furmanek":
+                    return "Adam Furmanek <br/> Ręczne zarządzanie pamięcią w .NET";
+                case "antonowicz":
+                    return "Damian Antonowicz <br/> Xamarin - jak się do tego zabrać?";
+                case "pyrzyk":
+                    return "Łukasz Pyrzyk <br/> Ile (nie) wiesz o strukturach w .NET";
                 default:
-                    return "dotnetconf.pl - start o 15:00";
+                    return "dotnetconf.pl - start o 14:00";
             }
         }
     }
