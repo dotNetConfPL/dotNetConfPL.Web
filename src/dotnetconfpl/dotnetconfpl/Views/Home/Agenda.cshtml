@@ -1,4 +1,4 @@
-@model IEnumerable<dotnetconfpl.Model.Session>
+﻿@model IEnumerable<dotnetconfpl.Model.Session>
 
 <div class="success">
     <div class="container text-center">
@@ -8,6 +8,10 @@
                 <hr />
             </div>
         </div>
+        @if (!Model.Any())
+        {
+            <div class="row"><h3>Agenda już wkrótce.</h3></div>
+        }
         @foreach (var item in Model)
         {
             <div class="row">

@@ -21,7 +21,6 @@
         </div>
     </div>
 </header>
-
 <section>
     <div class="container">
         <div class="row">
@@ -33,6 +32,10 @@
                         </p>
                     </div>
                 </div>
+                @if (!Model.Any())
+                {
+                    <div class="row"><h3>Agenda już wkrótce!</h3></div>
+                }
                 @foreach (var item in Model)
                 {
                     <div class="row">
@@ -56,33 +59,6 @@
                         </div>
                     </div>
                 }
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container">
-        <div class="col-lg-12 text-center">
-            <h2>Chcesz poprowadzić sesję?</h2>
-            <hr class="partners-primary">
-        </div>
-        <div class="col-lg-12" style="margin: 20px">
-            <p>Otwieramy Call For Papers!</p>
-            <p>Chcemy utrzymać konferencje w duchu .NET. W związku z tym mamy dla potencjalnych prelegentów kilka wskazówek nt. tematyki mile widzianych sesji:</p>
-            <ul style="font-size: 16px">
-                <li>.NET Framework i .NET Core we wszelkiej formie, m.in. dobre praktyki programowania, prezentowanie nowości w nowych wersjach m.in. ASP.NET Core</li>
-                <li>mocno techniczne sesje prezentujące tematy wydajności i „internali” .NET</li>
-                <li>Machine Learning w .NET</li>
-                <li>Tematyka chmurowa w kontekście .NET (np. Azure Functions)</li>
-                <li>Tworzenie gier w VR/AR w Unity (np. na Hololens)</li>
-                <li>wszelkiego rodzaju case-studies i lessons-learned związane z .NET</li>
-            </ul>
-            <p>
-                Oczywiście jesteśmy jak najbardziej otwarci na każde inne tematy dotyczące .NET, potraktujcie powyższą listę jedynie jako luźne sugestie.
-                Zapraszamy Was do nadsyłania CFP!
-            </p>
-            <div class="col-lg-12 text-center" style="margin-top: 20px">
-                <a href="@Url.Action("CallForPapers")" class="btn btn-primary btn-lg">Call For Papers</a>
             </div>
         </div>
     </div>
