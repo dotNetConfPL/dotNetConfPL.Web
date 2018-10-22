@@ -233,8 +233,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\images\jetbrains.png" />
+    <Content Include="Content\images\joanna_lamch2018.jpg" />
     <Content Include="Content\images\konrad_kokosa.jpg" />
     <Content Include="Content\images\krzysztof_owsiany2017.png" />
+    <Content Include="Content\images\krzysztof_owsiany2018.jpg" />
     <Content Include="Content\images\logo-white.png" />
     <Content Include="Content\images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -263,6 +265,7 @@
     <Content Include="Content\images\michal-franc.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\michal_jankowski2018.jpeg" />
     <Content Include="Content\images\michal_lusiak.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
