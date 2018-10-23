@@ -37,37 +37,29 @@ namespace dotnetconfpl.Model
                 Photo = "joanna_lamch2018.jpg"
             };
 
-            var speaker5 = new Speaker
+            var kamil_mrzyglod = new Speaker
             {
                 Id = 5,
-                Name = "TBA",
-                About = "",
+                Name = "Kamil Mrzygłód",
+                About = "Software developer, konsultant, trener, architekt(mniej więcej w takiej kolejności :) Certyfikowany specjalista od Azure oraz aspirujący ekspert od chmury.",
                 Photo = "unknown.jpg"
             };
 
             var speaker6 = new Speaker
             {
                 Id = 6,
-                Name = "TBA",
-                About = "",
+                Name = "Maciej Jędrzejewski",
+                About = "Programista, prelegent, bloger oraz jeden z głównych twórców strony poświęconej społeczności .NET - http://netdevelopers.pl. Autor szkoleń związanych z .NET i Angular. Absolwent Politechniki Wrocławskiej. Angular freak. W wolnym czasie oglądam polską ekstraklasę i piszę swój pierwszy kryminał.",
                 Photo = "unknown.jpg"
             };
 
-            var speaker7 = new Speaker
-            {
-                Id = 7,
-                Name = "TBA",
-                About = "",
-                Photo = "unknown.jpg"
-            };
 
             Speakers.Add(adam_furmanek);
             Speakers.Add(krzysztof_owsiany);
             Speakers.Add(michal_jankowski);
             Speakers.Add(joanna_lamch);
-            Speakers.Add(speaker5);
+            Speakers.Add(kamil_mrzyglod);
             Speakers.Add(speaker6);
-            Speakers.Add(speaker7);
 
             var session1 = new Session
             {
@@ -82,17 +74,18 @@ namespace dotnetconfpl.Model
             {
                 Id = 2,
                 Time = "15:00 - 16:00",
-                Speaker = joanna_lamch,
-                Title = "WebAssembly and .NET",
-                About = "WebAssembly będą następną dużą rzeczą w świecie IT. Już teraz nie tylko jest o nich głośno ale zaczynają zmieniać oblicze aplikacji webowych.  Aplikacje webowe to przecież JavaScrip co to ma z .NETem i C# wspólnego? Microsoft eksperymentuje z razorem w przeglądarce czyli Blazor\'em. Jednak nie tylko Blazor możliwy jest do uruchomienia jako WebAssembly, mamy też Ooui oraz Uno, a wszystko to oparte na Mono. Czyli .NET w przeglądarce i WebAssembly w pigułce. "
+                Speaker = speaker6,
+                Title = ".NET Core, Docker i Heroku - together forever",
+                About = ""
             };
 
             var session3 = new Session
             {
                 Id = 3,
                 Time = "16:00 - 17:00",
-                Speaker = speaker5,
-                Title = "TBA"
+                Speaker = kamil_mrzyglod,
+                Title = "Azure Functions - pisanie własnych rozszerzeń",
+                About = "Azure Functions, jako koronny przykład technologii serverless w Azure, potrafi zaskakiwać. Teoretycznie - FaaS pełną gębą gdzie abstrakcja goni abstrakcję a całość to zamknięty sandbox, którego cieżko odpakować. Praktycznie - całkiem fajny framework, którego można wyginać wedle uznania - pod warunkiem, że wiesz czego(i jak) używać. Podczas prezentacji zobaczycie jak działa model rozszerzeń w tej usłudze i na co zwrócić uwagę używając wersji V1 oraz V2."
             };
 
             var session4 = new Session
@@ -108,16 +101,19 @@ namespace dotnetconfpl.Model
             {
                 Id = 5,
                 Time = "18:00 - 19:00",
-                Speaker = speaker6,
-                Title = "TBA"
+                Speaker = joanna_lamch,
+                Title = "WebAssembly and .NET",
+                About = "WebAssembly będą następną dużą rzeczą w świecie IT. Już teraz nie tylko jest o nich głośno ale zaczynają zmieniać oblicze aplikacji webowych.  Aplikacje webowe to przecież JavaScrip co to ma z .NETem i C# wspólnego? Microsoft eksperymentuje z razorem w przeglądarce czyli Blazor\'em. Jednak nie tylko Blazor możliwy jest do uruchomienia jako WebAssembly, mamy też Ooui oraz Uno, a wszystko to oparte na Mono. Czyli .NET w przeglądarce i WebAssembly w pigułce. "
             };
+
 
             var session6 = new Session
             {
                 Id = 6,
                 Time = "19:00 - 20:00",
-                Speaker = speaker7,
-                Title = "TBA"
+                Speaker = speaker6,
+                Title = "Machine Learning w .NET - czyli podróż tam i z powrotem",
+                About = "Sztuczna inteligencja, machine learning - przyszłość, a nawet teraźniejszość w systemach na całym świecie. Analiza danych, podejmowanie na ich podstawie decyzji. Czym są te zagadnienia, w jaki sposób rozpocząć przygodę z machine learning w .NET? - na te i inne pytania odpowiem podczas prezentacji. Główne obszary skupienia - ML.NET i Microsoft Azure Bot"
             };
 
             var session7 = new Session
