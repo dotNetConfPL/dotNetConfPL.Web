@@ -76,7 +76,7 @@ namespace dotnetconfpl.Model
                 Time = "15:00 - 16:00",
                 Speaker = speaker6,
                 Title = ".NET Core, Docker i Heroku - together forever",
-                About = ""
+                About = ".NET CORE, DOCKER I HEROKU - TOGETHER FOREVER - Napisałeś aplikację ichcesz ją pokazać światu. Następny krok to jej opublikowanie. Tylko gdzie to zrobić? Heroku to rozwiązanie, które w oparciu o AWS zapewni Ci łatwy i przyjemny proces konfiguracji aplikacji i jej deploymentu. Co więcej, podczas rejestracji nie będziesz potrzebował żadnych kart kredytowych. Brzmi bardzo dobrze. Tylko po co w takim razie stosować Dockera dla aplikacji .NET? Podczas prezentacji przejdziemy przez cały proces - od stworzenia aplikacji w .NET Core, konfiguracji Dockera, aż po deployment do Heroku. Będzie się działo!"
             };
 
             var session3 = new Session
@@ -113,7 +113,7 @@ namespace dotnetconfpl.Model
                 Time = "19:00 - 20:00",
                 Speaker = speaker6,
                 Title = "Machine Learning w .NET - czyli podróż tam i z powrotem",
-                About = "Sztuczna inteligencja, machine learning - przyszłość, a nawet teraźniejszość w systemach na całym świecie. Analiza danych, podejmowanie na ich podstawie decyzji. Czym są te zagadnienia, w jaki sposób rozpocząć przygodę z machine learning w .NET? - na te i inne pytania odpowiem podczas prezentacji. Główne obszary skupienia - ML.NET i Microsoft Azure Bot"
+                About = "Sztuczna inteligencja, machine learning - przyszłość, a nawet teraźniejszość w systemach na całym świecie. Analiza danych, podejmowanie na ich podstawie decyzji. Czym są te zagadnienia, w jaki sposób rozpocząć przygodę z machine learning w .NET? - na te i inne pytania odpowiem podczas prezentacji."
             };
 
             var session7 = new Session
