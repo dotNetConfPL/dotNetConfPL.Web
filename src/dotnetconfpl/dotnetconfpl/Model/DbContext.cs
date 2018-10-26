@@ -42,7 +42,7 @@ namespace dotnetconfpl.Model
                 Id = 5,
                 Name = "Kamil Mrzygłód",
                 About = "Software developer, konsultant, trener, architekt(mniej więcej w takiej kolejności :) Certyfikowany specjalista od Azure oraz aspirujący ekspert od chmury.",
-                Photo = "unknown.jpg"
+                Photo = "kamil_mrzyglod.jpg"
             };
 
             var speaker6 = new Speaker
