@@ -50,7 +50,7 @@ namespace dotnetconfpl.Model
                 Id = 6,
                 Name = "Maciej Jędrzejewski",
                 About = "Programista, prelegent, bloger oraz jeden z głównych twórców strony poświęconej społeczności .NET - http://netdevelopers.pl. Autor szkoleń związanych z .NET i Angular. Absolwent Politechniki Wrocławskiej. Angular freak. W wolnym czasie oglądam polską ekstraklasę i piszę swój pierwszy kryminał.",
-                Photo = "unknown.jpg"
+                Photo = "maciej_jedrzejewski.png"
             };
 
 

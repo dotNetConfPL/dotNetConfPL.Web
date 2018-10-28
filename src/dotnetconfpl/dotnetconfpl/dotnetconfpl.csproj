@@ -259,6 +259,7 @@
     <Content Include="Content\images\maciej_grabek.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\maciej_jedrzejewski.png" />
     <Content Include="Content\images\marcin_malinowski.jpg" />
     <Content Include="Content\images\marcin_zajkowski2017.jpeg" />
     <Content Include="Content\images\marek_zajac.jpeg" />
