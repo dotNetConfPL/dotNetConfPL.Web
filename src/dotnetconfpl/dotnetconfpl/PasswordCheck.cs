@@ -9,7 +9,7 @@ namespace dotnetconfpl
         {
             // Odziedziczione, nadpisane
             //var hashedPassword = "22F36417CBB2228C9581E2E73F98F4CE";
-            var hashedPassword = "FED34201B1039E3738AC6B26E199255A6CFFAECC45B3352F6B452DCB5D6C6273";
+            var hashedPassword = "494B3B00BEDE6D70A1813B2E64DC2D8F002AA6F26EC936D124668EBCA78E5AFA";
             return CalculateSha256Hash(password) == hashedPassword.ToUpperInvariant();
         }
 
