@@ -6,22 +6,24 @@
         {
             switch (selectedStream)
             {
-                case "zajkowski":
-                    return "Marcin Zajkowski <br/> Co nowego w C#7, 7.x i....8!";
-                case "stapp":
-                    return "Piotr Stapp <br/> CCC - Cloud, Continious, Configuration";
-                case "pawlukiewicz":
-                    return "Dariusz Pawlukiewicz <br/> It's all about the state, czyli co skrywa async/await w C#?";
+                case "intro":
+                    return "dotNetConfPL - Intro";
+                case "outro":
+                    return "dotNetConfPL - Outro";
+                case "jankowski":
+                    return "Michał Jankowski <br/> 3… 2… 1… LIFT OFF… COSMOSDB";
+                case "jedrzejewski-1":
+                    return "Maciej Jędrzejewski <br/> .NET CORE, DOCKER I HEROKU - TOGETHER FOREVER";
+                case "mrzyglod":
+                    return "Kamil Mrzygłód <br/> AZURE FUNCTIONS - PISANIE WŁASNYCH ROZSZERZEŃ";
                 case "owsiany":
-                    return "Krzysztof Owsiany <br/> Grywalizacja + projektowanie na wybranym przykładzie";
-                case "dziubiak":
-                    return "Marian Dziubiak <br/> Porównanie MVC w F# z Suave oraz w C# z ASP.NET Core";
+                    return "Krzysztof Owsiany <br/> IL — MIĘDZY PIEKŁEM A NIEBEM";
+                case "lamch":
+                    return "Joanna Lamch <br/> WEBASSEMBLY AND .NET";
                 case "furmanek":
-                    return "Adam Furmanek <br/> Ręczne zarządzanie pamięcią w .NET";
-                case "antonowicz":
-                    return "Damian Antonowicz <br/> Xamarin - jak się do tego zabrać?";
-                case "pyrzyk":
-                    return "Łukasz Pyrzyk <br/> Ile (nie) wiesz o strukturach w .NET";
+                    return "Adam Furmanek <br/> BEBECHY WYJĄTKÓW";
+                case "jedrzejewski-2":
+                    return "Maciej Jędrzejewski <br/> MACHINE LEARNING W .NET - CZYLI PODRÓŻ TAM I Z POWROTEM";
                 default:
                     return "dotnetconf.pl - start o 14:00";
             }

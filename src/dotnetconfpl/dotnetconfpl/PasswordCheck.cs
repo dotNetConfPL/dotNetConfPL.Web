@@ -9,15 +9,15 @@ namespace dotnetconfpl
         {
             // Odziedziczione, nadpisane
             //var hashedPassword = "22F36417CBB2228C9581E2E73F98F4CE";
-            var hashedPassword = "FEA003D5F02931FA38B943A4D0FF85F7";
-            return CalculateMd5Hash(password) == hashedPassword.ToUpperInvariant();
+            var hashedPassword = "FED34201B1039E3738AC6B26E199255A6CFFAECC45B3352F6B452DCB5D6C6273";
+            return CalculateSha256Hash(password) == hashedPassword.ToUpperInvariant();
         }
 
-        private static string CalculateMd5Hash(string input)
+        public static string CalculateSha256Hash(string input)
         {
-            MD5 md5 = MD5.Create();
+            SHA256 sha256 = SHA256.Create();
             byte[] inputBytes = Encoding.ASCII.GetBytes(input);
-            byte[] hash = md5.ComputeHash(inputBytes);
+            byte[] hash = sha256.ComputeHash(inputBytes);
 
             var sb = new StringBuilder();
             for (int i = 0; i < hash.Length; i++)
