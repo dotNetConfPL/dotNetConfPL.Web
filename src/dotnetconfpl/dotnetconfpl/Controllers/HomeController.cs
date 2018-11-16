@@ -3,6 +3,8 @@ using System.Web.Mvc;
 using RestSharp;
 using dotnetconfpl.Model;
 using System;
+using System.Configuration;
+using Microsoft.WindowsAzure.Storage;
 
 namespace dotnetconfpl.Controllers
 {
@@ -57,19 +59,28 @@ namespace dotnetconfpl.Controllers
 
         private void SetStreamToCouchDb(StreamDocModel value)
         {
-            var client = new RestClient(string.Format("http://mfranc.cloudant.com/dotnetconf/_design/update_stream/_update/in-place-query/current_stream?field=stream&value={0}", value.stream));
-            var request = new RestRequest(Method.PUT);
+            var storageAccount = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["AzureStorage"]);
 
-            var response = client.Execute(request);
+            var blobClient = storageAccount.CreateCloudBlobClient();
+
+            var container = blobClient.GetContainerReference(ConfigurationManager.AppSettings["ContainerName"]);
+            container.CreateIfNotExists();
+            var currentStream = container.GetBlockBlobReference("CurrentStream");
+            currentStream.UploadText(Newtonsoft.Json.JsonConvert.SerializeObject(value));
         }
 
         private StreamDocModel GetStreamFromCouchDb()
         {
-            var client = new RestClient("http://mfranc.cloudant.com/dotnetconf/current_stream");
-            var request = new RestRequest(Method.GET);
-            var response = client.Execute<StreamDocModel>(request);
+            var storageAccount = CloudStorageAccount.Parse(ConfigurationManager.AppSettings["AzureStorage"]);
 
-            return response.Data;
+            var blobClient = storageAccount.CreateCloudBlobClient();
+
+            var container = blobClient.GetContainerReference(ConfigurationManager.AppSettings["ContainerName"]);
+            container.CreateIfNotExists();
+            var currentStream = container.GetBlockBlobReference("CurrentStream");
+            if (currentStream.Exists() == false)
+                return new StreamDocModel{stream = "", type = ""};
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<StreamDocModel>(currentStream.DownloadText());
         }
 
         private DbContext _context = new DbContext();
