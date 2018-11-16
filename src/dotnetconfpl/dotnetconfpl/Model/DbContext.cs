@@ -68,6 +68,7 @@ namespace dotnetconfpl.Model
                 Title = "3… 2… 1… Lift off… CosmosDB",
                 Speaker = michal_jankowski,
                 About = "Azure CosmosDB jest jednym z najgorętszych tematów w ostatnim czasie. Technologia ta, baza danych NoSQL, pozwala na budowanie wysoko skalowalnej, rozproszonej bazy danych o prawie natychmiastowym dostępie do danych. Możliwości tego rozwiązania są olbrzymie. \r\n\r\nA czy Ty znasz jego potencjał?\r\n\r\nJeśli nie, to ta sesja jest dla Ciebie. W jej trakcie zostaną przedstawione główne funkcjonalności Azure CosmosDB. Zastanowimy się, czy różni się ona od bazy relacyjnej. Jak wpływa to na jej projektowanie. Jakie są jej mocne i słabe strony. A przede wszystkim poznamy możliwości jej zastosowania przy budowaniu wysokowydajnych aplikacji.",
+                YoutubeUrl = "https://www.youtube.com/embed/zTPjVqe-sN4"
             };
 
             var session2 = new Session
@@ -76,7 +77,8 @@ namespace dotnetconfpl.Model
                 Time = "15:00 - 16:00",
                 Speaker = speaker6,
                 Title = ".NET Core, Docker i Heroku - together forever",
-                About = ".NET CORE, DOCKER I HEROKU - TOGETHER FOREVER - Napisałeś aplikację ichcesz ją pokazać światu. Następny krok to jej opublikowanie. Tylko gdzie to zrobić? Heroku to rozwiązanie, które w oparciu o AWS zapewni Ci łatwy i przyjemny proces konfiguracji aplikacji i jej deploymentu. Co więcej, podczas rejestracji nie będziesz potrzebował żadnych kart kredytowych. Brzmi bardzo dobrze. Tylko po co w takim razie stosować Dockera dla aplikacji .NET? Podczas prezentacji przejdziemy przez cały proces - od stworzenia aplikacji w .NET Core, konfiguracji Dockera, aż po deployment do Heroku. Będzie się działo!"
+                About = ".NET CORE, DOCKER I HEROKU - TOGETHER FOREVER - Napisałeś aplikację ichcesz ją pokazać światu. Następny krok to jej opublikowanie. Tylko gdzie to zrobić? Heroku to rozwiązanie, które w oparciu o AWS zapewni Ci łatwy i przyjemny proces konfiguracji aplikacji i jej deploymentu. Co więcej, podczas rejestracji nie będziesz potrzebował żadnych kart kredytowych. Brzmi bardzo dobrze. Tylko po co w takim razie stosować Dockera dla aplikacji .NET? Podczas prezentacji przejdziemy przez cały proces - od stworzenia aplikacji w .NET Core, konfiguracji Dockera, aż po deployment do Heroku. Będzie się działo!",
+                YoutubeUrl = "https://www.youtube.com/embed/6Jb3ZsOD7nA"
             };
 
             var session3 = new Session
@@ -85,7 +87,8 @@ namespace dotnetconfpl.Model
                 Time = "16:00 - 17:00",
                 Speaker = kamil_mrzyglod,
                 Title = "Azure Functions - pisanie własnych rozszerzeń",
-                About = "Azure Functions, jako koronny przykład technologii serverless w Azure, potrafi zaskakiwać. Teoretycznie - FaaS pełną gębą gdzie abstrakcja goni abstrakcję a całość to zamknięty sandbox, którego cieżko odpakować. Praktycznie - całkiem fajny framework, którego można wyginać wedle uznania - pod warunkiem, że wiesz czego(i jak) używać. Podczas prezentacji zobaczycie jak działa model rozszerzeń w tej usłudze i na co zwrócić uwagę używając wersji V1 oraz V2."
+                About = "Azure Functions, jako koronny przykład technologii serverless w Azure, potrafi zaskakiwać. Teoretycznie - FaaS pełną gębą gdzie abstrakcja goni abstrakcję a całość to zamknięty sandbox, którego cieżko odpakować. Praktycznie - całkiem fajny framework, którego można wyginać wedle uznania - pod warunkiem, że wiesz czego(i jak) używać. Podczas prezentacji zobaczycie jak działa model rozszerzeń w tej usłudze i na co zwrócić uwagę używając wersji V1 oraz V2.",
+                YoutubeUrl = "https://www.youtube.com/embed/YHwcZzIlkok"
             };
 
             var session4 = new Session
@@ -94,7 +97,8 @@ namespace dotnetconfpl.Model
                 Time = "17:00 - 18:00",
                 Speaker = krzysztof_owsiany,
                 Title = "IL — między piekłem a niebem.",
-                About = "Czym jest IL? Wykorzystanie narzędzi do analizy pisanego kodu. Nie zabraknie też powiązanych tematów: JIT, CLR, CTS, CLS, class, struct, boxing, kompilacja, dekompilacja, mnemoniki, manifest, metadane."
+                About = "Czym jest IL? Wykorzystanie narzędzi do analizy pisanego kodu. Nie zabraknie też powiązanych tematów: JIT, CLR, CTS, CLS, class, struct, boxing, kompilacja, dekompilacja, mnemoniki, manifest, metadane.",
+                YoutubeUrl = "https://www.youtube.com/embed/7yn17s8cOIE"
             };
 
             var session5 = new Session
@@ -103,7 +107,8 @@ namespace dotnetconfpl.Model
                 Time = "18:00 - 19:00",
                 Speaker = joanna_lamch,
                 Title = "WebAssembly and .NET",
-                About = "WebAssembly będą następną dużą rzeczą w świecie IT. Już teraz nie tylko jest o nich głośno ale zaczynają zmieniać oblicze aplikacji webowych.  Aplikacje webowe to przecież JavaScrip co to ma z .NETem i C# wspólnego? Microsoft eksperymentuje z razorem w przeglądarce czyli Blazor\'em. Jednak nie tylko Blazor możliwy jest do uruchomienia jako WebAssembly, mamy też Ooui oraz Uno, a wszystko to oparte na Mono. Czyli .NET w przeglądarce i WebAssembly w pigułce. "
+                About = "WebAssembly będą następną dużą rzeczą w świecie IT. Już teraz nie tylko jest o nich głośno ale zaczynają zmieniać oblicze aplikacji webowych.  Aplikacje webowe to przecież JavaScrip co to ma z .NETem i C# wspólnego? Microsoft eksperymentuje z razorem w przeglądarce czyli Blazor\'em. Jednak nie tylko Blazor możliwy jest do uruchomienia jako WebAssembly, mamy też Ooui oraz Uno, a wszystko to oparte na Mono. Czyli .NET w przeglądarce i WebAssembly w pigułce. ",
+                YoutubeUrl = "https://www.youtube.com/embed/kAGZDaxVSvY"
             };
 
 
@@ -113,7 +118,8 @@ namespace dotnetconfpl.Model
                 Time = "19:00 - 20:00",
                 Speaker = speaker6,
                 Title = "Machine Learning w .NET - czyli podróż tam i z powrotem",
-                About = "Sztuczna inteligencja, machine learning - przyszłość, a nawet teraźniejszość w systemach na całym świecie. Analiza danych, podejmowanie na ich podstawie decyzji. Czym są te zagadnienia, w jaki sposób rozpocząć przygodę z machine learning w .NET? - na te i inne pytania odpowiem podczas prezentacji."
+                About = "Sztuczna inteligencja, machine learning - przyszłość, a nawet teraźniejszość w systemach na całym świecie. Analiza danych, podejmowanie na ich podstawie decyzji. Czym są te zagadnienia, w jaki sposób rozpocząć przygodę z machine learning w .NET? - na te i inne pytania odpowiem podczas prezentacji.",
+                YoutubeUrl = "https://www.youtube.com/embed/Gr7-jeQCNQA"
             };
 
             var session7 = new Session
@@ -122,7 +128,8 @@ namespace dotnetconfpl.Model
                 Time = "20:00 - 21:00",
                 Title = "Bebechy wyjątków",
                 Speaker = adam_furmanek,
-                About = "Wiesz jak rzucić i złapać wyjątki, ale czy wiesz, jak są one zbudowane pod spodem? Czy znasz SEH, VEH, VCH, SJLJ i inne technologie w Windowsie? Czy wiesz, po co C# wprowadził exception filters i jak złapać StackOverflowException?\r\n\r\nW trakcie prezentacji poznamy szczegóły implementacyjne mechanizmów do łapania wyjątków. Zobaczymy kod z wielu języków, zarówno z poziomu procesora i WinAPI, jak również z C++, IL czy C#. Pokażę także kiedy bloki finally nie są wykonywane, jak ratować się w przypadku poważnych błędów w dostępie do pamięci, a także jak w C# złapać absolutnie wszystko, nawet StackOverflowException."
+                About = "Wiesz jak rzucić i złapać wyjątki, ale czy wiesz, jak są one zbudowane pod spodem? Czy znasz SEH, VEH, VCH, SJLJ i inne technologie w Windowsie? Czy wiesz, po co C# wprowadził exception filters i jak złapać StackOverflowException?\r\n\r\nW trakcie prezentacji poznamy szczegóły implementacyjne mechanizmów do łapania wyjątków. Zobaczymy kod z wielu języków, zarówno z poziomu procesora i WinAPI, jak również z C++, IL czy C#. Pokażę także kiedy bloki finally nie są wykonywane, jak ratować się w przypadku poważnych błędów w dostępie do pamięci, a także jak w C# złapać absolutnie wszystko, nawet StackOverflowException.",
+                YoutubeUrl = "https://www.youtube.com/embed/Y_Anjb1U0Bo"
             };
 
             Sessions.Add(session1);
