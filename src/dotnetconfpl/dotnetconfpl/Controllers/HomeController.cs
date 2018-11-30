@@ -3,7 +3,9 @@ using System.Web.Mvc;
 using RestSharp;
 using dotnetconfpl.Model;
 using System;
+using System.Collections;
 using System.Configuration;
+using System.Net;
 using Microsoft.WindowsAzure.Storage;
 
 namespace dotnetconfpl.Controllers
@@ -129,8 +131,12 @@ namespace dotnetconfpl.Controllers
 
         [HttpPost]
         [OutputCache(Duration = 0)]
-        public void UpdateStream(string newStream, string password, string streamType)
+        public ActionResult UpdateStream(string newStream, string password, string streamType)
         {
+            if (newStream.IndexOf("youtube", StringComparison.CurrentCultureIgnoreCase) == 0)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
             if (newStream.Contains("watch?v="))
             {
                 newStream = newStream.Replace("watch?v=", "embed/");
@@ -139,7 +145,10 @@ namespace dotnetconfpl.Controllers
             if (PasswordCheck.HashVerified(password))
             {
                 CurrentStream = new StreamDocModel {stream = newStream, type = streamType};
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
             }
+
+            return new HttpUnauthorizedResult("Invalid password");
         }
 
         [HttpPost]
