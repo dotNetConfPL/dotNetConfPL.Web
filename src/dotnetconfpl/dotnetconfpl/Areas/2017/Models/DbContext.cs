@@ -90,7 +90,7 @@ namespace dotnetconfpl.Areas._2017.Model
                 Title = "CCC - Cloud, Continious, Configuration",
                 Speaker = piotr_stapp,
                 About = "CCC na pierwszy rzut oka kojarzy się z firmą obuwniczą, ale o niej w tej sesji nic nie będzie. Co innego chmura tu skojarzenia idą dużo dalej. W większości przypadków jest to marzenie dla deweloperów, architektów czy nawet PM. Cały zestaw usług 'As A Service' + serverless to cała masa pomysłów. Jednak zarządzanie i wdrażanie ich nie jest aż tak proste. Dla dużej ilości usług i aplikacji konfiguracja prosta nie jest. Szczególnie, że maszyny wirtualne są bleee i fuj, a usług do wyboru bez liku. W trakcie sesji pokażę jak to robimy w FinAi (młodym statrtup z kategorii FinTech), w prawdziwej chmurze (tu wystąpi Azure), z punktu widzenia deweloperów (bo administratorów za bardzo u nas nie ma), na naszym CI (w głównej roli Visual Studio Team Services).",
-                YoutubeUrl = "https://www.youtube.com/embed/pqOVmAVyrYY"
+                YoutubeUrl = "https://www.youtube.com/embed/cSpqs5MQ_hw"
             };
 
             var session3 = new Session
