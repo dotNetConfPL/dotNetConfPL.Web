@@ -1,0 +1,89 @@
+﻿@model dotnetconfpl.Areas._2018.Controllers.StreamModel
+
+@{
+    ViewBag.Title = "dotnetconf.pl";
+}
+
+@{
+    var url = @Model.CurrentStream;
+}
+
+<section id="news">
+    <div class="container text-center">
+        <div>
+            <h3 class="bg-info" id="stream-title">
+               @Html.Raw(Model.CurrentStreamInfo)
+            </h3>
+        </div>
+        <div id="inject-place">
+
+            <iframe width="640" height="360" src="@url" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div>
+            <p>
+                <a class="btn btn-danger btn-lg" href="http://slackin.devstyle.pl/" target="_blank">Dołącz do dyskusji na Slack</a>
+            </p>
+            <p class="last-chance-text">
+                <a id="ForceRefresh" href="@Url.Action("Stream")"> Stream odświeża się automatycznie, w razie awarii. Odświeżenie ostatniej szansy :)</a>
+            </p>
+        </div>
+
+        @if (Model.IsAdmin)
+        {
+            <label>Stream Url</label>
+            <input id="new-stream"/>
+            <br/>
+            <label>Password</label>
+            <input id="password"/>
+            <br/>
+            <select id="selected-stream">
+                <option value="brak">brak</option>
+                <option value="intro">intro</option>
+                <option value="jankowski">jankowski</option>
+                <option value="jedrzejewski-1">jedrzejewski-1</option>
+                <option value="mrzyglod">mrzyglod</option>
+                <option value="owsiany">owsiany</option>
+                <option value="furmanek">furmanek</option>
+                <option value="lamch">lamch</option>
+                <option value="jedrzejewski-2">jedrzejewski-2</option>
+                <option value="outro">outro</option>
+            </select>
+            <button id="btn-set-stream">Set Stream</button>
+        }
+
+    </div>
+</section>
+
+@section scripts {
+    <script src="/Scripts/jquery.signalR-1.1.3.min.js"></script>
+    <script src="/signalr/hubs"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var injectHub = $.connection.injectHub;
+            injectHub.client.updateClient = function(stream, streaimInfo) {
+                $('#inject-place iframe').attr('src', stream);
+                $('#stream-title').html(streaimInfo);
+            };
+            
+            $.connection.hub.start().done(function () {
+                $('#btn-set-stream').click(function () {
+
+                    var newStream = $('#new-stream').val();
+                    if (newStream.includes("watch?v=")) {
+                        newStream = newStream.replace("watch?v=", "embed/");
+                    }
+
+                    injectHub.server.updateStream(newStream, $('#password').val(), $('#selected-stream').val());
+                    $.post("@Url.Action("UpdateStream")", { newStream: newStream, password: $('#password').val(), streamType: $('#selected-stream').val() });
+                });
+            });
+            
+            $.connection.hub.disconnected(function () {
+                setTimeout(function () {
+                    $.connection.hub.start();
+                }, 10000);
+            });
+        });
+    </script>
+}
