@@ -237,6 +237,8 @@
     <Content Include="Content\images\filip_woj.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\images\grzegorz_kotfis.jpg" />
+    <Content Include="Content\images\grzegorz_kotfis2.jpg" />
     <Content Include="Content\images\jakub-jedryszek.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -309,6 +311,7 @@
     <Content Include="Content\images\slawomir_sobotka.jpg" />
     <Content Include="Content\images\szymon_kulec.jpg" />
     <Content Include="Content\images\szymon_warda.jpg" />
+    <Content Include="Content\images\szymon_warda2.jpg" />
     <Content Include="Content\images\tomasz_janczuk.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
