@@ -35,6 +35,7 @@
                 @if (!Model.Any())
                 {
                     <div class="row"><h3>Agenda już wkrótce!</h3></div>
+                    <div class="row"><h2>@Html.ActionLink("Call For Papers", "CallForPapers")</h2></div>
                 }
                 @foreach (var item in Model)
                 {
