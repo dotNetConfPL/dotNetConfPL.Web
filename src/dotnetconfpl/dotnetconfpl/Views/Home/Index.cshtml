@@ -2,6 +2,25 @@
 
 @{
     ViewBag.Title = "dotnetconf.pl";
+    string friday = "";
+    string saturday = "";
+    if (Model.Any())
+    {
+        foreach (var item in Model.Where(i => i.Time.Contains("4.10")))
+        {
+            friday += item.Time;
+            friday += " - " + item.Speaker.Name;
+            friday += " - " + item.Title;
+            friday += @"\n";
+        }
+        foreach (var item in Model.Where(i => i.Time.Contains("5.10")))
+        {
+            saturday += item.Time;
+            saturday += " - " + item.Speaker.Name;
+            saturday += " - " + item.Title;
+            saturday += @"\n";
+        }
+    }
 }
 
 <header style="background-image: url('/Content/images/dotNetConfPL-background.jpg'); background-size: cover">
@@ -11,7 +30,24 @@
                 <div class="intro-text">
                     <br />
                     <span class="name">4-5 października 2019</span>
-                    <span class="skills">??:00 - ??:00</span>
+                    <p class="skills">4.10 (Piątek) 17:45 - 21:00</p>
+                    <div title="Dodaj do kalendarza (Piątek)" class="addeventatc">
+                        Dodaj do kalendarza
+                        <span class="start">10/4/2019 17:45</span>
+                        <span class="end">10/04/2019 21:00</span>
+                        <span class="timezone">Europe/CET</span>
+                        <span class="title">dotNetConfPL 2019 cz. 1</span>
+                        <span class="description">@friday</span>
+                    </div>
+                    <p class="skills">5.10 (Sobota) 10:30 - 14:00</p>
+                    <div title="Dodaj do kalendarza (Sobota)" class="addeventatc">
+                        Dodaj do kalendarza
+                        <span class="start">10/05/2019 10:30</span>
+                        <span class="end">10/05/2019 14:00</span>
+                        <span class="timezone">Europe/CET</span>
+                        <span class="title">dotNetConfPL 2019 cz. 2</span>
+                        <span class="description">@saturday</span>
+                    </div>
                     <hr>
                     <span class="skills">
                         Wirtualna konferencja dla .NET developerów.
