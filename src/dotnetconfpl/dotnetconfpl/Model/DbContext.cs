@@ -20,7 +20,7 @@ namespace dotnetconfpl.Model
                         Dariusz:
                         Absolwent wydziału Cybernetyki na Wojskowej Akademii Technicznej.Microsoft MVP. Miłośnik języka C# oraz platformy .NET Core. Entuzjasta DDD, CQRS oraz wszelkich zagadnień związanych z systemami rozproszonymi. Regularnie prowadzi bloga foreverframe.net, a okazjonalnie pojawia się na spotkaniach oraz konferencjach programistycznych w roli prelegenta. Współtwórca platformy DevMentors.io.
                 ",
-                Photo = "unknown.jpg"
+                Photo = "piotr_darek.jpg"
             };
 
             var joannaLamch = new Speaker
@@ -69,7 +69,7 @@ namespace dotnetconfpl.Model
                 Name = "Janusz Nowak",
                 About =
                     @"Senior software developer with 12 years of experience specialized on Microsoft and Web technologies, enterprise solutions architecture, programming and Azure Cloud computing, Paas, Saas, focused on Application Life Cycle Management.I have worked with multiple Microsoft Technologies starting from .NET 1.1 and VS2003 up to .NET 4.5 and VS2017 , Microsoft SQL Server, SharePoint Server, Team Foundation Server, Visual Studio Team Services keeping the big and small picture what is going on.",
-                Photo = "unknown.jpg"
+                Photo = "janusz_nowak.jpg"
             };
 
             var pawelHaracz = new Speaker
