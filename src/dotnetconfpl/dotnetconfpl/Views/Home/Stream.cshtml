@@ -39,6 +39,7 @@
             <select id="selected-stream">
                 <option value="brak">brak</option>
                 <option value="intro">intro</option>
+                <option value="day-1-outro">outro 1-dzień</option>
                 <option value="quiz">quiz</option>
                 <option value="convey">convey</option>
                 <option value="stapp">stapp</option>
@@ -46,7 +47,7 @@
                 <option value="nowak">nowak</option>
                 <option value="iot">iot</option>
                 <option value="haracz">haracz</option>
-                <option value="outro">outro</option>
+                <option value="day-2-outro">outro</option>
             </select>
             <button id="btn-set-stream">Set Stream</button>
         }
@@ -61,9 +62,9 @@
     <script type="text/javascript">
         $(function () {
             var injectHub = $.connection.injectHub;
-            injectHub.client.updateClient = function(stream, streaimInfo) {
+            injectHub.client.updateClient = function(stream, streamInfo) {
                 $('#inject-place iframe').attr('src', stream);
-                $('#stream-title').html(streaimInfo);
+                $('#stream-title').html(streamInfo);
             };
             
             $.connection.hub.start().done(function () {

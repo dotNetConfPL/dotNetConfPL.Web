@@ -8,7 +8,7 @@
             {
                 case "intro":
                     return "dotNetConfPL - Intro";
-                case "outro":
+                case "day-2-outro":
                     return "dotNetConfPL - Outro";
                 case "quiz":
                     return "Quiz wiedzy!";
@@ -24,6 +24,8 @@
                     return "Internet of Things on Azure";
                 case "haracz":
                     return "Jak Event-Driven development pozwolił zbudować skalowalny system";
+                case "day-1-outro":
+                    return "Zakończenie pierwszego dnia konferencji.";
                 default:
                     return "dotnetconf.pl - start o 17:45";
             }
